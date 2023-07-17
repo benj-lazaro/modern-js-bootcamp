@@ -1,0 +1,26 @@
+ECMA International
+------------------
+- An organization that is in change of creating different standards for technologies
+- Reference (https://ecma-International.org)
+
+ECMAScript
+----------
+- The specification defined in ECMA-262 document for a scripting language
+- A text document about a set of rules on how a (programming) language should work
+- Then it is up to the browsers to follow these rules and implement them as JavaScript
+
+JavaScript
+----------
+- A programming language that conforms to the ECMAScript specification
+- It is NOT a single language but a bunch of implementations of the same specification
+
+TC39 (Technical Committee 39)
+-----------------------------
+- They are in charge of evolving & maintaining the ECMAScript specification
+- They have 40 to 60 delegrates who meet 6 times a year
+- To discuss proposed changes to the specification
+
+Can I use
+---------
+- An website that helps determine w/c JavaScript features are currently supported by browsers
+- Reference (https://caniuse.com/?search=Javascript)
