@@ -1,0 +1,7 @@
+Number
+------
+- It is a way of storing or representing a number in JavaScript
+- JavaScript has ONE type of number type called number
+- It works with whole numbers (integer), decimal numbers (float), positive & negative numbers
+- JavaScript does NOT store infinitely precise numbers
+- Works with math operations (e.g. add, substract, multiply, divide, modulo, exponent)

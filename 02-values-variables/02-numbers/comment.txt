@@ -1,0 +1,12 @@
+JavaScript Single-line Comment
+------------------------------
+Example:
+// Single-line Comment
+
+
+JavaScript Multi-line Comment
+-----------------------------
+Example:
+/* This is a 
+   multi-line comment
+*/
