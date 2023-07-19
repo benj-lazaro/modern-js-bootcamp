@@ -1,0 +1,25 @@
+Variables
+---------
+- They are like "labeled jars" for a value in JavaScript
+- You can store a value & then give it a name
+- So that you can recall it, use it or change the value by name
+
+
+Syntax
+------
+let <variable_name> = <value>;
+
+
+Example
+-------
+let numOfHens = 4;
+numOfHens = 1;              // This does NOT change the value stored in variable hens
+
+numOfHens = numOfHens - 1;  // This CHANGES the value stored in variable hens
+
+
+Variable Name Convention
+------------------------
+- Variable names are to be written in Camel case
+    * Lowercase the 1st letter of the 1st word
+    * Capitalize the 1st letter of each suceeding word
