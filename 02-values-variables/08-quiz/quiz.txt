@@ -1,0 +1,37 @@
+Quiz
+----
+
+1. What is the value of eggCount?
+---------------------------------
+let eggCount = 42;
+eggCount + 2;
+
+Answer: 42
+- The question asked was for the value of eggCount
+- The mathematical operation didn't save the new result back to the variable eggCount
+
+
+2. What is the value of rating after this code runs?
+----------------------------------------------------
+const rating = 7.5;
+rating = 8;
+
+Answer: TypeError
+- Attempt to assisng a new value to a constant variable
+
+
+3. What is the value of wind_speed? What's the minor issue with the code?
+-------------------------------------------------------------------------
+let wind_speed = 76;
+wind_speed += 5;
+wind_speed--;
+
+Answer: 81
+- The sum is save to the variable wind_speed
+
+Answer: 80
+- The current value of wind_speed is decremented by 1
+
+Answer: variable name styling
+- JavaScript variables are declared using camelCase (e.g. windSpeed)
+- Python variables are declared using snake_case (e.g. wind_speed)
