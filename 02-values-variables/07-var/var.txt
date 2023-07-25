@@ -1,0 +1,14 @@
+var
+---
+- Declares a globally or function-scoped variables, optionally initializing to a value
+- It WAS the old-way of making variables and now REPLACED by 'let'
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+
+Syntax
+------
+var <variable_name>;
+var <variable_name> = <value>;
+
+Example
+-------
+var tripDistance = 7.4;
