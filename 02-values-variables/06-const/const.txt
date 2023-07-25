@@ -1,0 +1,17 @@
+const
+-----
+- Declares a block-scope variable
+- It works like 'let' BUT you can NOT CHANGE the value
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+
+Syntax
+------
+const <variable_name> = <value>;
+
+Example
+-------
+const hens = 4;
+hens = 20;          // TypeError: Assignment to constant variable
+
+const age = 17;
+age = age + 1;      // TypeError: Assignment to constant variable
