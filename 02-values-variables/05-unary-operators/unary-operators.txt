@@ -1,0 +1,18 @@
+Unary Operators
+---------------
+- Performs an operation with ONLY 1 operand
+- Applied to one-side of the operand
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+
+Example
+-------
+score = score + 10;         // Without using an unary operator
+score += 1                  // Using an unary operator
+
+let bonusMultiplier = 3;
+score = 150;
+score *= bonusMultiplier;   // Multiply score with bonusMultiplier; result is 450
+
+let counter = 0;
+counter++;                  // Increments the value of counter by 1
+counter--;                  // Decrements the value of counter by 1
