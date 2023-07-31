@@ -1,0 +1,17 @@
+Strings
+-------
+- It is a primitive data type that is a sequence of characters used to represent text.
+- The string value is wrapped in single quotes '' or double quotes ""
+- Do NOT mix single & double quotes on a single string value
+- Reference (https://developer.mozilla.org/en-US/docs/Glossary/String)
+
+Example
+-------
+let firstName = "Ziggy";
+let lastName = "Canaryface";
+let fullname = firstName + lastName;
+
+let msg = "Please do not feed the chimps!";
+let animal = 'Dumbo Octopus';
+
+let bad = "This is wrong';  //This does NOT work; do NOT mix the quotes
