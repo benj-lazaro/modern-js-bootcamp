@@ -1,6 +1,6 @@
 Boolean
 -------
-- It is a logical data type that can ONLY have two values 'true' or 'false'
+- It is a primitive data type that can ONLY have two values 'true' or 'false'
 - They can be stored in a variable
 - Reference (https://developer.mozilla.org/en-US/docs/Glossary/Boolean)
 
