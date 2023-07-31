@@ -1,9 +1,13 @@
 Strings
 -------
 - It is a primitive data type that is a sequence of characters used to represent text.
+
 - The string value is wrapped in single quotes '' or double quotes ""
 - Do NOT mix single & double quotes on a single string value
+
+- A string value is IMMUTABLE (can't be changed)
 - Reference (https://developer.mozilla.org/en-US/docs/Glossary/String)
+
 
 Example
 -------
