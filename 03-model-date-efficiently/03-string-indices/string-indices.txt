@@ -1,0 +1,48 @@
+String Indices
+--------------
+- Strings are indexed
+- Each character has a corresponding index (positional number) based off its position in the string
+
+- String indices starts from the left and progressing towards the right of a string
+- The lowest index value is 0
+- The index value increments by 1 as to move towards the last character of its string
+
+- A string value has a property named .length
+- The property .length returns the number of chracters of its string
+
+
+Syntax
+------
+<string_value>[<string_index>];
+- It returns the character residing on the specificed index
+- Otherwise, returns 'undefined' whicn means that there is no character on the specified index
+
+<string_value>[<string_value>.length - 1]
+- It returns the last character of the string
+
+
+Example
+-------
+"chicken"                   // Index value of 0 = 'a'; index value of 6 = 'n'
+"          "                // Index value of 0 = ' '; index value of 10 = ' '
+
+> "chicken".length
+< 7
+> "          ".length       // A space is considered a character in a string
+< 10
+
+let mySong = "Surfin' USA"; // Assign a string to a variable
+> mySong.length;
+< 11                        // Returns the length of the string
+
+> mySong[0]                 // Access the character at index 0
+< "S"
+> mySong[2]                 // Access the character at index 2
+< "r"
+> mySong[11]                // Access the character at index 11
+< undefined
+
+> mySong[0] = "D"           // Assigns 'D' as the 1st character of the string value in mySong
+< "D"
+> mySong
+< "Surfin' USA"             // String remains unchanges because it is IMMUTABLE
