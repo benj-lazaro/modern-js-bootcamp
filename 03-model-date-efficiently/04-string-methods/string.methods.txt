@@ -1,0 +1,87 @@
+String Methods
+--------------
+- String comes with a set of built-in methods 
+- Methods are like built-in pieces of functionality or actions that can be performed on
+  or with that particular string
+
+- Actions such as searching within a string, replacing parts of a string, 
+  changing case (upper/lowercase) and more
+
+- Methods can be chained one after another
+
+- Reference (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)
+
+
+General Syntax
+--------------
+<string_value>.<string_method>();
+<string_value>.<string_method_1>().<string_method_2>().<string_method_n>();
+
+
+-=-=-=-=-=-=-=-=-
+
+
+.toUpperCase()
+--------------
+- Returns a new uppercase version of the calling string value
+- Original string remains unchanged but it is immutable
+- To override previous string value, assign the return value of method back to the same variable
+
+
+Syntax
+------
+<string_value>.toUpperCase();
+
+
+Example
+-------
+> let string_text = "This quick brown fox jumps over the lazy dog.";
+> string_text.toUpperCase();
+< 'THIS QUICK BROWN FOX JUMPS OVER THE LAZY DOG.'
+> string_text
+< 'This quick brown fox jumps over the lazy dog.'
+
+
+.toLowerCase()
+--------------
+- Returns a new lowercase version of the calling string value
+
+
+Syntax
+------
+<string_value>.toLowerCase();
+
+
+Example
+-------
+> let msg = "THIS IS A TEST";
+> msg.toLowerCase();
+< 'this is a test'
+> msg
+< 'THIS IS A TEST'
+
+
+.trim()
+-------
+- Removes whitspaces from both ends of a string
+- It will NOT REMOVE whitespace between words in a string; ONLY the starting & trailing whitespaces
+- Returns a new string without modifying the original string
+
+
+Syntax
+------
+<string_value>.trim();
+
+
+Example
+-------
+> let greeting = "       Hello World!         ";
+> greeting.trim()
+< 'Hello World!'
+> greeting
+< '       Hello World!         '
+
+> greeting;
+< '       Hello World!         '
+> greeting.trim().toUpperCase();
+< 'HELLO WORLD!'
