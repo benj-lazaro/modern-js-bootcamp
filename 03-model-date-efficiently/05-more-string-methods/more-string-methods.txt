@@ -17,6 +17,7 @@ General Syntax
 - Returns the index value of where the substring is located within a string
 - It is case-sensitive
 - NOTE: Index value starts at 0
+- NOTE: Returns -1 if substring is NOT found within a string
 - NOTE: If a character is passed as substring, it will ONLY return the FIRST instance within a string
 
 
@@ -37,3 +38,55 @@ Example
 
 > tvShow.indexOf('bird');
 < -1                        // Not found
+
+
+.slice()
+--------
+- Slices and returns a slice of an existing string
+- It will NOT change the original string since string is IMMUTABLE 
+- Returns an empty string if the start index points to nothing
+- NOTE: MDN docs syntax... [] = meant that it is optional
+
+
+Syntax
+------
+<string_value>.slice(<start_index>);
+<string_value>.slice(<start_index>, [<end_index>]);
+
+
+Example
+-------
+> let phrase = "the last crusade";
+
+> phrase.slice(0, 5);
+< 'the l'                   // Returns a new string from index 0 up to 5; the last character excluded
+
+> phrase.slice(5);
+< 'ast crusade'             // Returns a new string starting from index 5
+
+> phrase.slice(40)
+< ''                        // Returns an empty string since the start index points to nothing
+
+
+.replace()
+----------
+- Searches an existing substring within a string and replaces the first occurence 
+- Returns a new string
+- If the substring being searched does not exists, it return the same string
+- Original string value remains unchanged
+
+
+Syntax
+------
+<string_value>.slice("<string_to_replace>", "<replacement_string>");
+
+
+Example
+-------
+> let annoyingLaugn = "teehee so funny! teehee!";
+
+> annoyingLaugn.replace("teehee", "haha");
+< 'haha so funny! teehee!'      // Returns a new string with the replaced substring
+
+> annoyingLaugn.replace("hohoho", "haha");
+< 'teehee so funny! teehee!'    // Returns the same string
