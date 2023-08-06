@@ -1,0 +1,39 @@
+String Methods
+--------------
+- The following string methods accepts arguments that modify their behavior.
+- Argument values are passed inside the method's parenthesis
+
+
+General Syntax
+--------------
+<string_value>.<string_method>(<argument_value>);
+
+
+-=-=-=-=-=-=-=-=-
+
+
+.indexOf()
+----------
+- Returns the index value of where the substring is located within a string
+- It is case-sensitive
+- NOTE: Index value starts at 0
+- NOTE: If a character is passed as substring, it will ONLY return the FIRST instance within a string
+
+
+Syntax
+-------
+<string_value>.indexOf("<string_value>");
+
+
+Example
+-------
+> let tvShow = "catdog";
+
+> tvShow.indexOf('cat');
+< 0                         // Located & starts at index 0
+
+> tvShow.indexOf('dog');
+< 3                         // Located at index 3
+
+> tvShow.indexOf('bird');
+< -1                        // Not found
