@@ -1,0 +1,74 @@
+String Quiz
+-----------
+
+1. What is the value of variable age?
+-------------------------------------
+const age = "5" + "4";
+
+answer: "54" 
+- The operation performed is string concatenation; not a mathematical addition
+
+
+2. What does the following statement evaluate to?
+-------------------------------------------------
+"pecan pie" [7];
+
+answer: "i" 
+
+
+3. What does the following statement evaluate to?
+-------------------------------------------------
+"PUP" [3];
+
+answer: undefined
+- Since the index value references to nothing in the string
+
+
+4. What is the value of the variable song?
+------------------------------------------
+let song = "london calling";
+song.toUpperCase ()
+
+answer: "london calling" 
+- Since string is immutable
+- The new uppercase string is not saved to the variable song
+
+
+5. What is the value of the variable cleanedInput?
+--------------------------------------------------
+let userInput = "    TODD@gmail.com";
+let cleanedInput = userInput.trim().toLowerCase();
+
+answer: "todd@gmail.com"
+- The method .trim() returns a new string "TODD@gmail.com"
+- THe method .toLowerCase() returns a new string "todd@gmail.com"
+- The new string is stored in the variable cleanedInput
+
+
+6. What is the value of the variable index?
+-------------------------------------------
+let park = 'Yellowstone';
+const index = park.indexOf('Stone');
+
+answer: -1 
+- Since the substring 'Stone' is not found within the string 
+- The method .indexOf() is case-sensitive
+
+
+7. What is the value of the variable index?
+-------------------------------------------
+let yell = 'GO AWAY!!';
+let index = yell.indexOf('!');
+
+answer: 7
+- Refers to the first instance of the character '!'
+
+
+8. What does the following statement evaluates to?
+--------------------------------------------------
+'GARBAGE!'.slice(2).replace("B", '');
+
+answer: 'RAGE!'
+- The .slice() method returns the string "RBAGE!"
+- NOTE: The argument value for .replace() method is an empty string; NOT space
+- The .replace() method returns th string "RAGE!"
