@@ -1,0 +1,36 @@
+String Template Literals
+------------------------
+- Template literals are literals delimited with backtick ` characters
+- It allows multi-line strings, string interpolation with embedded expressions & special constructs
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+- These are strings that allow embedded expressions, which will be evaluated & returns a resulting string
+- NOTE: A back tick ` is NOT single quote '
+
+
+Syntax
+------
+`${expression | string interpolation}`;
+
+
+Example
+-------
+> `I counted ${3 +4} sheeps`;             // Returns 
+< "I counted 7 sheeps"
+
+> let userName = 'Ziggy31';
+> `Welcome back, ${userName} `;
+< "Welcome back, Ziggy31"
+> `Game over ${userName.toUpperCase()}`;
+< "GAME OVER ZIGGY31"
+
+> let item = 'cucumber';
+> let price = 1.99;
+> let quantity = 4;
+> `You purchased ${quantity} ${item}, total price $${price * 4} `;
+< 'You purchased 4 cucumber, total price $7.96 '
+
+> const minAge = 21;
+> let yourAge = 19;
+> `You must be ${minAge} or older to enter, come back in ${minAge - yourAge} years`;
+< 'You must be 21 or older to enter, come back in 2 years'
