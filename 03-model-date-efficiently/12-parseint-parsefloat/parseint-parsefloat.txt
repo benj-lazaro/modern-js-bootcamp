@@ -1,0 +1,58 @@
+parseInt()
+----------
+- A function that parses a string argument and returns an integer of the specified radix
+- Basically parses strings into numbers; watchout for NaN
+- String value MUST START with a number, otherwise returns a NaN
+
+- Leading whitespace in the string value is ignored
+- An integer between 2 and 36 represents the radix (mathematical numeral system)
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+
+
+Syntax
+------
+parseInt(<string_value>, [<radix>]);
+
+
+Example
+-------
+> parseInt("24");
+< 24
+
+> parseInt("24.987");
+< 24
+
+> parseInt("28dayslater");
+< 28
+
+> parseInt("I consumed 2 burgers.");
+< NaN
+
+> parseInt('21') + 1;
+< 22
+  
+
+parseFloat()
+------------
+- Identical to parseInt() EXCEPT it returns a floating point number.
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
+
+
+Syntax
+------
+parseFloat(<string_value>, [<radix>]);
+
+
+Example
+-------
+> parseFloat("24");
+< 24
+
+> parseFloat("24.987");
+< 24.987
+
+> parseFloat("28dayslater");
+< 28
+
+> parseInt("I consumed 2 burgers.");
+< NaN
