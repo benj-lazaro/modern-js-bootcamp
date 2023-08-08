@@ -1,0 +1,15 @@
+String Escape Characters
+------------------------
+- It is a combination of characters that have a different meaning within a string that a normal character would have
+
+- An escape character represents a character that may not be able to conveniently represent in its literal form.
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape)
+
+
+Examples
+--------
+- \n    = newline
+- \'    = single quote
+- \"    = double quote
+- \\    = backslash
+- \t    = tab
