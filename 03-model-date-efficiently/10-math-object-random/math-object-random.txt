@@ -1,0 +1,42 @@
+ Math object
+ -----------
+ - Contains properties and methods for mathematical constants and functions
+ - Works with the Number type BUT not with BigInt
+ - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+
+ Example
+ -------
+> Math.PI;              // Math object's PI property
+< 3.141592653589793
+
+> Math.floor(3.999999); // Chops off the decimal part and retains the integer part
+< 3
+
+> Math.round(3.999999); // Rounds to the nearest interger
+< 4
+
+> Math.pow(7, 2);       // The value of 7 raised to the power of 2
+< 49
+
+
+Math.random()
+-------------
+- Used for generating random numbers
+- Without an argument, returns a floating-point, pseudo-random number between 0 (inclusive) & 1 (exclusive)
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+
+Syntax
+------
+Math.random([<number_value>, <number_value>]);
+
+
+Example
+-------
+> const step1 = Math.random();
+> const step2 = step1 * 10;
+> const step3 = Math.floor(step2);
+> const step4 = step3 + 1;              // The 1 is to include the last (or largest) number
+
+> Math.random(Math.random() * 10) + 1;
