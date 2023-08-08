@@ -1,0 +1,27 @@
+typeof Operator
+---------------
+- It returns a string indicating the type of the operand's value.
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+
+
+Syntax
+------
+typeof <value>;
+
+
+Example
+-------
+> typeof 'hello';
+< 'string'
+
+> typeof 2;
+< 'number'
+
+> typeof true;
+< 'boolean'
+
+> typeof undefined;
+< 'undefined'
+
+> typeof null;
+< 'object'      // Considered as a mistake & a weird quirk in JavaScript
