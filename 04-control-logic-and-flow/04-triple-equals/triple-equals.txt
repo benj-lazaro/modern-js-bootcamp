@@ -1,0 +1,43 @@
+Triple Equals
+-------------
+- A comparison operator that checks the equality of both type AND value
+- Does NOT COERCE (convert) both values to be of a common type
+- It is more precise / specific
+
+- NOTE: Recommended to use === and !== comparing values moving forward
+
+===     // strict equality
+!==     // strict non-equality
+
+
+Examples
+--------
+> 4 == 4
+< true
+
+> 'a' == 'a'
+< true
+
+> false == false
+< true
+
+> 0 == false        // both values are falsy
+< true
+
+> 7 == '7'          // == operator converts them to a common type & then compare their values
+< true
+
+> 7 === '7'         // === operator compares both type and value
+< false
+
+> 0 == ''
+< true
+
+> 0 === ''
+< false
+
+> null == undefined
+< true
+
+> null === undefined
+< false
