@@ -1,0 +1,51 @@
+Double Equals
+-------------
+- Refers to the 4 equality (comparison) operators that focuses on equality and inequality
+
+==      // equality
+!=      // not equal
+===     // strict equality
+!==     // strict non-equality
+
+
+== vs ===
+---------
+- == checks for equality of value and NOT equality of type
+- It converts both values to the SAME TYPE and then compares them
+- This can lead to unexpected results
+
+- === checks for both equality of value and type
+
+Examples
+--------
+> 4 == 4
+< true
+
+> 'a' == 'a'
+< true
+
+> false == false
+< true
+
+> 0 == false        // both values are falsy
+< true
+
+> 7 == '7'          // == operator converts them to a common type & then compare their values
+< true
+
+> 7 === '7'         // === operator compares both type and value
+< false
+
+> 0 == ''
+< true
+
+> 0 === ''
+< false
+
+> null == undefined
+< true
+
+> null === undefined
+< false
+
+
