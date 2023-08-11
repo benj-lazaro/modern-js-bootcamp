@@ -1,20 +1,11 @@
 Double Equals
 -------------
-- Refers to the 4 equality (comparison) operators that focuses on equality and inequality
+- A comparison operator that checks the equality of the values being compared but NOT their type
+- It coerces (converts) values being compared to the SAME TYPE and then compares them
 
 ==      // equality
 !=      // not equal
-===     // strict equality
-!==     // strict non-equality
 
-
-== vs ===
----------
-- == checks for equality of value and NOT equality of type
-- It converts both values to the SAME TYPE and then compares them
-- This can lead to unexpected results
-
-- === checks for both equality of value and type
 
 Examples
 --------
@@ -47,5 +38,3 @@ Examples
 
 > null === undefined
 < false
-
-
