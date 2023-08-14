@@ -1,0 +1,51 @@
+Running Code From Script
+------------------------
+- JavaScript code that is run from the browser console = REPL (Read Evauluate Print Loop)
+
+- Often JS code is called from a HTML file where the location of the JS file is embedded
+- Embed the location of the JavaScript (JS) code within the HTML file using the <script></script> tag
+
+
+console.log()
+-------------
+- The .log() method of the console basically outputs a message to the browser's JavaScript console
+- The message may be a simple string or any JavaScript objects
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Console/log)
+
+- You can pass mutiple arguments to the .log(); each separated by a comma
+  - Printed values are returned & separated by a space
+
+
+console.error()
+---------------
+- The .error() method of the console basically outputs an error message to the browser's JavaScript console
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/console/error)
+
+
+Example
+-------
+
+app.js
+-------
+alert("It's working!");                     // alert() demo
+
+console.log("hi".toUpperCase());            // console.log() demo
+console.log(3 + 4);
+console.log(10 + 10, "Hi there!", true);
+
+console.error("OH MY!!!");                  // console.error demo
+
+
+index.html 
+----------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First JS Script</title>
+  </head>
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>
