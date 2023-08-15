@@ -1,0 +1,12 @@
+If Statement
+------------
+- It is a conditional statement that executes a statement if a specified condition is truthy.
+- If the condition if falsy, the nested statement will NOT be executed
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+
+
+Syntax
+------
+if (<conditional_statement>) {
+    // execute this statement if condition is truthy
+} 
