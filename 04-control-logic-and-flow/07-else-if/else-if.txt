@@ -1,0 +1,12 @@
+Else-If Statement
+-----------------
+- Provides an alternative statement ONLY IF the first conditional statement evaluates to false
+
+
+Syntax
+------
+if (<conditional_statement>) {
+    // execute this statement if condition is truthy
+} else if (<conditional_statement>) {
+    // execute this statement if previous condition evaluates to false
+}
