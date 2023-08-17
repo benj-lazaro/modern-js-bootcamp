@@ -1,0 +1,5 @@
+Else Statement
+--------------
+- Provides an optional last statement to execute after ALL conditional statements evaluates to false
+- It is considered as the "otherwise" part of the conditional statement
+- You can ONLY have 1 else statement
