@@ -1,0 +1,4 @@
+Nesting Conditional
+-------------------
+- It is possible to nest conditional statement inside one another
+- Provides multiple layers of conditionals
