@@ -1,2 +1,12 @@
 Logical AND
 -----------
+- Both sides MUST be true in order for the whole thing (expression) to be (evaluated to) true
+
+
+Example
+-------
+1 <= 4 && 'a' === 'a';              // evaluates to true
+
+9 > 10 &&  9 >= 9;                  // evaluates to false
+
+'abc'.length === 3 && 1 + 1 === 4;  // evaluates to false
