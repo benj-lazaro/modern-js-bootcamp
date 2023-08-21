@@ -1,0 +1,12 @@
+Logical OR
+----------
+- If one side is true then the whole thing (expression) is (evaluated to) true
+
+
+Example
+-------
+1 !== 1 || 10 === 10    // evaluates to true
+
+10 / 2 === 5 || null    // evaluates to true
+
+0 || undefined          // evaluates to false
