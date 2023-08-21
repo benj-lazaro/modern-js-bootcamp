@@ -1,0 +1,13 @@
+Logical NOT
+-----------
+- Evaluates to true if the expression is false
+- It operates on a SINGLE expression
+
+
+Example
+-------
+!null       // Evaluates to true
+
+!(0 === 0)  // Evaluates to false
+
+!(3 <= 4)   // Evaluates to false
