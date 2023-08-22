@@ -1,0 +1,16 @@
+Operator Precedence
+-------------------
+- The ! (NOT) operator has the highest precedence than && (AND) and || (OR)
+- The && (AND) operator has higher precedence than || (OR)
+- Precedence can be altered using a pair of ( )
+- NOTE: When in doubt of precedence, use a pair ( ) to group operators
+
+
+Precedence Summary
+------------------
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
+( ) = Highest opreator precedence
+!   = Higher logical operator precedence
+&&
+||  = Least logical operator precedence
