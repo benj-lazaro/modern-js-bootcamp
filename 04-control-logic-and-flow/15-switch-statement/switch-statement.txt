@@ -1,0 +1,23 @@
+Switch Statement
+----------------
+- Evaluates an expression
+- Matches the expression's value against a series of case clauses
+- Executes the matching statements
+- Until it encounters a break statement
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+
+
+Syntax
+------
+switch (expression) {
+  case value1:
+    statements
+  case value2:
+    statements
+  // …
+  case valueN:
+    statements
+  default:
+    statements
+}
+
