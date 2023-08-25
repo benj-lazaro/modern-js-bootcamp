@@ -1,0 +1,15 @@
+Ternary Operator
+----------------
+- The only JavaScript operator that takes 3 operands
+    - A condition followed by a ?
+    - An expression if thecondition evaluates to truthy 
+    - Followed by a :
+    - An expression if the condition evaluates to falsy
+
+- Basically, turning an if-else statement into a single-line of code
+    - This ONLY works if the conditional is answerable by a simple yes (true) or no (false)
+
+
+Syntax
+------
+<condition> ? <exprIfTrue> : <exprIfFalse?
