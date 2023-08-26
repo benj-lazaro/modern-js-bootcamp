@@ -1,0 +1,29 @@
+Creating Arrays
+---------------
+- An array is an ordered collection of values (e.g. blog post comments, songs in a playlist, etc.)
+
+- It is resizeable and can contain different data types including another array
+- It is zero-indexed (starts with 0)
+
+- It is NOT an associative array
+    - Array items can NOT be accessed using arbitrary string as index
+    - Non-negative integer is used as index
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+
+Syntax
+------
+// Creates an empty array
+let <variable_name> = [];
+let <variable_name> = new Array();   
+
+// An array of strings
+let colors = ["red", "orange", "yellow"];
+
+// An array of integers
+let lottoNums = [19, 22, 56, 12, 51];
+
+// A mixed array
+let stuff = [true, 68, "cat", null];
+
