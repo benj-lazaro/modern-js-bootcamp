@@ -1,0 +1,28 @@
+Array Indices
+-------------
+- Arrays are (zero) indexed; starting index is 0
+- Each array item has a corresponding index
+- Array index is what dictates the order
+
+
+Syntax
+------
+<array_name>[<index_value>];
+
+
+- JavaScript arrays has a .length property that returns the array's size
+
+
+Syntax
+------
+<array_name>.length;
+
+
+Example
+-------
+let colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+colors.length;              // Returns 7
+colors[0];                  // Returns 'red'
+colors[colors.length - 1];  // Returns 'violet'
+colors[7];                  // Returns undefined
