@@ -1,0 +1,11 @@
+Modifying Arrays
+----------------
+- Array elements are MUTABLE (can be changed) unlike the data type string
+
+- Use the = operator to assign a new value to specific array element using its index value
+
+
+Syntax
+------
+<array_name>[<array_element_index>] = <new_value>;
+
