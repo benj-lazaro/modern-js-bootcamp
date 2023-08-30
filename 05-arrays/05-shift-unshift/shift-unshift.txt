@@ -1,0 +1,31 @@
+.unshift()
+----------
+- The .unshift() method add an element or elements to the beginning of an array
+- It returns the new length of the array
+- NOTE: The order of the added elements is preserved when passed as an arguement value
+
+- It is similar to the .push() method EXCEPT that it add new elements at the front of the array instead of the end
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
+
+
+Syntax
+------
+unshift()
+unshift(element0)
+unshift(element0, element1)
+unshift(element0, element1, /* …, */ elementN)
+
+
+.shift()
+--------
+- The .shift() method removes the first element from an array 
+- It update the size or length of the array
+- It returns the removed element
+
+- It is similar to the .pop() method EXCEPT that it removes the first element instead of the last element
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+
+
+Syntax
+------
+shift()
