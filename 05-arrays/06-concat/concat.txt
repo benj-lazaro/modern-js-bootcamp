@@ -1,0 +1,15 @@
+.concat()
+---------
+- The .concat() method merge two or more arrays
+- This method does NOT CHANGE the original / existing arrays
+- It returns a new array
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+
+
+Syntax
+------
+concat()
+concat(value0)
+concat(value0, value1)
+concat(value0, value1, /* …, */ valueN)
+
