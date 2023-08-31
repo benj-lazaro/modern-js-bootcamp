@@ -1,0 +1,29 @@
+.includes()
+-----------
+- The .includes() method looks for the passed argument value within an array
+- Returns true or false as appropriate
+- Common use case: when needed to verify the existence of the searched element within an array
+
+- NOTE: Search for the EXACT MATCH of the passed argument value
+- NOTE: This method is NOT supported by Internet Explorer
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
+
+Syntax
+------
+includes(searchElement)
+includes(searchElement, fromIndex)
+
+
+.indexOf()
+----------
+- The .indexOf() searches for the passed argument value within an array
+- If found, it returns the corresponding index value
+- If NOT, returns a -1 instead
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+
+
+Syntax
+------
+indexOf(searchElement)
+indexOf(searchElement, fromIndex)
