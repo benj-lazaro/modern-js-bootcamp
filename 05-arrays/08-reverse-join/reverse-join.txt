@@ -1,0 +1,28 @@
+.join()
+-------
+- The .join() method basically creates a string from an array
+- It concatenates all elements into a string separated by a comma or any specified string separator
+- By default, the returned string is separated by commas unless a specified string separator was declared
+- NOTE: Array of mixed elements will be converted as string before joined as a string
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
+
+Syntax
+------
+join()
+join(separator)
+
+
+.reverse()
+----------
+- The .reverse() method reverse all items in an array in place (i.e. permanently)
+- The first array element becomes the last and the last as the first
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
+
+- NOTE: To reverse array element WITHOUT MUTATING the original array, use .toReversed() instead
+
+
+Syntax
+------
+reverse()
