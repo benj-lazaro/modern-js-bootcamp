@@ -1,11 +1,18 @@
 .splice() method
 ----------------
-- The .splice() method changes the content of an array in place
-- It accepts a start index, delete count & the element(s) to be inserted into an array
+- The .splice() method allows to insert, remove or replace element(s) of an array in place.
+
+- It accepts three argument values:
+    - A start index 
+    - A delete count = how many array elements to be deleted
+    - Array element(s) to be inserted to or replaced on the array
 
 - It returns an array that contains the deleted elements
     - If one item was removed, it returns an array with a single element
     - If NO item was removed, it returns an empty array 
+
+- To create a new array with a segment removed or replaced WITHOUT MUTATING the original array
+    - Use .toSpliced() method instead
 
 - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
@@ -17,3 +24,4 @@ splice(start, deleteCount)
 splice(start, deleteCount, item0)
 splice(start, deleteCount, item0, item1)
 splice(start, deleteCount, item0, item1, /* …, */ itemN)
+
