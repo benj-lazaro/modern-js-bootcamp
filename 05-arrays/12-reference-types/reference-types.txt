@@ -1,0 +1,14 @@
+Reference Types
+---------------
+- An array is a reference data type
+
+- A variable assigned with an array or an object
+    - It does NOT store the actual value
+    - It holds a pointer to where the actual value is stored in memory
+
+
+Primitive Types
+----------------
+- A variable assigned with a primitive data type is considered a value-typed variable
+    - Every variable created is stored in memory
+    - The corresponding assigned actual value is also stored in memory 
