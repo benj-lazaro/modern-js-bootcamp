@@ -1,0 +1,19 @@
+.splice() method
+----------------
+- The .splice() method changes the content of an array in place
+- It accepts a start index, delete count & the element(s) to be inserted into an array
+
+- It returns an array that contains the deleted elements
+    - If one item was removed, it returns an array with a single element
+    - If NO item was removed, it returns an empty array 
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+
+
+Syntax
+------
+splice(start)
+splice(start, deleteCount)
+splice(start, deleteCount, item0)
+splice(start, deleteCount, item0, item1)
+splice(start, deleteCount, item0, item1, /* …, */ itemN)
