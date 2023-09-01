@@ -1,0 +1,15 @@
+.sort() method
+--------------
+- The .sort() method sorts the elements of an array in place
+- It returns the sorted array
+- The default sort order = ascending
+
+- NOTE: Numbers are converted to string & then sorted according to their UTF-16 character codes
+
+- To sort array elements WITHOUT MUTATING the original array, use .toSorted() method instead 
+
+
+Syntax
+------
+sort()
+sort(compareFn)
