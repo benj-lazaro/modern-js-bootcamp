@@ -1,0 +1,18 @@
+.slice()
+--------
+- The .slice() method copies a portion of an array
+- It returns the copied portion as a new array & leaves the original array UNMODIFIED
+
+- It optionally accepts two arguments:
+    - A start index
+    - An exclusive end index
+
+- It can also accepts a negative index
+    - An inclusive end index
+
+
+Syntax
+------
+slice()
+slice(start)
+slice(start, end)
