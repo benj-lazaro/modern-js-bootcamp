@@ -1,0 +1,16 @@
+Using const with arrays
+-----------------------
+- Arrays are reference types
+- The actual array value is NOT STORED in a variable
+- The variable stores the reference (address) where the actual array value is located
+
+- The values in an array CAN CHANGE as long as the reference (address) REMAINS the same
+
+- The const keyword ensure that the reference stored in the constant variable will NOT be CHANGED
+    - const is used ALL THE TIME when working with reference types (e.g. arrays)
+
+
+Example
+-------
+const = myEggs["brown", "brown"];
+myEggs.push("purple");
