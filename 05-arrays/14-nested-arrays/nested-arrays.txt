@@ -1,0 +1,8 @@
+Nested Arrays
+-------------
+- An array can stored another array(s) inside them
+- Commonly referred as a Multi-Dimensional Array
+
+- Use the [] to access the sub-array and another [] to access the corresonding element within that array
+
+- Often used for simple board games (e.g. tic-tac-toe, chessboard)
