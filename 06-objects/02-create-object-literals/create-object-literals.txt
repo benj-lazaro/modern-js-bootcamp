@@ -1,0 +1,31 @@
+Creating Object Literals
+------------------------
+- Much like an array, storing an object to a variable
+    - It stores a reference (address) to the actual object value in memory
+    - It does NOT STORE the actual object value
+
+- An object can store all data types as a value to their corresponding keys
+    - Including refernce data types e.g. arrays & other objects
+
+- To access specific properties of an object, access it using the corresponding key
+    - All valid keys are converted to strings 
+    - EXCEPT for symbols
+
+
+Syntax
+------
+- An empty object literal declaration
+
+const <variable_name> = {
+
+};
+
+
+- An object literal declaration with properties (key:value pairs)
+
+const <variable_name> = {
+    <key>: <value>,
+    <key>: <value>,
+    <key>: <value>,
+    ...
+};
