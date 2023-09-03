@@ -1,0 +1,25 @@
+Intro To Objects
+----------------
+- An object allows to store data where it can group associated things & group pieces of data together
+    - It is simply a container
+    - It contains related information in the form of key-value pairs
+    - A key is used to access the associated value
+
+- Objects are a collection of properties
+    - Properties are a key-value pair
+    - Rather than accessing data using an index, custom keys are used instead
+
+- Reference (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+
+- NOTE: JavaScript object = Python dictionary
+
+
+Example
+-------
+const fitbitData = {
+    totalSteps: 308727,
+    totalMiles: 211.7,
+    avgCalorieBurn: 5755,
+    workoutsThisWeek: '5 of 7',
+    avgGoodSleep: '2:13'
+};
