@@ -1,0 +1,3 @@
+Nested Arrays Objects
+---------------------
+- Objects can be filled with keys that are arrays (and other objects)
