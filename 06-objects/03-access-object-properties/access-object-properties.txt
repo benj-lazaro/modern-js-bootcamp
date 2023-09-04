@@ -1,0 +1,16 @@
+Accessing Object Properties
+---------------------------
+- Keys are used to access the properties of an object
+- Keys are automatically converted into string, EXCEPT for symbols
+
+- The [ ] are used to access object properties (i.e. keys) that are NOT valid JavaScript identifiers (e.g. numbers)
+
+
+Syntax
+------
+<object_name>.<key>;        // Using dot-notation for accessing an object property
+
+<object_name>[<key>];       // Using [] to access a property that might NOT use a valid JavaScript identifier
+
+let <new_object_property_name> = <new_object_property_value>;   // Using a variable to hold the object property in order to serve
+<object_name>[<new_object_property_name>]                       // as a dynamic as key & access the corresponding property
