@@ -1,0 +1,5 @@
+Adding & Updating Object Properties
+-----------------------------------
+- Similar to accessing object properties using .dot-notation or [ ]
+- EXCEPT it uses an equal operator to assign a value to the corresponding object property
+
