@@ -1,0 +1,29 @@
+Array Object Equality
+---------------------
+- When checking for equality between arrays or objects
+    - You can NOT simply use == or === to check their content's equality
+    - Doing so will ALWAYS evaluates to false
+    - This is due to the nature of Reference Data Types
+
+- Variables assigned with Reference Data Types (e.g. array or object)
+    - Does NOT store the actual array or object
+    - It stores a REFERENCE to the location of the array or object in memory
+
+- The == and === operators compares the memory location, NOT the content
+    - Each instance of a Reference Data Type created is stored in a different location in memory
+    - Despite having identical content and order of content
+
+- In order to check if the content of an array or object is identical to another one
+    - A loop must be used to compare each array element or object property value individually
+    - There is NO easy way to compare the 'equality of content' directly
+
+
+Examples
+--------
+let nums = [1, 2, 3];
+let mystery = [1, 2, 3];
+let moreNums = nums;
+
+nums === mystery    // Returns false, both references to different locations in memory where the array resides
+nums === moreNums   // Returns true, both references to the same location in memory where the array is located
+
