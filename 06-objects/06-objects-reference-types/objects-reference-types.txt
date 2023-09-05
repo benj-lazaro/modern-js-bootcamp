@@ -1,0 +1,13 @@
+Objects & Reference Types
+-------------------------
+- Arrays and Objects stored in a variable does NOT hold the actual value
+    - It holds the reference to the actual array or Objects
+    - Arrays & Objects are reference type of data
+
+- The keyword 'const' is used if the variable storing the reference for arrays & objects
+    - Is expected NOT be changed within the program flow
+    - This still allows to add or remove object properties
+    - This still allows to change a value in an array or object property
+
+- The keyword 'let' is used if the variable storing the reference for arrays & objects 
+    - Is expected to be changed later in the program flow
