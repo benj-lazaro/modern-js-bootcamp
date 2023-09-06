@@ -1,0 +1,16 @@
+For Loop
+---------
+- The for statement creates a loop that consists of:
+    - 3 optional expressions enclosed in parenthesis & separated by semi-colons
+        - initialization
+        - condition
+        - afterthought (increment || decrement)
+    - A block statement to be executed in the loop
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+
+Syntax
+------
+for (initialization; condition; afterthought)
+  statement
