@@ -1,0 +1,14 @@
+Infinite Loops
+--------------
+- A piece of code that loops INFINITELY
+
+- Avoid using equality & non-equality conditions in a for loop
+    - Better to use >, <, <=, >= operators when working with numbers
+
+
+Example
+-------
+for (let i = 20; i >= 0; i++) {
+    console.log(i);
+}
+
