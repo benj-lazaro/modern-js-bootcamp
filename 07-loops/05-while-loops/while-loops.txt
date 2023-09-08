@@ -1,0 +1,14 @@
+While Loops
+-----------
+- A white statement creates a loop that executes a specified statement(s) 
+    - As long as the test condition evaluates to true
+
+- It is syntatically simplier and flexible than a for loop in some ways
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+
+
+Syntax
+------
+while (condition)
+  statement
