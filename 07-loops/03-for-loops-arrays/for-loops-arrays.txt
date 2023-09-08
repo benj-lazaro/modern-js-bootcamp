@@ -1,0 +1,14 @@
+For Loops Arrays
+----------------
+- Use for loops to loop or iterate over a string or an array 
+
+- To loop over an array, start at 0 & continue to the last index (.length - 1)
+
+
+Example
+-------
+const animals = ["lions", "tigers", "bears"];
+
+for (let i = 0; i < animals.length; i++) {
+    console.log(i, animals[i]);
+}
