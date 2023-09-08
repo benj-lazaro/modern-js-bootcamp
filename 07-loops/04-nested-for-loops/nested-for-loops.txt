@@ -1,0 +1,3 @@
+Nested For Loops
+----------------
+- Just like with nested conditional statements, for loops can also be nested
