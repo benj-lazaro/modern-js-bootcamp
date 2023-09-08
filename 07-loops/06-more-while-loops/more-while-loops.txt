@@ -1,0 +1,14 @@
+More While Loops
+----------------
+- A while loop EXCELS at writing a loop wherein you DO NOT KNOW exaxtly how many time it is going to run
+
+- A common implementation pattern of a while loop:
+
+    while(some condition) {
+        update or attempt to make the condition false
+    }
+
+
+    NOTE: Failing to make the condition false will result to an INFINITE LOOP
+
+    
