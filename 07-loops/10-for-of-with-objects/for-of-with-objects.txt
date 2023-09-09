@@ -1,0 +1,12 @@
+For..Of with Objects
+--------------------
+- The for..of loop works with iterables (e.g. arrays, string) BUT NOT Objects
+    - An object is NOT ITERABLE 
+
+- To use for..of loop in an object
+    - Instead of accessing the entire object
+
+    - Use Object.keys() method to access the object's keys
+
+    - Use Object.values() method to access the correponding object key's value
+        - OR use the object's key to access the correponding value
