@@ -1,0 +1,12 @@
+Break Keyword
+-------------
+- The break keyword terminates the current loop (or switch statement)
+    - It transfers program control to the statement following the terminated statement
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break)
+
+
+Syntax
+------
+break;
+break label;
