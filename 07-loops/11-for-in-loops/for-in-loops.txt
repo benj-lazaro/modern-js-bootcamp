@@ -1,0 +1,22 @@
+For..In Loops
+-------------
+- The for..in statement iterates all enumrable string properties (i.e. keys) of an object
+    - It basically loop over the keys (properties) of an object
+    - It iterates over the actual values in an array or string
+
+- Arrays are technically objects, therefore can also be used in a for..in loop
+    - However, it iterates through the array's properties (i.e indices) NOT the element values
+
+    - Arrays are special objects where the keys are ORDERED set of indices numbers (begins at 0)
+        - The order of for..in loops are NOT set in stone (i.e. arbitrary order)
+        - The order changes from browser to browser
+        - Therefore DO NO USE for..in with an array
+        - Use a for..of loop instead
+    
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+
+
+Syntax
+------
+for (variable in object)
+  statement
