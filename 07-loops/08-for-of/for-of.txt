@@ -1,0 +1,19 @@
+For...Of
+--------
+- It is a nice & easy way of iterating over arrays & other iterable objects
+    - Includes strings, maps, sets, nodelists, typedarrays, DOM collections, argument objexts, generators
+    - As well as user-defined iterables
+
+- NOTE: It is NOT SUPPORTED on Internet Explorer browser
+
+- Use case:
+    - There is NO need for the index value of an iterable
+    - Just need to access the individual element of an iterable
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+
+
+Syntax
+------
+for (variable of iterable)
+  statement
