@@ -1,0 +1,8 @@
+Comparing For and For..Of Loops
+-------------------------------
+- For..Of loop are NOT recommended when 
+    - Iteraing through an iterable where both of the element's index and value (data) are NEEDED
+    - Regular for loop is more suited for this task
+
+- For..Of loop is recommended when 
+    - Iterating through an iterable where the element's value (data) ONLY is needed
