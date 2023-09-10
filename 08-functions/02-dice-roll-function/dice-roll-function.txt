@@ -1,0 +1,3 @@
+Dice Roll Function
+------------------
+- Demonstrates how to call a function within another function
