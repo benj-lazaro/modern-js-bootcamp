@@ -1,0 +1,15 @@
+Return Statement
+----------------
+- A return statement ends the function execution
+    - Specifies a value to be returned to the function caller
+    - A returned value can be stored into a variable or passed into another function
+
+- The return statement MUST be evaluated into a single value from a function
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
+
+
+Syntax
+------
+return;
+return expression;
