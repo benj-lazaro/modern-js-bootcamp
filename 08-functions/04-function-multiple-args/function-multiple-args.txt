@@ -1,0 +1,12 @@
+Function With Multiple Arguments
+--------------------------------
+- A parameter is a variable that is defined during function declaration
+    - Variables placed within the pair of ( )
+    - Serve as a placeholder for the input(s) of a function
+
+- The order that the parameters are defined in a function declaration matter
+    - It dictates the order that they are filled in from left to right
+
+- An argument is the actual value that is passed into a function
+    - When calling or executing a function within a program
+    - A missing argument will AUTOMATICALLY have the value of undefined by JavaScript
