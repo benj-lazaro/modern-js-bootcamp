@@ -1,0 +1,26 @@
+Our First Function
+------------------
+- A function is simply a reusable procedure
+    - Bunch of code that can be called at any point of the code execution
+    - Often contains code that performs a specific task
+
+- It has a 2-steps process for every function that is written
+    - Define the function
+    - Execute the function
+
+- A function name is case-sensitive
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+
+Syntax
+------
+// Function Declaration (or Function Statement)
+function <function_name>(<parameter_list>) {
+    // code block
+}
+
+// Function Expression
+const <variable_name> = function (<parameter_list>) {
+    // code block
+}
