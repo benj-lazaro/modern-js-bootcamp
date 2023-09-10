@@ -1,0 +1,18 @@
+Function Arguments
+------------------
+- It is a fancy term for input(s) to a function
+
+- In the event that there is no value passed as an argument when calling a function
+    - JavaScript will consider it as undefined
+    - It will NOT generate an error
+
+
+Syntax
+------
+// Function Declaration
+function <function_name>(<parameter_list>) {
+    // code block
+}
+
+// Function call with argument values
+function <function_name>(<argument_values>);
