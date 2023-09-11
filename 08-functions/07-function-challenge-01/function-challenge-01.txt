@@ -1,0 +1,17 @@
+Function Challenge 01 Password Validator
+----------------------------------------
+- Write a function named isValidPassword
+- It accepts 2 arguments: password and username
+- The password MUST:
+    - Be at least 8 characters
+    - Can NOT contain spaces
+    - Can NOT contain the username
+
+- If all requirements are met, return true
+    - Otherwise return false
+
+
+Example
+-------
+isValidPassword("89Fjj1nms", "dogLuvr");    // Returns true
+isValidPassword("dogLuvr123!", "dogLuvr");  // Returns false
