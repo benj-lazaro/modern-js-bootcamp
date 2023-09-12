@@ -1,4 +1,4 @@
-// Functin Challenge 01 Password Validator
+// Function Challenge 01 Password Validator
 
 // My Solution
 // function isValidPassword(password, username) {
