@@ -1,0 +1,15 @@
+Function Challenge 03 Pangrams
+------------------------------
+- A pangram is a sentence that contains every letter in the alphabet
+
+- Write a function named isPangram()
+    - Accepts a string
+    - Ignores string casing
+    - Returns true if the string contains every letter in the alphabet
+    - Otherwise, return false
+
+
+Example
+-------
+isPangram("The five boxing wizards jump quickly");  // Returns true
+isPangram("The five boxing wizards jump quick");    // Returns false
