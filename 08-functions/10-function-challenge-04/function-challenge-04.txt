@@ -1,0 +1,7 @@
+Function Challenge 04 Get Playing Card
+--------------------------------------
+- Write a function named getCard()
+    - It accepts NO arguments
+    - It picks a random value from 2, 3, 4, 5, 6, 7, 8, 9, 10, A, K, Q, J
+    - It picks a random suit from clubs, spades, hearts, diamonds
+    - It returns both random values as an object; representing a playing card
