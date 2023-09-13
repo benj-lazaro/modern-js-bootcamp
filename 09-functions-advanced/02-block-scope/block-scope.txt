@@ -1,0 +1,11 @@
+Block Scope
+-----------
+- A scope created with a pair of { } 
+
+- A variable defined using keywords let or const is considered block scoped
+    - These variables can NOT be redeclared
+
+- A variable defined using keyword var is function scoped BUT NOT block scoped
+    - This variable CAN BE REDECLARED
+
+    
