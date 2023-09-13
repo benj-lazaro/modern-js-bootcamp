@@ -1,0 +1,29 @@
+Function Scope
+--------------
+- Scope is the current context of execution in which values & expressions are "visible" or can be referenced
+    - If a variable or expression is NOT in the current scope, it will NOT be available for use
+
+- Scope = variable visibility
+    - Location where a variable (binding) is defined dictates where we have access to that variable
+
+
+- JavaScript has different kinds of scope
+    - Global    = default scope for all code running in script mode
+    - Function  = scope created within a function
+    - Module    = score for running in module mode
+    - Block     = scope created with a pair of { }
+
+- Reference (https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+
+- Variables (bindings) created with let or const belong to the block scope
+
+
+Example
+-------
+function helpMe() {
+    let message = "I'm on fire!";   // Variable scoped within this function
+    return message;
+}
+
+console.log(helpMe());
+console.log(message);   // Unable to access variable message outside the function
