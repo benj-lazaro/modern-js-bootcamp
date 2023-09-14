@@ -1,0 +1,46 @@
+Function Expression
+-------------------
+- It is another way of defining a function; it is similar to the previous function declaration EXCEPT:
+    - The function has NO name (also referred as an anonymous function)
+    - The function gets assigned to or stored in a variable
+
+- NOTE: A name may be assigned after the keyword function (e.g. named function expression)
+    - However, the name of the function can NOT be accessed directly
+    - The variable name that stores the function expression can be referenced
+
+- Functions are objects
+    - They can be stored in a variable or an array
+    - They can be passed around as an argument value(s) to a function
+
+- To call it, reference the variable name
+
+- The console.dir(<variable_function_stored>) reveal details of the underlying object
+    - This serves as proof that functions are objects
+
+
+Syntax
+------
+const <variable_name> = function(<parameter_list>) {
+    // code block
+};
+
+
+const <variable_name> = function <name> (<parameter_list>) {
+    // code block
+};
+
+
+Example
+-------
+const square = function (num) {
+    return num * num;
+};
+
+console.log(square(10));            // Returns 100
+
+
+const product = function multiply(x, y) {
+    return x * y;
+}
+
+console.log(product(2, 2));
