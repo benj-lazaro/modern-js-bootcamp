@@ -1,0 +1,17 @@
+Lexical Scope
+-------------
+- It refers to the fact that nested functions are lexically bound
+    - Inner functions are bound to the scope of their parent function
+    - Inner functions has access to the variables defined in the outer function
+    - Outer function has NO access to the variables define within their inner functions
+
+- The logic behind the lexical scope
+    - When an inner function executes a line of code that required access to a variable
+
+    - It looks up if the said variable is available within its local scope
+
+    - If the named variable is NOT available, it searches for the variable on its parent function
+        - If such variable exists, it accesses the value assigned to that variable
+
+    - Outer functions has NO access to the variables defined within inner functions
+    
