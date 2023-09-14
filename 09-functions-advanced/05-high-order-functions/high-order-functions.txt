@@ -1,0 +1,7 @@
+High Order Functions
+--------------------
+- Functions are objects
+
+- Function can be treated like any other value
+    - Can be loop in an array
+    - Can be stored in objects
