@@ -1,0 +1,6 @@
+Functions As Arguments
+----------------------
+- Higher order functions are functions that operate on / with other functions
+    - Accept other functions as arguments (a common pattern in JavaScript)
+    - A function that return a function
+
