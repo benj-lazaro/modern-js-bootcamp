@@ -1,0 +1,6 @@
+Functions As Return Values
+--------------------------
+- Higher order functions are functions that operate on / with other functions
+    - A function that return a function
+
+- Perceive these functions as a 'function factory'
