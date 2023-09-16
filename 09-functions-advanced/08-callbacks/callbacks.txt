@@ -1,0 +1,22 @@
+Callbacks
+---------
+- It is a function passed into another function as an argument value
+    - To be invoked within the outer (separately defined) function
+
+- Anonymous functions are often used for functionality is needed ONLY ONCE
+    - There is no need to declare a function for it
+
+
+Example
+-------
+function callTwice(func) {
+    func();
+    func();
+}
+
+function laugh() {
+    console.log("Ha! Ha! Ha!");
+}
+
+
+callTwice(laugh);   // laugh is the callback function; passed as an argument & then call within another function (callTwice)

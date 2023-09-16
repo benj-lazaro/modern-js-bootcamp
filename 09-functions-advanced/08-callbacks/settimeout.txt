@@ -1,0 +1,16 @@
+setTimeOut()
+------------
+- A method that sets the timer which executes a function or specified piece of code once the timer expires
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+
+
+Syntax
+------
+setTimeout(code)
+setTimeout(code, delay)
+
+setTimeout(functionRef)
+setTimeout(functionRef, delay)
+setTimeout(functionRef, delay, param1)
+setTimeout(functionRef, delay, param1, param2)
+setTimeout(functionRef, delay, param1, param2, /* …, */ paramN)
