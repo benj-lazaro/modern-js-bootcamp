@@ -1,0 +1,26 @@
+Hoisting
+--------
+- It is an odd behavior in JavaScript
+
+- On variables declared using keyword var
+    - Automatically 'hoist' the variable declaration prior to the line of code that call / use it
+    - Despite the variable actually declared below the line that call / use it
+    - To prevent it, make sure to declare and initialize variables before using them
+
+- On variables declared using keywords let and const
+    - It does NOT support hoisting
+    - It returns a ReferenceError
+    - NOTE: keywords 'let' and 'const' exists to REMEDY hoisting
+
+- On function declaractions
+    - It supports hoisting
+    - JavaScript 'hoists' all function declaractions to the beginning of the code
+
+- On function expressions
+    - It does NOT support hoisting
+
+
+Example
+-------
+console.log(animal);    // Returns undefined; there is no assigned value yet but JavaScript 'hoists' up the variable declaration
+var animal = "Tapir";   // as if it was declared to the line of code prior to the console.log()
