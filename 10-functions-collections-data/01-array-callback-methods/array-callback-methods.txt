@@ -1,0 +1,3 @@
+Array Callback Methods
+----------------------
+- Arrays come with many built-in methods that accept callback functions
