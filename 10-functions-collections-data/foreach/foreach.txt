@@ -1,0 +1,43 @@
+For Each
+--------
+- The forEach() method executes the provided function for each array element
+
+- This method accepts a callback function as an argument
+    - Executes the passed callback function once for each element in the array
+
+- The .forEach() method does NOT care if an anonymous or declared function is used
+    - If it is just a once time thing for each element = use an anonymous function
+    - Otherwise, use a declared function
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+- It operates similarly to a for..of and for loop EXCEPT
+    - forEach() passes in a function as an argument
+    - forEach() exists longer than the for..of loop
+    - for and for..of loops are code blocks
+
+    - If the index value of a for loop will NOT be utilized on an array or object
+        - Better to use the .forEach() method instead
+        - .forEach() method's 2nd parameter can be used to access the index value
+            - Without the need to create a variable to access the index (like in a for loop)
+
+
+Syntax
+------
+forEach(callbackFn)
+forEach(callbackFn, thisArg)
+
+
+Example
+-------
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+nums.forEach(function (n)) {    // Accepts an anonymous function as argument
+    console.log(n * n);         // Multiplies the number by itself
+}
+
+nums.forEach(function (element) {
+    if (element % 2 === 0) {
+        console.log(element);   // Prints out even numbered elements in the array
+    }
+})
