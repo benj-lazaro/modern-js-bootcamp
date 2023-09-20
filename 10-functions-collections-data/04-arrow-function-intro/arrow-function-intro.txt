@@ -1,0 +1,39 @@
+Arrow Function Intro
+--------------------
+- It is a syntactically compact alternative to a regular function expression
+    - The keyword function is dropped
+    
+    - The pair of ( ) is dropped if there is ONLY parameter value
+    - The pair of ( ) returns is there is NONE or MORE THAN 1 parameter values
+
+    - The arrow => is added prior to the optional { } that contain statements
+
+- NOTE: Arrow function is NOT SUPPORTED in Internet Explorer
+
+- An arrow function works exactly the same way as a function declaration or expression EXCEPT
+    - An arrow function behaves differently with the JavaScript keyword 'this'
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+
+Syntax
+------
+() => expression
+
+param => expression
+
+(param) => expression
+
+(param1, paramN) => expression
+
+() => {
+  statements
+}
+
+param => {
+  statements
+}
+
+(param1, paramN) => {
+  statements
+}
