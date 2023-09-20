@@ -1,0 +1,31 @@
+Arrow Function Implicit Return
+------------------------------
+- A more compact way of writing arrow functions
+    - Known as the one-liner implicit return
+    - Does NOT require writing the keyword 'return'
+
+- Applicable for arrow functions that accepts a single parameter & a single line of expression
+    - Replaces the pair of ( ) with a pair of { }
+
+- A more compact arrow function with a single parameter & line of expression
+    - Drops the pair of ( ) 
+    - Place the single line of expression right after the =>
+
+    - NOTE: if the single expression is too long or hard to read
+        - Break it the expression into multiple lines as appropriate
+        - Enclose the expressions within a pair of ( )
+
+    - It is a nice feature when needed a simple arrow function
+        - A single short expression to be returned
+
+- In the event that the body of the arrow function contains conditional statements or multiple expressions
+    - An arrow function with implict return can NOT be used
+
+
+Syntax
+------
+param => (
+    expression
+);
+
+param => expression;
