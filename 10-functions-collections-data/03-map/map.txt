@@ -1,0 +1,32 @@
+Map
+---
+- It creates a new array with the results of calling a callback function on every element in the array
+
+- It calls the callback function with every element in the array
+    - Builds a new array with those values
+
+- NOTE: the function passed as argument to map() MUST return a value
+    - This is for the .map() method to know what value(s) will be added into the new array
+    - Otherwise, the array will contain undefined values
+
+- NOTE: the original array remains UNCHANGED
+
+- It is similar to .forEach() that it calls a callback function for each element of an array EXCEPT:
+    - The .map() method stores the returned (updated) elements into a new array
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+
+Syntax
+------
+map(callbackFn)
+map(callbackFn, thisArg)
+
+
+Example
+-------
+const texts = ["rofl", "lol", "omg", "ttyl"];
+
+const caps = texts.map(function (eachElement) {
+    return eachElement.toUpperCase();           // Stores the new array into the variable caps
+})
