@@ -1,0 +1,20 @@
+Array Find
+----------
+- The array method .find() returns the 1st element in the array that satisfies the provided testing function
+    - Returns undefined if NO value(s) satisfies the testing function
+    - The array remains unchanged
+
+- This is useful when finding an element based on an:
+    - id
+    - identifier
+    - username
+
+- NOTE: .find() method ONLY returns the FIRST MATCH
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+
+
+Syntax
+------
+find(callbackFn)
+find(callbackFn, thisArg)
