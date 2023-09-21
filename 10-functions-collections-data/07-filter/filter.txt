@@ -1,0 +1,19 @@
+.filter()
+---------
+- The .filter() method creates a shallow copy of a portion of a given array
+    - Filtered down just to the elements from the given array that passed the test
+    - Test implemented by the provided function
+
+- It creates a new array with all elements that pass the test implemented by the provided function
+    - The test (callback) function returns a boolean expression (true or false)
+    - The element that passes the test gets added into the returned (new) array
+
+- The original array does NOT get changed
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+
+Syntax
+------
+filter(callbackFn)
+filter(callbackFn, thisArg)
