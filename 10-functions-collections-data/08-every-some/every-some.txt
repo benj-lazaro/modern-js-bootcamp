@@ -1,0 +1,34 @@
+.every() Method 
+---------------
+- The .every() method tests whether ALL ELEMENTS in the array passes the test 
+    - Test implemented by the provided function
+    - Returns a boolean expression
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+
+
+Syntax
+------
+every(callbackFn)
+every(callbackFn, thisArg)
+
+
+.some() Method
+--------------
+- The .some() method tests whether AT LEAST 1 ELEMENT in the array passes the test
+    - Test implemented by the provided function
+    - Returns a boolean expression
+
+- It is similar to the .every() method EXCEPT
+    - Immediately returns true as soon as an element passes the provided test function
+    - It does not proceed to check the remaining elements
+
+- NOTE: It ONLY REQUIRES 1 element to pass the test in order to return true
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+
+
+Syntax
+------
+some(callbackFn)
+some(callbackFn, thisArg)
