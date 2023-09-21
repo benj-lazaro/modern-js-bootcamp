@@ -44,10 +44,10 @@ const books = [{
 }
 ];
 
-// Find the book with a rating >= 4.3 from an array of objects
+// Find the first instance of a book with a rating >= 4.3 from an array of objects
 const bookSearch = books.find(book => book.rating >= 4.3);
 console.log(bookSearch.title);
 
-// Find the book authored by Neil Gaiman from an array of objects
+// Find the first instance of a book authored by Neil Gaiman from an array of objects
 const gaimanBook = books.find(book => book.authors.includes("Neil Gaiman"));
 console.log(gaimanBook.title);
