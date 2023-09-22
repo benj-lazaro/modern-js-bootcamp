@@ -1,0 +1,36 @@
+.sort() Method
+--------------
+- The .sort() method sorts the elements of an array IN PLACE
+    - Returns the reference to the same array, now sorted
+
+- Time and space complexity of the sort CAN NOT be guaranteed
+    - It depends on the implementation
+
+- To sort array elements WITHOUT MUTATING the array
+    - Use .toSorted() method
+
+    - An alternative, use .slice() without passing any argument value
+        - Creates a copy of the original array
+
+- The default sort order is ascending
+    - .sort() method converts the array elements into strings
+    - Then sort them according to the element's UTF-16 code unit value
+
+- To sort numbers according to their numerical value; use .sort() method & a user-defined compare function
+    - The compare function accepts two argument values namely a & b
+        - Then perform a mathematical subtraction on a - b
+
+    - If the difference is less than 0
+        - The .sort() method places the value in a before b
+        
+    - If the difference is equal to 0
+        - The .sort() method leaves the values in a and b unchanged
+
+    - If the difference is greater than 0
+        - - The .sort() method places the value in b before a
+
+
+Syntax
+------
+sort()
+sort(compareFn)
