@@ -1,0 +1,10 @@
+.reduce() Method
+----------------
+- An initial value can also be passed into the .reduce() method 
+    - That is passed right after the user-defined callback 'reducer' function
+
+
+Syntax
+------
+reduce(callbackFn)
+reduce(callbackFn, initialValue)
