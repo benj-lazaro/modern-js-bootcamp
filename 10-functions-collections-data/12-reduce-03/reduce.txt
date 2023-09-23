@@ -1,0 +1,5 @@
+.reduce() Method
+----------------
+- The .reduce() method can also be used to
+    - Tally up results from an array
+    - Group different values in an array using an object
