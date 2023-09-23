@@ -1,0 +1,14 @@
+.reduce() Method
+----------------
+- The .reduce() method executes a user-defined 'reducer' callback function on each element of the array
+    - Returns a single value after all elements have been processed by the 'reducer' function
+
+- The parameters of the callback function for the .reduce() method
+    - 1st parameter = accumulator (stores the accumulated value of the elements)
+    - 2nd parameter = current array element
+
+
+Syntax
+------
+reduce(callbackFn)
+reduce(callbackFn, initialValue)
