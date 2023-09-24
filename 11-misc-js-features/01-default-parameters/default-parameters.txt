@@ -1,0 +1,21 @@
+Default Parameters
+------------------
+- The default function parameters allow named parameters to be initialized with default values
+  - If no value or undefined is passed
+
+- NOTE: The ORDER of the default parameter value placeholder(s) ABSOLUTELY MATTER
+
+- NOTE: Default paramter(s) MUST come at end of the parameter list
+  - Can NOT assign the 1st paramter with a default value
+      - While leaving the rest as regular parameter(s) with no default value
+
+  - JavaScript will interpret the rest of the parameter as 'undefined'
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+
+Syntax
+------
+function fnName(param1 = defaultValue1, /* …, */ paramN = defaultValueN) {
+  // …
+}
