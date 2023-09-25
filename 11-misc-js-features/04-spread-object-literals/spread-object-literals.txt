@@ -1,0 +1,35 @@
+Spread In Object Literals 
+-------------------------
+- Spread allows an iterable (object) to be expanded
+    - In places where zero or more key-value pairs are expected
+
+- Common use case
+    - Copies properties from one object into another object literal
+        - It does NOT clone nested objects or arrays 
+
+    - Combines properties from other objects into another object literal
+
+- NOTE: Object literals with an identical key-value pair
+    - The latter object's properties overrides the former object literal
+
+- NOTE: Object literals with an identical key but different value
+    - The position where the spreaded object literal matters
+
+    - If the spreaded object literal is placed first
+        - It gets overwritten by the value of the identical key of the latter object literal
+
+    - If the spreaded object literatl is placed last
+        - It overwrites the value of the identical key of the former object literal
+
+- NOTE: An object is NOT an ITERABLE 
+    - You can NOT spread an object literal in an array
+    - HOWEVER, you can spread an object literal within another object literal
+
+- NOTE: Spreading an array or string in an object literal (as property) is possible
+    - Elements of the array or individual characters of a string 
+        - Become the corresponding values of the system generated indices (i.e. 0, 1, 2)
+
+
+Syntax 
+------
+{ ...obj, key: 'value' }                // Spread for object literal
