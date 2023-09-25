@@ -1,0 +1,25 @@
+Spread In Array Literals 
+------------------------
+- The spread (...) syntax allows an iterable (e.g. array, string) to be EXPANDED where 
+    - Zero or more elements for array literals are expected
+
+- Spread iterates through an array literal
+    - Copy each existing element into a new array
+
+- Common use case
+    - Make a clone of an existing array
+    - Nested arrays will NOT be cloned
+
+- The new array will have a unique reference different from the original array
+    - Using === operator to check for equality will result to false
+    - As each references a different array in memory
+
+- The new array follows the order of elements from the original array(s)
+
+- The spread serves as a shorter version of the array method .concat()
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+
+
+Syntax 
+------
+[1, ...iterableObj, '4', 'five', 6]
