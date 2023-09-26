@@ -1,0 +1,18 @@
+Destructing Arrays
+------------------
+- A short, clean syntax to 'unpack' values from data structures into separate, distinct variables
+    - Elements from an array 
+    - Properties from an object
+
+- The new variables will be created in the order based on
+    - The elements position in the array
+
+- To select specific elements from the array
+    - Insert a blank space (separate by a comma) in the array of distinct variables
+
+- To collect the rest of the argument values, use rest ...
+
+
+Syntax 
+------
+const [a, b] = array;
