@@ -1,0 +1,28 @@
+Rest Parameters
+---------------
+- It allows a function to accept an indefinite number of arguments as an array
+
+- It looks like spread BUT it is NOT
+    - It uses the same ... operatpr but BEHAVES DIFFERENTLY
+    - It is almost the opposite of spread
+    - It collects things (instead of spreading out) down into a single array
+
+- Use case:
+    - Functions that accept an unlimited number of arguments (e.g. Math.max())
+
+
+Arguments Object 
+----------------
+- It is an array-like object accessible inside functions
+  - It contains the values of arguments passed to that function
+  - It has an array-like length property
+
+  - It does NOT have array methods .push() or .pop()
+    - If needed, convert arguments into a real array using spread (i.e. ...arguments)
+
+- It is the OLD WAY of implementing a function with unlimited number of arguments
+  - In modern code, rest parameters is PREFERRED
+  
+- It is NOT AVAILABLE inside arrow functions
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
