@@ -1,0 +1,23 @@
+Destructuring Objects
+---------------------
+- Use the object's property name to unpack to a variable of the same name
+    - It is possible to unpack a property to a variable of a different name
+        - Use the format:        
+
+        const {<object_property_name>:<different_variable_name} = object;
+
+- The source object will NOT be changed
+
+- To collect the rest of the object's properties into a single variable or container
+    - Use the rest ... operator
+
+- When destructuring a non-existent property
+    - JavaScript will return an undefined value
+    - It will NOT generate an error
+
+
+Syntax 
+------
+const {a, b} = object;
+
+const {a, b:<different_property_name>} = object;
