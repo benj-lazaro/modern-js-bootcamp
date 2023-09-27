@@ -1,0 +1,4 @@
+Nested Destructuring
+--------------------
+- Use "," to skip an element (in an array) or property (in an object) within an iterable
+
