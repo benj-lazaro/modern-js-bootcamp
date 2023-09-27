@@ -1,0 +1,18 @@
+Destructuring Parameters
+------------------------
+- To destructure parameter(s) of an object passed into a function
+    - Pass the property name for the corresponding object property name 
+
+- To destructure parameter(s) of an array passed into a function
+    - Pass the variable name for the corresponding array element
+
+
+Syntax 
+------
+function <function_name> ({<object_property, <object_property, ...>}) {
+    // code block
+}
+
+function <function_name> ([<array_element_variable>, <array_element_variable>, ...]) {
+    // code block
+}
