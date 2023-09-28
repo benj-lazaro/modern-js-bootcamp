@@ -1,0 +1,28 @@
+Computed Properties
+-------------------
+- An improvement for object literal syntax
+    - Adds a property with a dynamic key
+    - Uses a variable as a key name in an object literal property
+
+- To use computed properties
+    - In the object liteeral's property definition
+        - Wrap the variable name within a pair of [ ] to serve as a dyanmic key
+        - JavaScript evaluates the variable first
+        - Then the variable name replaced with its assigned value
+        - This now serves as a property name (or key)
+
+- It is possible to use complex expression as a dynamic key
+
+
+Example
+-------
+const user = "Jools";
+
+const userRoles = {
+    // Wraps the variable within a pair of [ ] to become a dyanmic key
+    // Variable user will become the propery (key) name 'Jools'
+    // Gets assigned with the value "Admin"
+    [user]: "Admin"
+}
+
+console.log(userRoles);     // Returns {Jools: "Admin"}
