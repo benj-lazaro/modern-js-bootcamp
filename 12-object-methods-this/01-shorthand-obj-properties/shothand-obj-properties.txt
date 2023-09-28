@@ -1,0 +1,46 @@
+Shorthand Object Properties
+---------------------------
+- Shorthand properties are a new addition to JavaScript with ES2015
+    - NOT support in Internet Explorer
+
+- It is a nice easy way to create an object literal where
+    - When you have variables with values
+    - Create an object literal property where
+        - The property key name = name of the variable
+        - The property value = value stored in the variable
+
+
+Example
+-------
+// Old way
+const getStats = (arr) => {
+    const max = Math.max(...arr);
+    const min = Math.min(...arr);
+    const sum = arr.reduce((sum, r) => sum + r);
+    const avg = sum / arr.length;
+    
+    // Returns an object literal with properties (key-value pairs)
+    return {
+        max: max,
+        min: min,
+        sum: sum,
+        avg: avg,
+    }
+}
+
+
+// Modern way
+const getStats = (array) => {
+  const max = Math.max(...array);
+  const min = Math.min(...array);
+  const sum = array.reduce((sum, r) => sum + r);
+  const avg = sum / array.length;
+
+  // Shorthand to return an object literal with properties
+  // Takes the variables, use them to both set the object property key name & corresponding value
+  return { max, min, sum, avg };
+};
+
+const reviews = [4.5, 5.0, 3.44, 2.8, 3.5, 4.0, 3.5];
+const stats = getStats(reviews);
+
