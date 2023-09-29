@@ -1,0 +1,26 @@
+Method Shorthand Syntax
+-----------------------
+- Instead of using a key-value syntax when defining methods inside an object literal
+    - Give it a name w/c will be used to create the key
+    - Do away the : after the method name
+    - The comma is used to separate other methods or properties defined within the object literal
+
+- This method of adding method(s) in an object literal is much cleaner
+
+- It is NOT COMMON to use an arrow function when defining methods in an object literal
+    - This is similar to the old method of adding method
+    - It clutters the code
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
+
+
+Syntax
+------
+const obj = {
+  foo() {
+    // …
+  },
+  bar() {
+    // …
+  },
+};
