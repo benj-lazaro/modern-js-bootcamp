@@ -1,0 +1,17 @@
+Adding Methods To Objects
+-------------------------
+- When a user-defined function is added to an object literal as a property, it is now called a method
+
+
+Syntax
+------
+- Method definition
+
+const obj = {
+  foo: function () {
+    // …
+  },
+  bar: function () {
+    // …
+  },
+};
