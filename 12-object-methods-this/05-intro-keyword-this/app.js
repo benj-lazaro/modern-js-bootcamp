@@ -7,7 +7,7 @@ function sayHi() {
 }
 sayHi();
 
-// On a regular function express
+// On a regular function expression
 const greet = function () {
   console.log(this); // Returns the same 'window' objecct
 };
