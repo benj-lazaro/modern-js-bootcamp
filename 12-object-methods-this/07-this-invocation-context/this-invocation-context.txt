@@ -1,0 +1,50 @@
+This Invocation Context
+-----------------------
+- The value of 'this' depends on the INVOCATION CONTEXT of the function (method) it is used in
+
+- When 'this' is declared within a stand-alone function
+    - 'this' references the global scoped object 'window'
+
+- When 'this' is declared within an object literal's method
+    - 'this' refernces the parent object literal
+
+- However, the value of 'this' changes depending on the function (where it resides) is executed
+    - It is NOT dependent on where 'this' is written 
+
+- If 'this' is declared within an object literal's method
+    - Invokes the method normally using <object>.<method_name>()
+    - 'this' references the parent object literal
+
+- If the same object literal method is assigned to a variable as reference
+    - Invokes the variable as a stand-alone function using <variable_name>()
+    - 'this' references the global object 'window'
+    - 'this' does NOT reference the parent object literal
+
+- IMPORTANT NOTE
+    - When a function (method) where 'this' is declared and called
+        - With an object name at the left-hand side
+        - Followed by a  period
+        - Then a method name on the right-hand side
+        - 'this' will be set (reference) to the object literal on the left-hand side
+
+        - With no object name at the left-hand side
+        - Just calling the function (method) where 'this' resides
+        - 'this' will be set (reference) to the global execution scope object 'window'
+
+    - It all depends on the Invocation Context
+        - On how the function (or method) is executed 
+
+- Arrow function do NOT get their own version of 'this'
+    - It does NOT matter how an arrow function is called
+
+    - The value of 'this' will NOT BE CHANGED
+        - Regardless of how it is invoked
+        - 'this' is set (reference) to the global execution scope object 'window'
+            - Despite invoking the function (method) <object>.<method_name>()
+
+    - This is the reason why arrow function(s) is NOT used for defining methods of an object literal
+        - Some methods will require access to the parent object literal
+            - To access / reference properties 
+            - To call a different method 
+        
+        - NOTE: An arrow function is unable to do this until .bind() is used
