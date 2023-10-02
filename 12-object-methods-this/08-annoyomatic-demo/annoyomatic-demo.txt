@@ -1,0 +1,10 @@
+Annoyomatic Demo
+----------------
+- Arrow function suck as regular function (method) w/in an object literal
+    - NOT having it's own 'this' can be advantageous
+
+    - It is good when dealing with nested functions (methods) and callbacks
+        - As well as handling different execution context (e.g. parent object VS 'window')
+
+    - The 'this' inside an arrow function (method) of an object literal
+        - Will be identical the value of 'this' referencing the parent object literal
