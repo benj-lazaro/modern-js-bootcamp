@@ -1,31 +1,32 @@
 Introduction To Keyword This
 ----------------------------
-- The keyword 'this' is a reference to an object
-    - That object represents the current execution scope
+- 'this' is a keyword
+    - Acts as a reference to the current execution scope
+        - It returns an object
+    
+    - The returned object changes depending on
+        - The current execution scope
+            - Global scoped object 'window'
+            - Parent object literal
 
-- The keyword 'this' returns an object
-    - The returned object changes depending on the scope and rules 
-    - As well as on how a function is called
+        - How the rules work
+        
+        - How the function where 'this' resides is called
 
-    - This is the confusing part
-        - The returned object often references to the global scope
-        - Global scope on browsers = 'window' object
-
-- On a regular function
-    - The keyword 'this' refers to the global scoped object of the browser = 'window' object
-
+- 'this' inside a regular function
+    - Implicitly becomes a method for the browser's global scope object 'window'
+    
 - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
-- NOTE: Declaring a variable using the keyword 'var'
-    - The variable is added to the global scope of the browser = 'window' object
-    - The variable becomes a property of the 'window' object
+- An important note about the globally scoped object 'window'
+    - A variable declared using 'var'
+        - It Implicitly becomes a property of the 'window' object
+        - Explains the global scoped nature of variables declared with 'var'
 
-    - Variables defined using keywords 'let' and 'const'
-        - Are NOT added to the global scope of the browser
-        - It does NOT become a propery of the 'window' object
+    - A variable declared using 'const' or 'let'
+        - It does NOT become a property of the 'window' object
 
 
 Syntax
 ------
 this
-

@@ -1,9 +1,9 @@
 // Introduction To Keyword This
 
-// On a function declaration
+// On a regular function declaration
 function sayHi() {
   console.log("Hi!");
-  console.log(this); // Returns the 'window' object; global scople of the browser
+  console.log(this); // Returns an object referring tot the current execution scope = 'window' object
 }
 sayHi();
 
