@@ -1,13 +1,8 @@
 Using This In Methods
 ---------------------
-- On an object literal
-    - The keyword 'this' refers to the object's current execution scope
-        - Does NOT reference to the global scope object 'window'
-
-    - It references the current execution scope of the object's methods & properties
-
-    - It provides the ability to write a method
-        - That is aware of the object it lives it
-        - That interacts with other properties & methods 
-
-    - It provides a self-contained world
+- 'this' inside an object literal's method(s)
+    - The current execution scope / content = object literal itself
+    
+- 'this' is granted access to and interacts with the same object literal's
+        - Properties
+        - Methods
