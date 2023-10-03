@@ -1,50 +1,37 @@
-This Invocation Context
------------------------
-- The value of 'this' depends on the INVOCATION CONTEXT of the function (method) it is used in
+'this' Invocation Context
+-------------------------
+- As far as we know:
+    - 'this' inside a regular function
+        - The current execution scope = the browser's global scope object 'window'
 
-- When 'this' is declared within a stand-alone function
-    - 'this' references the global scoped object 'window'
+    - 'this' inside an object literal's method
+        - The current execution scope = object literal itself
 
-- When 'this' is declared within an object literal's method
-    - 'this' refernces the parent object literal
+    - However, the value of 'this' changes depending on the Invocation Context
+        - How the function / method where 'this' resides is invoked / executed
+            - NOT just where the keyword 'this' is declared / written
 
-- However, the value of 'this' changes depending on the function (where it resides) is executed
-    - It is NOT dependent on where 'this' is written 
 
-- If 'this' is declared within an object literal's method
-    - Invokes the method normally using <object>.<method_name>()
-    - 'this' references the parent object literal
+- RULES:
+    - 'this' inside an object literal's function (method)
+        - Invocation context = <object_literal>.<method_name>()
+        - Current execution scope = object literal itself 
 
-- If the same object literal method is assigned to a variable as reference
-    - Invokes the variable as a stand-alone function using <variable_name>()
-    - 'this' references the global object 'window'
-    - 'this' does NOT reference the parent object literal
+    - 'this' inside an object literal's function (method) DEFINED as an Arrrow Function
+        - Invocation context = <object_literal>.<method_name>()
+        - Current execution scope = the browser's global scope object 'window'
 
-- IMPORTANT NOTE
-    - When a function (method) where 'this' is declared and called
-        - With an object name at the left-hand side
-        - Followed by a  period
-        - Then a method name on the right-hand side
-        - 'this' will be set (reference) to the object literal on the left-hand side
+    - 'this' inside a regular function
+        - Invocation context = <function_name>()
+        - Current execution scope = the browser's global scope object 'window'
 
-        - With no object name at the left-hand side
-        - Just calling the function (method) where 'this' resides
-        - 'this' will be set (reference) to the global execution scope object 'window'
 
-    - It all depends on the Invocation Context
-        - On how the function (or method) is executed 
+- NOTE: An arrow function does NOT have its own (flexible) version of 'this'
+    - Current execution scope = the browser's global scope object 'window'
+    - Regardlesss of the Invocation Context used
+        - Unless .bind() method is used (to be discussed later)
 
-- Arrow function do NOT get their own version of 'this'
-    - It does NOT matter how an arrow function is called
-
-    - The value of 'this' will NOT BE CHANGED
-        - Regardless of how it is invoked
-        - 'this' is set (reference) to the global execution scope object 'window'
-            - Despite invoking the function (method) <object>.<method_name>()
-
-    - This is the reason why arrow function(s) is NOT used for defining methods of an object literal
-        - Some methods will require access to the parent object literal
-            - To access / reference properties 
-            - To call a different method 
-        
-        - NOTE: An arrow function is unable to do this until .bind() is used
+    - This is why an arrow function is NOT used to define an object literal's function (method)
+        - Most of the functions (methods) we write require access to the object literal's 
+            - Properties 
+            - Other methods
