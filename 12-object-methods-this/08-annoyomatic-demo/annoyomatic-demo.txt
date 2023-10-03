@@ -1,10 +1,13 @@
 Annoyomatic Demo
 ----------------
-- Arrow function suck as regular function (method) w/in an object literal
-    - NOT having it's own 'this' can be advantageous
+- An arrow function does NOT have its own (flexible) version of 'this'
+    - Current execution scope = the browser's global scope object 'window'
+    - Regardlesss of the Invocation Context used
 
-    - It is good when dealing with nested functions (methods) and callbacks
-        - As well as handling different execution context (e.g. parent object VS 'window')
+- An arrow function can be useful when 
+    - Dealing with nested functions and callbacks
+    - Handling different current execution scopes
 
-    - The 'this' inside an arrow function (method) of an object literal
-        - Will be identical the value of 'this' referencing the parent object literal
+- If an arrow function is defined within a normal function (method) inside an object literal
+    - The value of 'this' is altered by the method's current execution scope
+    - Current execution scope = the object literal itself
