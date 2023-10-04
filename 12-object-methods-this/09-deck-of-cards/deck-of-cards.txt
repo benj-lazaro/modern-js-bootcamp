@@ -1,0 +1,19 @@
+Putting It All Togerther: Deck Of Cards
+---------------------------------------
+- The disadvantages of using a function based approach in writing code
+    - Requires passing related values around function(s) as arguments
+    - Promotes long and inflexible code
+
+- Using an object based approach is a great way of organzing your code
+    - Grouping relevant values with functionality
+
+    - The object stores the values (in corresponding properties)
+    - The object's methods work on those values
+        - Thanks to the keyword 'this'
+
+    - There is NO need to 'return' value(s) from an object literal's method
+        - Since it is interacting with the object literal's property
+
+        - In a pure function approach
+            - The processed value(s) disappears into obliviou after leaving the function
+            - Unless the value is return back to calling code
