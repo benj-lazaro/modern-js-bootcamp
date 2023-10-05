@@ -1,0 +1,30 @@
+Another Fun DOM Example
+-----------------------
+- Launch browser
+    - Proceed to https://www.google.com/
+    - Launch JavaScript 'console' of the browser
+    
+    - Click the 'Source' tab
+    
+    - Click 'New snippet'
+        - Click window of 'Script snippet #1'
+        - Write the snippet of code for interacting with the DOM
+
+        const sheet = new CSSStyleSheet();
+        sheet.replaceSync('* {translation: all 2s} ');
+        document.adoptedStyleShees = [sheet];
+
+        const allElements = document.getElementById('viewport').children;
+
+        setInterval(() => {
+            for(let el of allElements) {
+                const rotation = Math.floor(Math.random() * 360);
+                const x = Math.floor(document.body.clientWidth * Math.random());
+                const y = Math.floor(document.body.clientHeight * Math.random());
+                el.style.transform = `translate(${x}px, ${y}px) rotate(${rotation}deg)`; 
+        
+            }
+        }, 2000);
+
+
+        - CTRL + ENTER to execute the snippet 
