@@ -1,0 +1,6 @@
+Introduction to the DOM
+-----------------------
+- DOM = Document Object Model
+
+- Uses JavaScript to provide functionality or user interactivity within a Web Page
+
