@@ -1,0 +1,15 @@
+Taste of the DOM
+----------------
+- DOM = Document Object Model
+    - A windows into HTML, CSS and the web page in general
+    - A JavaScript representation of a web page
+    - A JavaScript 'window' into the contents of a web page
+    - A bunch of objects that can be interacted with via JavaScript
+    - A JavaScript representation of the content on a  web page
+
+- When a web page is loaded into the browser
+    - Browser turns it into a bunch of JavaScript objects
+    - These objects are all contructed & put together to form the DOM
+        - Objects representing HTML & CSS
+
+    - Each object (a.k.a node) has a bunch of different properties & methods
