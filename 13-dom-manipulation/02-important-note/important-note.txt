@@ -1,0 +1,5 @@
+Important Note
+--------------
+- Pre-requisites before learning DOM manipulation
+    - Basic HTML & CSS
+    
