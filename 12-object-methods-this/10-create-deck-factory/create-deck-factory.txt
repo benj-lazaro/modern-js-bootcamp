@@ -1,0 +1,8 @@
+Creating A Deck Factory
+-----------------------
+- Demonstrates how to create multiple deck of cards based on the previous section's example
+    - A stand-alone function that returns an object literal
+        - An object literal with associated properties and methods
+
+- NOTE: This is NOT the best way of doing it
+    - It is the best way based on what you know so far
