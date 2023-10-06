@@ -1,0 +1,23 @@
+.getElementById()
+-----------------
+- A method of the document interface where
+    - It takes an ID string as an argument
+    - It finds the element that matches to the passed (specific) ID string
+    - It returns the matching element object
+        - Otherwise, returns a 'null' if none
+        
+    - The returned element object comes with a 'prototype' property
+        - This identifies the type of the object element such as:
+            - HTMLImageElement
+            - HTMLParagraphElement
+
+- NOTE: The ID attribute value inside a document is supposed to be unique
+    - If two or more element objects have the same ID
+    - The .getElementById() method returns ONLY the 1st matching element
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+
+
+Syntax
+------
+getElementById(id)
