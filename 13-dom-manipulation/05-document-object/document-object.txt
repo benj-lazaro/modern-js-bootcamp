@@ -1,0 +1,22 @@
+The Document Object
+-------------------
+- The document object (interface) represents any web page loaded in the browser
+    - It serves as entry point into the web page's content w/c is the DOM tree
+    - It is the root of the DOM tree
+
+    - DOM tree is a tree structure whose nodes represent an HTML document's content
+        - Reference (https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Using_the_Document_Object_Model#what_is_a_dom_tree)
+    
+        - To view the web page's document currently loaded into the browser
+            - Launch the browser's JavaScript console & type the following:
+        
+            > console.dir(document)
+
+            - Expand 'all' to view the current number of elements in the web page's document
+
+        - It represents a document with a logical tree
+            - Each branch of the tree ends in a node
+            - Each node contains an object
+            - Nodes can also have event handlers attached to them
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Document)
