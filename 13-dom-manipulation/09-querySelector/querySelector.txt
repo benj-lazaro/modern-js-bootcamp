@@ -1,0 +1,59 @@
+.querySelector()
+----------------
+- A method of the document interface where
+    - It returns the first element object within the document that matches
+        - The specified CSS style selector
+        - It returns a single element object
+        - It returns 'null' if NO match is found
+
+- The 'selectors' parameter is a string containing
+    - One or more selectors to match
+    - It MUST be a valid CSS selector string
+    - Returns a SyntaxError exception if it is an invalid string
+
+- It is considered a newer, all-in-one method to select a SINGLE element
+    - The 'swiss army knife' of DOM selectors
+
+    - It replicates the functionalities of
+        - .getElementedById()
+        - .getElementsByTagName()
+        - .getElementsByClassName()
+
+- NOTE: This method is supported by Internet Explorer browser
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+
+
+Syntax
+------
+querySelector(selectors)
+
+
+.querySelectorAll()
+-------------------
+- It is a variant method of the .querySelector()
+    - It returns a static (NOT live) NodeList
+        - It contains matching element objects
+        - It returns a list even if there is a single match found
+
+        - It is an array-like object like HTMLCollection
+            - Indices work to access a specific element object
+            - It has access to the .length property
+            - It can be iterated over using for..each loop
+
+    - Ir returns a empty NodeList if NO match was found
+
+- Compared to older .getElementedById(), .getElementsByClassName() & .getElementsByTagName()
+    - .querySelector() is less performant than its predecessors
+    - It depends on the CSS selector used
+
+- Difference between HTMLCollection vs NodeList
+    - HTMLCollection is live; updates automatically when the DOM tree updates
+    - NodeList is static, NOT live
+    - Both list contains matching element objects
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+
+Syntax
+------
+querySelectorAll(selectors)
