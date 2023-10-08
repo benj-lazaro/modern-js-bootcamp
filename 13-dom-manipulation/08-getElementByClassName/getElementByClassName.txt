@@ -1,0 +1,31 @@
+.getElementByClassName()
+------------------------
+- A method of the document interface where
+    - It returns a live HTMLCollection of elements with the given class name
+    - It returns an empty HTMLCollection if NO match is found
+
+- The HTMLCollection is an array-like object
+    - It is NOT an array but has a few related properties
+        - It has indices can be used to access a specific element object
+        - It has .length property
+        - It does NOT support methods .pop(), .push(), .includes(), .indexOf()
+
+    - It can be iterated over
+        - Using for..of loop
+        - Use the ... (spread) operator
+        
+    - It updates itself with the DOM tree automatically
+
+- To perform a specific search
+    - Select the targeted element object from the document by its tag name
+    - Select the targeted element object from the returned object by its class name
+
+    - NOTE: This does NOT work with .getElementById()
+        - The said method ONLY searches for a specific element based on its ID attribute
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+
+
+Syntax
+------
+getElementsByClassName(names)
