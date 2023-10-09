@@ -1,0 +1,39 @@
+.innerText
+----------
+- A property of the HTMLElement interface
+    - It represents the rendered text content of a node & its descendants
+    - It does NOT preserve the formatting of the content within the HTML document
+
+    - It is aware of the text content being shown (or rendered) on the web browser
+        - It is aware of things like <br> elements
+    
+    - It ignores hidden elements (e.g. inline CSS property = display:none)
+    - It is NOT able to read the text content of the <script> & <style> tags
+
+- As a getter
+    - It copies the text content of the element
+
+- As a setter
+    - It replaces the element's children with the given value
+    - It converts line breaks into <br> elements
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
+
+
+.textContent
+------------
+- A property of the Node interface
+    - It represents the text content of the node & its descendants
+    
+    - It returns the content of ALL elements including <script> and <style> elements
+        - It preserves the formatting of the content within the HTML document
+        - It renders the text content directly from the actual HTML document
+    
+    - It returns the text content of hidden elements
+    - It returns the text content of the <script> & <style> tags
+
+- The .textContent property is faster
+    - Although the speed difference against the .innerText property is imperceptible
+    - It does NOT parse the content as HTML
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
