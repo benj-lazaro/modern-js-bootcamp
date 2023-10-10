@@ -1,0 +1,37 @@
+.innerHTML
+----------
+- A property of the element object
+    - Which retrieves both HTML tags & associated text content of a given element
+    - It get and sets the HTML markup contained within the element
+
+- It can be used to change / update the content of an element
+
+- To insert the HTML into the document rather than replace the contents of an element
+    - Use .insertAdjacentHTML() method
+
+- To update the HTML content of an element without replacing its current content
+    - Use the "=+" operator
+    - Followed by a string containing the additional content
+
+- To add an HTML element into the targeted element
+    - Using the "=" operator to assign a properly-formed HTML string
+    - The .innerHTML parses the passed string then reflect the changes in the DOM
+
+    - Exception 'SyntaxError'
+        - The value of innerHTML using a string that is NOT a properly-formed HTML
+        
+    - Exception 'NoModificationAllowedError'
+        - An attempt to insert HTML into a node whose parent is a 'document'
+
+    - The .innerText property can NOT add / update HTML elements into the targeted element
+        - It interprets the string as a literal string
+        - It does NOT parse the string to check if is a properly-formed HTML
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+
+
+Example
+-------
+let contents = myElement.innerHTML;
+contents.innerHTML = "<properly-formed HTML string>";
+contents.innerHTML += " <additional_string_content>";
