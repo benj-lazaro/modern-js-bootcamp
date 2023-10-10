@@ -1,0 +1,63 @@
+value, src, href & more
+-----------------------
+- The following properties that correspond to HTML attributes
+    - That can be accessed directly from an element
+
+
+.value
+------
+- To access the value assigned to (or typed into) an <input> element
+    - Use the property .value
+
+    - NOTE: For <input> element with attribute type of 'checkbox'
+        - Use the property .checked instead of the property .value 
+
+- To set a new value to the attribute "value" of an element
+    - Use the "=" operator
+    - Followed by the new value
+
+- To update the current value of the attribute "value" of an element
+    - Use the "+=" operator
+    - Followed by the additional value
+
+
+.placeholder
+------------
+- To access value of attribute "placeholder"
+    - Use the property .placeholder
+
+- To set the value of attribute "placeholder"
+    - Use the prperty "=" operator
+    - Followed by the new value
+
+- To update the value of attribute "placeholder"
+    - Use the property "+=" operator
+    - Followed by the additional value
+
+
+.href
+-----
+- To access the attribute "href" of an element <a>
+    - Use the property .href
+
+- To set the value of attribute "href" of an element <a>
+    - Use the prperty "=" operator
+    - Followed by the new URL value
+
+
+.src
+----
+- To access the attribute "src" of an element <img>
+    - Use the property .src
+
+- To set the value of attribute "src" of an element <img>
+    - Use the prperty "=" operator
+    - Followed by the URL of the image
+
+
+Example
+-------
+const inputs = document.querySelectorAll("input");
+console.log(inputs[3].value);
+inputs[3].value = "new value";
+inputs[3].value += "additional value";
