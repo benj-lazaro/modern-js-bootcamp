@@ -1,0 +1,49 @@
+Finding Parent Children Siblings
+--------------------------------
+- The following are properties that provide access to the targeted element's
+    - parent element
+    - children element(s)
+    - sibling element(s) = next or previous
+
+
+.parentElement
+--------------
+- It is a READ-ONLY property of the Node interface
+    - It returns the DOM node's parent element
+    - It returns null if the node has NO parent or parent is NOT a DOM element
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)
+
+
+.children
+---------
+- It is a READ-ONLY property that returns a live HTMLCollection
+    - It returns all of the child elememts of the element upon w/c it was called
+        - Arranged in order of appearance in the DOM
+
+    - It includes ONLY element nodes
+        - To get all child nodes including non-element nodes (e.g. text) & comment nodes
+        - Use Node.childNode property instead
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/children)
+
+
+.nextElementSibling
+-------------------
+- It is a READ-ONLY property of the Element interface
+    - It returns the element immediately following the specified one
+        - In the parent's children list
+    
+    - It returns null if the specified element is the last one in the list
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling)
+
+
+.previousElementSibling
+- It is a READ-ONLY property of the Element interface 
+    - It returns the element immediately preceeding the specified one
+        - In the parent's children list
+
+    - It returns null if the specified element is the first one in the list 
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling)
