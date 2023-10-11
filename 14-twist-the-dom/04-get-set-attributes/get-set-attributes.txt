@@ -1,0 +1,30 @@
+Getting Setting Attributes
+--------------------------
+- The .getAttribute() is a method of the Element interface
+    - It returns the value of a specified attribute on the element 
+    - Otherwise, returns a null or "" if the attribute does NOT exist
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)
+
+
+Syntax
+------
+getAttribute(attributeName)
+
+
+.setAttribute()
+---------------
+- The .setAttribute() is a method of the Element interface 
+    - Sets the value of an attribute on the specified element
+    - If the attribute already exists, the value is updated
+    - Otherwise, a new attribute with is added with the specified name & value
+
+- Often used on element attributes that did NOT have a shortcut
+    - Shortcut such as value, src, href & placeholder
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+
+
+Syntax
+------
+setAttribute(name, value)
