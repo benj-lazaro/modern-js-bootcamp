@@ -1,0 +1,5 @@
+Changing Multiple Elements
+--------------------------
+- Make use of the previously learned DOM-related methods & properties
+    - To select multiple elements in the docment
+
