@@ -1,0 +1,31 @@
+Altering Styles
+---------------
+- Manipulating CSS properties using JavaScript and the DOM using the .style property
+
+
+.style
+------
+- It is a READ-ONLY property of the HTMLElement
+    - It returns the inline style of an element    
+    
+    - In the form of a live CSSStyleDeclaration object
+        - The object contains a list of style properties of that element
+        - Styles defined on the element's INLINE 'style' attribute
+
+- It can be used to change the INLINE style of an element
+    - One style property at a time
+    - Can use a loop to implement changes on related elements' INLINE 'style' attribute
+
+- It does NOT read the styles defined in an external CSS file 
+
+- NOTE: CSS properties in JavaScript uses camelcase & does NOT recognize '-'
+    - The '-' is NOT a valid identifier
+    - Some CSS properties use '-' (e.g. background-color)
+
+    - Use the camelcase version of the CSS property by removing '-'
+    - Then camelcase the property (e.g. backgroundColor)
+
+    - Any property in the CSSStyleDeclaration object that is more than 1 word
+        - Is presented in their camelcase version
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
