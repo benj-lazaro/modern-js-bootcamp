@@ -1,0 +1,19 @@
+getComputedStyle()
+------------------
+- It is a method of the Window object
+    - It returns an CSSStyleDeclaration object
+    - The object contains all CSS properties (& corresponding current values) of the selected element
+
+- It offers a different way to read / retrieve the current style value of an element
+    - Styles defined in an external stylesheet, internal, inline or by JavaScript
+
+- It returns a massive CSSStyleDeclaration object
+    - That contains every property that has been calculated in CSS
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle)
+
+
+Syntax
+------
+getComputedStyle(element)
+getComputedStyle(element, pseudoElt)
