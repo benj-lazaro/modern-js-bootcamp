@@ -1,0 +1,38 @@
+Creating Elements
+-----------------
+- To create a new element from scratch
+    - Use the .createElement() method
+
+- To add/insert the created element into the DOM
+    - Use the .appendChild() method
+
+
+.createElement()
+----------------
+- It is a method of the document interface
+    - It creates the HTML element (object) specified by tagName
+    - It returns HTMLUnknownElement if the tagName is NOT recognized
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+
+
+Syntax
+------
+createElement(tagName)
+createElement(tagName, options)
+
+
+.appendChild()
+--------------
+- It is a method of the Node interface
+    - Appends the new child element at the END of the list of children of the specified parent node
+
+- It is a method called on a parent element that you want to append
+    - The recently created child element into
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
+
+
+Syntax
+------
+appendChild(aChild)
