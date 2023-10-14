@@ -1,0 +1,32 @@
+Manipulating Classes
+--------------------
+- Manipulating multiple styles at once
+    - Through the selected element's 'class' attribute
+
+    - Updating it by accessing the element's .classList property
+
+
+classList
+---------
+- It is a READ-ONLY property of the Element 
+    - It returns a live DOMTokenList collection
+        - Of the targeted element's 'class' attribute
+    
+    - This can be used to manipulate the element's class list
+
+    - Offers a better alternative to the following methods when setting styles of an element
+        - .getAttribute()
+        - .setAttribute()
+
+- It also includes methods (e.g. add(), etc.) to do things with the list
+    - .add() = add a new class to the list
+    - .contains() = checks if a class exists in the list
+    - .remove() = removes a class from the list
+    - .toggle() = if the class exists then remove it, if not then add it
+
+- It helps maintain the "seperation of concern"
+    - Keeping CSS styles within the stylesheet
+    - Refrains from declaring CSS style(s) within JavaScript
+    - Using classList.toggle() you can selectively apply / remove a class defined in the stylesheet
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
