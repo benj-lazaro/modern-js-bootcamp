@@ -1,0 +1,74 @@
+.append(), .prepend(), .insertBefore()
+--------------------------------------
+
+.insertBefore()
+---------------
+- A method of the Node interface
+    - Inserts a node BEFORE a reference node as a child of a specified parent node
+
+- The method is called on the targeted parent node & requires two argument values
+    - The created child element to be inserted
+    - The child where the created child will be inserted BEFORE it
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
+
+
+Syntax
+------
+insertBefore(newNode, referenceNode)
+
+
+.insertAdjacentElement()
+------------------------
+- A method of the Element interface
+    - It inserts a given element node at a given position
+        - Relative to the element it is invoked upon
+
+- The 'position' is a string representing the position relative to the targeted element
+    - 'beforebegin  = BEFORE the target element itself
+    - 'afterbegin'  = just inside the target element, BEFORE its first child
+    - 'beforend'    = just inside the target element, AFTER its last child
+    - 'afterend'    = AFTER the target element itself
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement)
+
+
+Syntax
+------
+insertAdjacentElement(position, element)
+
+
+.append()
+---------
+- A method of the Element interface
+    - Inserts a set of Node objects or string objects AFTER the LAST CHILD of the Element
+    - It can insert multiple elements at once
+
+- NOTE: This does NOT work in Internet Explorer
+
+- Refernce (https://developer.mozilla.org/en-US/docs/Web/API/Element/append)
+
+
+Syntax
+------
+append(param1)
+append(param1, param2)
+append(param1, param2, /* …, */ paramN)
+
+
+.prepend()
+----------
+- A method of the Element interface
+    - Inserts a set of Node objects or string objects BEFORE the FIRST CHILD of the Element
+    - It can insert multiple elements at once
+
+- NOTE: This does NOT work in Internet Explorer
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend)
+
+
+Syntax
+------
+prepend(param1)
+prepend(param1, param2)
+prepend(param1, param2, /* …, */ paramN)
