@@ -1,0 +1,30 @@
+h1 {
+  color: purple;
+  font-size: 60px;
+}
+
+input[type="password"] {
+  width: 100px;
+  height: 50px;
+}
+
+#starship-photo {
+  width: 250px;
+}
+
+.special {
+  color: teal;
+  font-size: 30px;
+  border: 1px solid teal;
+}
+
+.todo {
+  font-size: 30px;
+  color: olive;
+}
+
+.done {
+  color: "gray";
+  text-decoration: line-through;
+  opacity: 50%;
+}

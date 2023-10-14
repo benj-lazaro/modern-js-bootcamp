@@ -1,0 +1,30 @@
+.removeChild()
+--------------
+- It is a method of the Node interface
+    - It removes a child node from the DOM
+    - It returns the removed node
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
+
+
+Syntax
+------
+removeChild(child)
+
+
+.remove()
+---------
+- It is a method of the Element interface
+    - It removes an element from the DOM
+
+    - It ONLY requires to select the element to be removed
+    - It does NOT require to specify the parent of the element to be deleted
+
+- NOTE: This does NOT work in Internet Explorer
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/remove)
+
+
+Syntax
+------
+<target_element>.remove()
