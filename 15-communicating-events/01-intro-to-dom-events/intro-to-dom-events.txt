@@ -1,0 +1,21 @@
+Intro To DOM Events
+-------------------
+- Events responding to user inputs and actions
+
+- Sample of common events 
+    - clicks
+    - drags
+    - drops
+    - scrolls
+    - form submission
+    - key presses
+    - focus / blur
+    - mouse wheel
+    - double click
+    - copying
+    - pasting
+    - audio start
+    - screen resize
+    - printing
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/Events)
