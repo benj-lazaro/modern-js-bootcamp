@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways NOT To Add Events</title>
+  </head>
+  <body>
+    <!-- Using Inline Event Handlers -->
+    <button onclick="alert('YOU CLICKED ME!')">Click Me!</button>
+    <button onmouseover="alert('HOVERED')">Hover Over Me!</button>
+
+    <button id="clicker">Clicker</button>
+
+    <form action="">
+      <input
+        type="range"
+        min="10"
+        max="50"
+        onclick="console.log('Clicked the <input> element.')"
+      />
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+Two Ways NOT To Add Events
+--------------------------
+- All events follow the same pattern
+    - Each event are TRIGGERED differently
+    - BUT follow the same pattern when incorporating it into code
+        - Targeted element (e.g. button, image)
+        - Event type (e.g. click, hover)
+        - Calls the code (function / method) for the corresponding action
+
+- It is NOT proper to add an event
+    - Using an Inline Event Handler
+        - Corresponding HTML (event) attribute on targeted element
+        - Assign a string representing inline JavaScript code / function
+
+        - Follows the pattern:
+            on<eventName> = "<code_to_do_somethng>"
+
+    - Using the selected element's .on<properties>
+        - Select the targeted element
+        - Set the element's corresponding .on<property>
+        - Assign the corresponding JavaScript code
+
+        - Need to keep track the list of .on<properties>
+            - Writen in lowercase despite JavaScript promoting camelCase
+            - It can be quite confusing
+
+        - Need to using console.dir() on the selected element
+            - To display the list of corresponding properties to use
