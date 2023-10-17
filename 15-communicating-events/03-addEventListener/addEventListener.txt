@@ -1,0 +1,27 @@
+.addEventListener
+-----------------
+- It is a method of the EventTarget interface
+    - It sets up a function that will be called
+    - Whenever an event occurs on the selected element
+
+- The common targets are:
+    - Elements or its children
+    - Document
+    - Window
+    - Any object that support events (e.g. XMLHttpRequest)
+
+- The MOST RECOMMENDED way to register an Event Listener
+    - It allows to add more than one handler for an event
+    - It allows to listen to multiple events of the same type, on one element
+    - It works on any event target, NOT just HTML or SVG elements
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+- Event type reference (https://developer.mozilla.org/en-US/docs/Web/Events)
+
+
+Syntax
+------
+addEventListener(type, listener)
+addEventListener(type, listener, options)
+addEventListener(type, listener, useCapture)
