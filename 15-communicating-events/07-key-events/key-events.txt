@@ -1,0 +1,27 @@
+Key Events
+----------
+- Refers to key related events:
+    - keypress  = fired when a key that produces a character is pressed down (deprecated)
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/keypress_event)
+
+    - keyup     = fired when a key is released; any key
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event)
+
+    - keydown   = fired when a key is pressed; any key
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)
+
+- The event keypress
+    - A deprecated key event but still has its uses (see NOTE)
+    - Behavior differs from browser to browser
+    - Unable to detect SHIFT, CAPS LOCK, arrow keys
+
+    - NOTE: Useful for detecting 'Enter' key; it detects a single key press
+        - Due to events keydown & keyup detects two successive key presses
+
+- NOTE: The event keyup does NOT recognize the key 'tab' WHEN
+    - The cursor is focused or within targeted element
+
+    - Pressing 'tab' moves the focus away from the target element (object)
+        - Prevents it from detecting succeeding key events
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values)
