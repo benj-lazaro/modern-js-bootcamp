@@ -1,0 +1,17 @@
+The Event Object
+----------------
+- When the function in the .addEventListener() method is called
+    - After it is triggered by an event
+
+    - The .addEventListener() method calls the corresponding function
+        - Automatically pass an event object to the function as argument value
+            - Even if there is NO parameter variable defined in the function declaration
+
+        - The event object is often referred as 'e', 'evt' or 'event'
+            - On most publications / online  tutorials
+        
+        - Performing a console.log() to the event object
+            - Returns the associated properties
+            - Property .type = identifies the event type
+
+- Reference (https://developer.mozilla.org/en-US/docs/web/api/event)
