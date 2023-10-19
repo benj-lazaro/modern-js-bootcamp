@@ -1,0 +1,11 @@
+Form Events .preventDefault()
+-----------------------------
+- It is a method of the Event interface
+    - Tells the user agent (i.e. browser) that if an event did NOT get explicitly handled
+    - The default action should NOT be taken as it normally would
+
+- Use case
+    - To prevent form data from being submitted to a remote server
+    - Extract form data then  forward to an API using AJAX / client-side request
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
