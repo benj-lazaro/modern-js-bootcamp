@@ -1,0 +1,28 @@
+Input Change Events
+-------------------
+- Events that allows to capture data types or changes on a form element
+    - Without having to wait for a 'submit' event
+
+    - Keeps in-sync with the form element
+        - To know exactly what is happening on each form element
+
+    - Use case
+        - Simultaneously display each character typed on a form element
+            - On a separate element (e.g. displaying type credit card nmber) 
+            - BEFORE the user clicks the 'Submit' button
+
+- Event 'input'
+    - Captures each character typed by the user in an <input> of 'type' element
+    - Captures the current clicked status of a checkbox element
+    - Captures the current element <item> element
+
+- Event 'change'
+    - Works pretty much the same as the 'input' event on most form elements
+    - EXCEPT for the <input> element of type 'text'
+        - Will NOT immediately remain in-sync as the user types
+        - UNTIL the cursor loses 'focus' or blurs from the <input> element
+
+- The code pattern demonstrated in the example is commonly seen in React or other framework
+    - Uses the 'name' attribute of an element as a key
+        - To store the corresponding assigned value
+    - Creates an object that contains all of the form data at once
