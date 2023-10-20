@@ -1,0 +1,31 @@
+The Call Stack
+--------------
+- It is a mechanism the JavaScript interpreter use
+    - To keep track of its place in a script that calls multiple functions
+        - What function is currently being run
+        - What functions are called from within that function, etc.
+
+    - Helps Javascript identify which
+        - Function is currently being run
+        - Function(s) that are not done yet
+
+- A stack is a simple data structure
+    - It is similar to that of a stack of books or plates
+
+    - The last item added (most recently) on top of the stack
+        - Is the first item that to be removed from the stack
+
+- How it works
+    - When a script calls a function
+        - The interpreter adds it to the call stack
+        - Then starts carrying out the function
+
+    - If there are any functions that are called by that within function
+        - That function is then added to top of the call stack
+        - Run that function when they are called
+
+    - When the that function is finished (and returns a value)
+        - The interpreter takes that function from the call stack
+        - Then resumes execution of the function that came before it
+
+- Reference (https://developer.mozilla.org/en-US/docs/Glossary/Call_Stack)
