@@ -1,0 +1,9 @@
+JavaScript Is Single Threaded
+-----------------------------
+- JavaScript is a single-threaded language
+    - At any given point in time. JavaScript runs 1 line of code at a time
+    - It is NOT multitasking
+
+- To overcome this limitation
+    - The browser offers a solution to get around JavaScript's single-threaded nature
+    - Asynchronous Callbacks
