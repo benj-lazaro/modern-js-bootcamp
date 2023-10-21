@@ -1,0 +1,27 @@
+How Asynchronous Callbacks Actually Work
+----------------------------------------
+- The browser provide a workaround for JavaScript single-threaded nature
+    
+- JavaScript is NOT the browser
+    - JavaScript is a language implemented in the browser
+
+    - Browsers are usually written in C++
+        - It is capable of multitasking 
+    
+    - To address JavaScript's single-threaded nature
+        - It hands over certain tasks to the browser
+        - When the browser is done
+        - It notifies and turns over back to JavaScript
+
+- Web browsers come with a Web API
+    - That are capable of handling certain tasks in the background
+        - e.g. requests or setTimeout()
+
+    - The JavaScript call stack recognizes these Web API functions
+        - Passes them off to the browser to take care of
+
+    - After the browser finished the task
+        - They are returned
+        - Pushed onto the JavaScript call stack (or callback queue) as a callback
+        - JavaScript picks up the callback
+
