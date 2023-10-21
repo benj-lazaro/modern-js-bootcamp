@@ -1,0 +1,18 @@
+Call Stack Debugging With Dev Tools
+-----------------------------------
+- Using Chrome's Dev Tools to view the Call Stack representation
+    - How to step through it, one call at a time
+
+- Launch Chrome Dev Tools
+    - Click 'Sources' tab
+    - Click 'Page' tab
+    - Click the JavaScript source file
+    - Add a breakpoint by clicking the number line
+        - It will pause code execution
+    - Refresh (F5) the web page 
+
+    - On the right-hand side panel, look for the tab labeled 'Call Stack'
+        - This is the representation of the Call Stack
+
+    - Click the button 'Step into next function call'
+    
