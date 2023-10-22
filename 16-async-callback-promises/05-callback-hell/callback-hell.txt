@@ -1,0 +1,23 @@
+Welcome to Callback Hell
+------------------------
+- Callbacks are NOT perfect
+    - They can get messy very quickly
+
+- Old JavaScript way of doing asynchronous callbacks (or specifically, making requests)
+    - Requires two callbacks 
+        - onSuccess
+        - onFailure
+
+    - Implementing it results to 
+        - Densely nested
+        - Difficult to follow
+        - Messy (hard to read) code
+
+
+.getBoundingClientRect()
+------------------------
+- A method of the Element interface
+    - Returns a DOMRect object
+    - Provides information about the size of an element object & its position relative to the viewport
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
