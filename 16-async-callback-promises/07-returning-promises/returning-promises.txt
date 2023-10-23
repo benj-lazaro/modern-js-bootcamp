@@ -1,0 +1,8 @@
+Returning Promises From Functions
+---------------------------------
+- A function (or function expression) can return a promise object
+    - Then save the returned promise object into a variable
+
+    - Call the variable with the corresponding callbacks attached (resolve & reject)
+        - That interacts with the promise object based on its status (fulfilled or rejected)
+        - Execute the corresponding code
