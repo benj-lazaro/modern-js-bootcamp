@@ -1,0 +1,10 @@
+Resolving Rejecting With Values
+-------------------------------
+- When you resolve / reject a promise object
+    - It can be resolve / reject with a value 
+    - You have access to that value in the callback 
+        - That is passed into .then() or .catch() methods
+    
+- The value will provide some info
+    - Why the promise object is rejected
+    - What is the data that got returned when the promise object is resolved
