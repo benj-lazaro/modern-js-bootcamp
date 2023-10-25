@@ -1,0 +1,5 @@
+The Delights Of Promise Chaining
+--------------------------------
+- The shorthand of promise chaining provides a much cleaner code
+    - Organized in a much linear way
+    - Than nesting pairs of .then() and .catch() methods
