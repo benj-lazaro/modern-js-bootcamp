@@ -1,0 +1,29 @@
+Intro To AJAX
+-------------
+- AJAX = Asynchronous JavaScript And XML
+    - It is an approach using a number of existing technologies together
+        - HTML / XHTML
+        - CSS
+        - JavaScript
+        - DOM
+        - XML
+        - XSLT
+        - XMLHttpRequest object
+
+    - In order to get information from an API
+
+- Modern day AJAX does NOT use XML anymore 
+    - Replaces XML with JSON
+    - JSON = a format for sending data as text using JSON notation
+
+- JSON Notation is a way of formating, representing and sharing data
+    - That can be used in JavaScript
+    - It is easy to take JSON and turn it into JavaScript
+        - To do something with it
+    
+- With AJAX, web applications are able to 
+    - Make quick, incremental updates to the user interface
+    - Without reloading the entire browser page (e.g. single-page web application)
+    - Makes it faster and more responsive to user actions
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
