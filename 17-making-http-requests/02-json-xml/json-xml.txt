@@ -1,0 +1,75 @@
+JSON XML
+--------
+- JSON & XML are two ways of formattng data
+    - That can be sent from a server to another server or server to a browser
+    - A way to format information
+    - A common standard way of sending information
+
+- XML = eXtensible Markup Language
+    - It is a markup language
+        - Rarely used these days
+
+    - It defines a set for encoding documents
+        - In a format that is both human & machine-readable
+
+    - It is a broad way of structuring data
+
+    - It looks similarly to that of the HTML
+        - Except the element names are very different
+        - The elements themselves are NOT actually elements
+        
+    - JavaScript can parse XML and turn into a JavaScript object
+
+
+- JSON = JavaScript Object Notation
+    - It is another format for sending data
+        - Extremely common these days
+
+    - It is NOT JavaScript
+        - It LOOKS LIKE JavaScript
+
+    - Every key in JSON MUST be a string enclosed in quotes
+        - It uses colon ':' instead of an object '{ }'
+        - It can use arrays
+        - It can have values like numbers, boolean, strings
+        - It can NOT store functions
+
+    - It is easy to translate from JSON to JavaScript
+        - Other languages besides JavaScript can read / parse JSON
+
+    - There are available online tools that format & validates JSON
+        - JSON Formatter & Validator (https://jsonformatter.curiousconcept.com/#)
+        
+        
+Example
+-------
+
+XML
+---
+<name>
+    <first>Jason</first>
+    <last>Todd</last>
+</name>
+<email>JTodd@gotham.dc</email>
+
+
+JavaScript Object
+-----------------
+{
+    name: {
+        first: "Jason",
+        last: "Todd"
+    },
+    email: "JTodd@gotham.dc",
+}
+
+
+JSON
+----
+{
+    "name": {
+        "first": "Jason",
+        "last": "Todd"
+    },
+    "email": "JTodd@gotham.dc",
+}
