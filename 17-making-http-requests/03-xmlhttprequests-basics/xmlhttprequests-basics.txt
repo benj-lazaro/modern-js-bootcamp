@@ -1,0 +1,15 @@
+XMLHttpRequests The Basics
+--------------------------
+- XMLHttpRequest objects in the browser that are used to interact with servers
+    - To send / fetch / data to / from a URL without having to do a full page refresh
+    - Abbreviately known as XHRs
+
+- The original way of sending requests via JavaScript
+    - It does NOT support promises
+    - It uses LOTS of callbacks
+    - It has a clunky & hard to remember syntax
+
+- The 'XML' name part is just a relic
+    - When XML was a standard
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
