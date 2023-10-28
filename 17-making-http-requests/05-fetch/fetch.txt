@@ -1,0 +1,37 @@
+Fetch API
+---------
+- The newer way of making requests via JavaScript
+    - It support promises
+    - It is NOT supported in Internet Explorer
+    - It is made as replacement to XMLHttpRequest
+    - It uses the .fetch() global method
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+
+fetch()
+-------
+- It is a global method that starts the process of fetching a resource from the network
+    - Returns a promise which is fulfilled once the response is available
+
+    - The promise resolves to the 'Response' object
+        - Representing the response to the rquest
+
+- The promise object ONLY rejects when a network error is encountered
+    - It does NOT reject on HTTP errors
+
+    - To do so, a .then() handler MUST check for the following properties
+        - response.ok
+        - response.status
+
+    - The .catch() will ONLY run
+        - If there is a NETWORK ERROR
+        - Anything that prevented the request from completing or getting a response
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/API/fetch)
+
+
+Syntax
+------
+fetch(resource)
+fetch(resource, options)
