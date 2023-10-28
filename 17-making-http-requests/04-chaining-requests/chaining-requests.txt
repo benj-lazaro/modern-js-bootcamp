@@ -1,0 +1,8 @@
+XMLHttpRequests Chaining Requests 
+---------------------------------
+- Chaining XMLHttpRequests is unfortunately quite annoying & tedious
+
+- Each chained XHR object require 
+    - A pair of corresponding 'load' & 'error' event listeners
+    - Nested within the previous XHR object
+    
