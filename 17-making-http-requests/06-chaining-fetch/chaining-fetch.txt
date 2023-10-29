@@ -1,0 +1,5 @@
+Chaining Fetch Requests
+-----------------------
+- The main selling point of fetch() is that it
+    - Avoids using callbacks
+    - Avoids nesting code
