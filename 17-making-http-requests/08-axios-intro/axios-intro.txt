@@ -1,0 +1,27 @@
+Axios Introduction
+------------------
+- It is a 3rd party promise-based library for making HTTP requests
+    - It uses fetch() behind the scenes
+
+    - It removes the 'minor' pains using fetch()
+        - Checking on the returned HTTP status codes after the request
+            - Handles resolved promise object through the .then() method
+            - Handles rejected promise object / HTTP errors (e.g. 404) through the .catch() method
+            
+            - fetch() does NOT reject HTTP errors
+    
+        - Parsing returned promised object in JSON format
+
+    - It is an isomorphic application
+        - Can run on the browser and node.js with the same codebase
+
+- To install Axios via CDN:
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    - Place it above the <script> tag pointing to your external JavaScript file
+
+
+- Github Repo (https://github.com/axios/axios)
+- Website (https://axios-http.com/)
+
