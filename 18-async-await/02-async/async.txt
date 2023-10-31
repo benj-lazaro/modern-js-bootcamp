@@ -1,0 +1,24 @@
+async
+-----
+- It is a keyword used in front of a function declaration or expression
+    - To designate a function as an async function
+
+- An async function ALWAYS return a promise
+    - If it returns a value, the promise will be resolved with that value
+    - It if returns an exception, the promise will be rejected
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+
+
+Syntax
+------
+async function name(param0) {
+  statements
+}
+async function name(param0, param1) {
+  statements
+}
+async function name(param0, param1, /* …, */ paramN) {
+  statements
+}
+
