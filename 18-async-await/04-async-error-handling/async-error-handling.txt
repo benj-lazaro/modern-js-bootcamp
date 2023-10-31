@@ -1,0 +1,18 @@
+Error Handling In Async Functions
+---------------------------------
+ - There are two options to handle errors
+    - Chain a .catch() method to the async function 
+
+    - Implementing a 'try' & 'catch' block inside the async function
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+
+Syntax
+------
+try {
+  tryStatements
+} catch (exceptionVar) {
+  catchStatements
+} finally {
+  finallyStatements
+}
