@@ -1,0 +1,13 @@
+Async Functions Overview
+------------------------
+- Async functions depend heavily relies on promises
+    - They are syntatical sugar for promises
+
+    - Make asynchronous functions behave like synchronous code
+
+    - Handles resolved / rejected promise objects
+        - With NO explicit mention of promises or callbacks
+
+- Two async functions
+    - async
+    - await
