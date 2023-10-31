@@ -1,0 +1,18 @@
+await
+-----
+- A keyword placed inside an async function
+    - It pauses the execution of the function
+
+    - It waits for a promise to be resolved 
+        - Without the need to use a .next() method
+
+    - It still uses promises in the background
+
+    - NOTE: ONLY works WITHIN an async function
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+
+
+Syntax
+------
+await expression
