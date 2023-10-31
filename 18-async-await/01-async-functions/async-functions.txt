@@ -8,6 +8,6 @@ Async Functions Overview
     - Handles resolved / rejected promise objects
         - With NO explicit mention of promises or callbacks
 
-- Two async functions
+- Two async keywords
     - async
     - await
