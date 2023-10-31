@@ -1,7 +1,7 @@
 async
 -----
 - It is a keyword used in front of a function declaration or expression
-    - To designate a function as an async function
+    - To declare a function as an async function
 
 - An async function ALWAYS return a promise
     - If it returns a value, the promise will be resolved with that value
