@@ -1,0 +1,3 @@
+Multiple Awaits
+---------------
+- Help mimic asynchronous code like a synchronous code
