@@ -1,0 +1,21 @@
+Promise.all()
+-------------
+- A static helper method that accepts an array or iterable of promises (input)
+    - Then returns a single Promise
+
+- The returned single Promise is fulfilled when
+    - All of the passed promises have been fulfilled / resolved
+    - The values of the returned promise objects are saved as elements of an array
+    - The values are then assigned to a variable for processing
+
+- The async and await make asynchronous code looks like synchronous
+    - BUT behaves asynchronously
+    - Makes it easier for the code to be read
+    - It is built on top of promises hidden behind syntatic sugar
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+
+
+Syntax
+------
+Promise.all(iterable)
