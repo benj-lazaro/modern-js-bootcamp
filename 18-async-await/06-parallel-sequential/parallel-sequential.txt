@@ -1,0 +1,11 @@
+Parallel VS Sequential Requests
+-------------------------------
+- If requests does NOT need to be performed in sequence
+    - Do all of the requests in parallel
+
+    - Await for the returned promise objects
+
+    - Save the returned promise objects to their respective variables
+        - Extract the returned value from each promise object
+    
+    
