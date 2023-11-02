@@ -1,0 +1,28 @@
+What On Earth Are Prototypes
+----------------------------
+- The prototype is the template object by which a JavaScript object inherits features from
+    - Features = methods and properties
+
+- It serves as a blueprint / template object
+    - It contains a bunch of methods and properties
+
+    - New objects that instantiated from the same prototype object
+        - Inherits the methods and properties
+
+- There is one object that serve as the PROTOTYPE for other types of object
+    - The prototype object is referenced as having an uppercase first letter
+        - e.g. Array, String
+
+- The __proto__ or [[Prototype]] property in JavaScript objects
+    - Is a special property that provides a reference to the JavaScript object's prototype object
+    - It lists the inherited methods and properties from the prototype object
+    - This is NOT the actual prototype object
+
+    - NOTE: It is very rare to tinker with the __proto__ property
+    - Often the actual prototype object is directly accessed & manipulated with
+
+- You can create / instantiate multiple objects that share the same prototype object
+    - These new objects will contain the inherited methods & properties
+    - Without each object having their individual copies of these inherited features
+
+- Reference (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
