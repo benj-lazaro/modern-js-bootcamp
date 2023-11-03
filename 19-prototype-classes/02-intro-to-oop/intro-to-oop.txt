@@ -1,0 +1,11 @@
+Introduction To OOP
+-------------------
+- OOP is a pattern of creating a repeatable recipe (or class / object template)
+    - For other objects to be created based of this recipe
+
+- To create a new object based of a class
+    - Uses the 'new' keyword prior to the class name
+    - Returns an object that contains methods and properties defined in the class
+
+- Reference (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming)
+
