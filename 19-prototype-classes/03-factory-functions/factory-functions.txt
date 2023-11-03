@@ -1,0 +1,11 @@
+Factory Functions
+-----------------
+- It is basically a function that creates & returns an object
+    - Starts by creating an empty object
+    - Define properties based on the provided argument values
+    - Define methods
+    - Methods access the object's properties using 'this' keyword
+    - Returns the object
+
+- This is one way of creating an object
+    - Based on a pattern or recipe
