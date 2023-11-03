@@ -1,4 +1,4 @@
-// Factory Functions
+// Factory Functions Demo
 
 // Normal functions
 function hex(red, green, blue) {
