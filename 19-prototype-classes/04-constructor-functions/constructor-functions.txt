@@ -1,0 +1,48 @@
+Constructor Functions
+---------------------
+- Constructor function or pattern is more used than the factory function / pattern
+    - Each instantiated object references methods from a prototype object
+    - Each object does NOT have a its own copy of inherited methods
+
+- The disadvantage of using factory functions:
+    - Each instantiated object comes with a copy of factory function's methods
+
+    - This is verified by using the === operator 
+        - Checks if the method of each instantiated object are located in the same area in memory
+        - Returns 'false' proving that each instantiated object has its own copy of interited methods
+
+            > firstColor.hex() === black.hex()
+            < false
+
+- The 'new' keyword is an operator that creates an instance of
+    - A user-defined object type
+    - A built-in object type that has a constructor function (e.g. Array, String, etc)
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new)
+
+- The 'new' keyword does the following:
+    - Step #1: Creates a blank, plain JavaScript object
+    - Step #2: Links this object to another object
+    - Step #3: Passes the newly created object from Step #1 as the 'this' context
+    - Step #4: Returns 'this' if the function does NOT returns its own object
+    
+- A Constructor function creates an object similarly to the Factory function EXCEPT
+    - It uses 'new' operator preceeding the function name 
+        - To create an object 
+
+    - Where it IMPLICITLY
+        - Creates a blank JavaScript object
+        - Sets the object's properties
+        - Sets a reference to the constructor function's methods 
+            - Included within the object's __proto__ or [[Prototype]] property
+
+        - Returns the object
+
+    - NOTE: Methods are defined outside of the Constructor function
+        - Prepended by the Constructor function's name
+        - Followed by .prototype.
+        - Then the name of method
+
+        <Constructor_function>.prototype.<method_name> = function() {
+            // Method code here
+        }
+
