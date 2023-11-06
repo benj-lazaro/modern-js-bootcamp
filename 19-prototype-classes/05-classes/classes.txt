@@ -1,0 +1,28 @@
+Classes
+-------
+- Classes are a template for creating objects
+    - Encapsulates data with code to work on that data
+
+    - They are built on prototypes 
+        - But have their own unique syntax & semantics
+        
+    - It offers a better way of creating object than a Constructor Function
+        - Syntatic sugar of prototypes (see Constructor Functions notes)
+        - Syntatic sugar = cleaner, cuter way of writing something
+
+    - It defines the prototype's properties and methods in a single class
+        - Removes the separation of the Constructor Function's properties from its methods
+
+- When defining a Class
+    - Use 'class' keyword followed by a name with its 1st letter in uppercase
+
+    - Add a 'constructor' within the Class 
+        - It is a function that automatically executes whenever the class is instantiated into an object
+        - This is a MUST HAVE whenever defining a Class
+        - Similar to that of a Constructor Function
+
+        - Define the Class' properties
+
+    - Define the Class' method(s) right after the constructor 
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
