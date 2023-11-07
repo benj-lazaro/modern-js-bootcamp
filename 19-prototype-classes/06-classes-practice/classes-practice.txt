@@ -1,2 +1,3 @@
 More Classes Practice
 ---------------------
+- Practice on creating methods for a class
