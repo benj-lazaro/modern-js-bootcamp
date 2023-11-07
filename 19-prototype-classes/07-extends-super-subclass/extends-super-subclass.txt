@@ -1,0 +1,32 @@
+Extends, Super and Subclasses
+-----------------------------
+- The 'extends' keyword is used in class declarations / expressions to create a class
+
+- It extends the properties and functionalities defined in the parent class
+    - To its children class or subclass
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
+
+
+Syntax
+------
+class ChildClass extends ParentClass { /* … */ }
+
+
+- The 'super' keyword is used to access properties on an object literal or class' [[Prototype]]
+    - As well as to invoke a superclass' constructor
+
+- It basically access the parent class' properties defined within its 'constructor'
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+
+
+Syntax
+------
+super([arguments]) // calls the parent constructor.
+super.propertyOnParent
+super[expression]
+
+
+- The keywords 'extends' and 'super' both have to do with subclasses
+    - Essentially inheritance = a way of sharing functionality between classes
