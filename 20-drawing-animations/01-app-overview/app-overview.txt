@@ -1,0 +1,22 @@
+App Overview
+------------
+- A simple timer browser-based project
+    - Focused on practicing the basic JavaScript skills
+        - Namely classes and functions
+
+- The timer web app upon accessing, displays
+    - A number '30' representing 30 seconds
+        - Clicking on it will turn into a text input
+        - Allows the user to provide a different initial value
+
+    - A 'play' button
+        - When clicked, counts the number or timer down by a value of 1
+        - Counts down until it reaches the value of 0
+
+    - A 'pause' button
+        - When clicked, pauses the timer
+
+- The timer web app will have an circle animated border
+    - The border fills the edge of the element beginning from the top
+        - As it moves clockwise around the element
+        - Until it completes the border by reaching the top
