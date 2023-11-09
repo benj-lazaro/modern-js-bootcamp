@@ -1,0 +1,14 @@
+Class-based Implementation
+-------------------------
+- Use a JavaScript class to implement the timer web app project
+    - Around DOM elements
+
+- Class design
+
+    class Timer
+        start() = starts the timer
+        pause() = pauses the timer
+        onDurationChange()  = changes the duration of the timer (count)
+        tick()  = update the state of the timer; change the number, etc.
+
+        constructor(durationInput, startButton, pauseButton)
