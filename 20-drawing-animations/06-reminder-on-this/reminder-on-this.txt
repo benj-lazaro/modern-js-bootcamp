@@ -1,0 +1,10 @@
+Reminder On this
+----------------
+- The value of 'this' inside a class
+
+- The 'this' attached to the event listener 'click' inside the class Timer
+    - It does NOT provide access to the instance variables & methods of the class
+
+- The 'this' inside the class method start()
+    - It provides access to the instance variables & methods of the class
+
