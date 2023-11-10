@@ -1,0 +1,3 @@
+Binding Events In A Class
+-------------------------
+- Implement the class & event based architecture of the web app in code
