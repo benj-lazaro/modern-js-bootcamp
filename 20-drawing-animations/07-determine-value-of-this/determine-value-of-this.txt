@@ -1,0 +1,14 @@
+Determining The Value Of this
+-----------------------------
+- Three rules to determine the value of 'this' inside a class
+
+- Rule #1: Did you define the function with an arrow function?
+    - Write 'console.log(this)' on the first valid line above the arrow function
+    - Value of 'this' inside the arrow function will be EQUAL to that console log 
+
+- Rule #2: Did call 'bind', 'call' or 'apply' on the function you invoked it?
+    - The value of 'this' is EQUAL to the first argument of 'bind', 'call' or 'apply'
+
+- Rule #3: All other cases
+    - The value of 'this' is EQUAL to whatever is to the left of the '.' in the method call
+
