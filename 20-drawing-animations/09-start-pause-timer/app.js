@@ -11,7 +11,7 @@ class Timer {
   }
 
   start = () => {
-    this.tick();  // Invoke tick() method immediately in order to start the timer immediately
+    this.tick(); // Invoke tick() method immediately in order to start the timer immediately
     this.interval = setInterval(this.tick, 1000); // Continue calling tick() method & save session ID to a variable
   };
 
