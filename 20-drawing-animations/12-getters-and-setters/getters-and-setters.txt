@@ -1,0 +1,20 @@
+Getters And Setters
+-------------------
+- Refactor the code of the instace method tick()
+    - To implement helper methods known as getter & setter
+        - To retrieve the current value of the targeted DOM element
+        - To set the current value of the targeted DOM element
+
+    - Helper getter method
+        - Uses the keyword 'get' prior to the method name
+
+    - Helper setter method
+        - Uses the keyword 'set' prior to the method name
+        - Requires a parameter value
+
+    - Help methods are invoked like an instance variable (properties) inside the class
+
+- Helper methods getter and setter
+    - Modularizes the code for getting & setting a value
+    - Hides the complexity of the code
+        - These methods are invoked like an instance variable
