@@ -1,4 +1,4 @@
-// Reminder on 'this' demo
+// Start Pause Timer Web App Project
 
 class Timer {
   constructor(durationInput, startButton, pauseButton) {
