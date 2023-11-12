@@ -1,0 +1,3 @@
+DOMcentric Approach
+-------------------
+- Implementation of storing the timer data (time left) into the DOM (input element)
