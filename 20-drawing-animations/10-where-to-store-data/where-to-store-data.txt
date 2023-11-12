@@ -1,0 +1,22 @@
+Where To Store Data
+-------------------
+- Option #1
+    - Stores the timer data in an instance variable within the class
+
+    - Create an Event Listener to 'listen' for input in the text input
+        - For changes in the initial timer value
+        - Any changes will require updating the initial timer value within tick() instance method
+
+    - The current popular choice of approach in storing timer data
+
+
+- Option #2 (author's choice)
+    - Stores the timer data (time left) into the DOM (input element)
+    - Offers better UX (User eXperience)
+
+    - Removes the creation of an Event Listener to 'listen' for input in the text input
+        - For changes in the initial timer value
+        - Relies on the data written in the text input instead
+
+    - Former choice of approach in storing timer data
+        - To demonstrate the downsides of this approach
