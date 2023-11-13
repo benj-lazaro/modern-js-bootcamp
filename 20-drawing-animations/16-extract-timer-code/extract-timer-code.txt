@@ -1,0 +1,4 @@
+Extracting Timer Code
+---------------------
+- Extract the class definition of the timer web application & paste it into a separate file (timer.js)
+    - In order to make the JavaScript file easier to read
