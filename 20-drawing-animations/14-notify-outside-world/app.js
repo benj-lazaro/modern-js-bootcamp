@@ -1,4 +1,4 @@
-// Getters And Setters Timer Web App Project
+// Callback Functions in Web App Project
 
 class Timer {
   // Define constructor method; setup instance variables, event listeners & pass callback functions
