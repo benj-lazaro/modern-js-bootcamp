@@ -1,0 +1,8 @@
+onTick() And onComplete()
+-------------------------
+- Optional callback functions to the class Timer
+    - onTick() for every tick event of the timer
+    - onComplete() when the timer reaches 0
+
+- These callback functions provide spcific events
+    - For use of functions outside the class Timer
