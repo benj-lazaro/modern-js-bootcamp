@@ -1,0 +1,5 @@
+Stopping The Timer
+------------------
+- Write a piece of code within the tick() instance method that
+    - Stops the time when it reaches 0
+    - Otherwise, continue with the countdown to 0
