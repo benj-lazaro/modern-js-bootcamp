@@ -1,0 +1,6 @@
+Notifying The Outside World
+---------------------------
+- Write a piece of code that
+    - Emits events from the Timer class to the outside world 
+    - Outside world = code handling the border of the timer web app
+
