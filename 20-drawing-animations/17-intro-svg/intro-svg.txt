@@ -1,0 +1,6 @@
+Introducing SVGs
+----------------
+- SVG stands for Scalable Vector Graphics
+    - It is a XML-based markup language for describing 2-dimensional based vector Graphics
+
+- Reference (https://developer.mozilla.org/en-US/docs/Web/SVG)
