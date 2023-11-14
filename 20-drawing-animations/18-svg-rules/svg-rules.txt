@@ -1,0 +1,30 @@
+Rules Of SVG
+------------
+- Define a <svg> element in the HTML document
+    - Assign values to the element's attributes 'height' and 'width'
+    - This serves as a canvas size for the shape that will be rendered within 
+ 
+- Define the shape that will be rendered within the <svg> element
+    - Use the element's shape name (e.g. <circle>, <polygon>, <elipse>, <square>, etc.)
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/SVG/Element)
+
+- Position the shape within the bounds of the <svg> element using x and y-coordinates
+    - NOTE: The top-left corner of the <svg> element = origin 
+        - The coordinates of the origin
+            - x-axis = 0 
+            - y-axis = 0
+
+    - Position the center point of the shape using the element's attributes
+        - 'cx'  = coordinate x-axis (increases from left to right)
+        - 'cy'  = coordinate y-axis (increases from top to bottom)
+
+- For the shape <circle>
+    - Set the radius by assigning value to the attribute
+        - 'r' = radius
+        
+        - The radius starts from the center point out to the edge of the circle
+        - The diameter refers to the full distance from one edge to the opposite edge of the circle
+    
+    - Position the center point of the circle from the origin using the attributes 
+        - 'cx'  = coordinate x-axis
+        - 'cy'  = coordinate y-axis
