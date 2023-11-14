@@ -1,0 +1,32 @@
+Advanced Circle Properties
+--------------------------
+- Attrubutes of the <circle> shape
+    - 'fill'                = refers to the inside of the circle, kind of like the content
+    
+    - 'stroke'              = refers to the border of the circle
+        - Starts rendering from the right-hand side
+        - Draws around the circle clockwise
+
+    - 'stroke-width'        = sets the border thickness
+
+    - 'storke-dasharray'    = sets the length of each dash & gap around the border ('stroke')
+        - Accepts two values, the 2nd optional value refers to the gap size
+        - Assigning a singe value, automatically sets the length of dash & gap as equal
+
+    - 'stroke-dashoffset'   = introduces a whitespace around the border ('stroke')
+
+    - NOTE: These attributes IMPLICITLY use pixels as the unit of measurement
+
+- To make the circle's fill transparent
+    - Assign the value of 'transparent' to the element's attribute 'fill'
+
+- To calculate the entire perimeter of a circle, use the formula
+    
+    perimeter = 2 * PI * radius
+
+    - Perimeter = the total length of the outside edge of a circle
+    - Radius    = the length from the center point of a circle to its outside edge
+
+- The <circle> attributes 'stroke-dasharray' and 'stroke-dashoffset'
+    - Will be used to perform the animated border of the timer web application
+    
