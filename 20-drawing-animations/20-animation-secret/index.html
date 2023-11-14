@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <!-- Circle Border -->
+
+    <!-- Circle perimeter = 2 * PI * radius -->
+    <!-- Circle perimeter = 2 * Math.PI * 90 = 565.48 pixels -->
+
+    <!-- Half circle perimeter = 2 * PI * radius / 2 -->
+    <!-- Half circle perimeter = 2 * Math.PI * 90 = 565.48 / 2 = 282.74 pixels -->
+    <svg height="200" width="200">
+      <circle
+        r="90"
+        cx="100"
+        cy="100"
+        fill="transparent"
+        stroke="blue"
+        stroke-width="10"
+        stroke-dasharray="565"
+        stroke-dashoffset="-100"
+        transform="rotate(-90 100 100)"
+      />
+    </svg>
+
+    <input id="duration" type="text" value="30" />
+    <button id="start">Start</button>
+    <button id="pause">Pause</button>
+    <script src="timer.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
