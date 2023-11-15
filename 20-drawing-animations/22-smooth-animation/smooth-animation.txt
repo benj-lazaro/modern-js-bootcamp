@@ -1,0 +1,20 @@
+Smoothing The Animation
+-----------------------
+- Implement a much smoother animation on the border of the <circle> element
+    - In the callback function tick()
+        - Replace the initial placeholder value of 50 with 1 pixel when calculating for the currentOffset
+
+        currentOffset = currentOffset - 1;
+
+
+    - In the instance method start()
+        - Change the initial value for setInterval() from 1000 to 50 (milliseconds)
+
+        this.interval = setInterval(this.tick, 50);
+
+
+    - In the instance method tick() 
+        - Change the value for calculating the timeRemaining from 1 to .05
+    
+        this.timeRemaining = this.timeRemaining - .05;
+
