@@ -1,2 +1,3 @@
 First Pass On The Animation
 ---------------------------
+- Code implementation for the first version of the animated border
