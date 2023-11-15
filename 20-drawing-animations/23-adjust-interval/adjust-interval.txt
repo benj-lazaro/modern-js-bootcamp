@@ -1,0 +1,66 @@
+Adjusting By An Even Interval
+-----------------------------
+- Adjust the interval for the 'stroke-dashoffset'
+    - When the timer starts
+        - 'stroke-dasharray'    = perimeter
+        - 'stroke-dashoffset'   = 0
+
+    - When the timer finishes
+        - 'stroke-dasharray'    = perimeter
+        - 'stroke-dashoffset'   = -1 * perimeter
+
+    - If the perimeter of the circle is 100
+        - With 50 'tick' events
+        - Each 'tick' needs to adjust the offset by
+            - offset = -1 * 100 / 50 
+            - offset = -2
+
+            - offset = (perimeter * timeRemaining) / totalDuration - perimeter
+
+
+- In the instance method tick()
+    - Pass this.timeRemaining as an arguement value to this.onTick()
+
+    if (this.onTick) {
+        this.onTick(this.timeRemaining);
+    }
+
+
+- In the passed callback function onTick()
+    - Pass timeRemaining as an argument value to onTick()
+
+    onTick(timeRemaining)
+
+
+- In the instance method start()
+    - Pass this.timeRemaining as an arguement value to this.onStart() 
+
+    if (this.onStart) {
+      this.onStart(this.timeRemaining);
+    }
+
+
+- In the passed callback function onStart()
+    - Pass totalDuration as an arguement value to onStart()
+    - Refactor the variable 'currentOffset' to 'duration'
+    
+
+- In the passed callback function onTick()
+    - Refactor the passed argument values for circle.setAttribute()
+
+    circle.setAttribute(
+      "stroke-dashoffset",
+      (perimeter * timeRemaining) / duration - perimeter
+    );
+
+
+- Improve animation rendering of the border when timer is set to run for 3 seconds
+    - In the instance method start()
+        - Reduce the argument value passed to setInterval() from 50 to 20
+
+        this.interval = setInterval(this.tick, 50);
+
+    - In the instance method tick()
+        - Reduce the number subtracted from this.timeRemaining from 0.05 to 0.02
+
+        this.timeRemaining = this.timeRemaining - 0.02;
