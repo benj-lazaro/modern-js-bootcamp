@@ -1,0 +1,3 @@
+Styling And Wrap Up
+-------------------
+Implement styling using CSS and updating the HTML document
