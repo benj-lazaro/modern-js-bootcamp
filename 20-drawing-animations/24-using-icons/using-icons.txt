@@ -1,0 +1,29 @@
+Using Icons
+-----------
+- Replace the start & pause text within the <button> elements of the web app's HTML document
+    - Using icons from Font Awesome (https://fontawesome.com/)
+
+    - Link Font Awesome library to the HTML document using CDN
+        - Open a separate browser tab
+        - Proceed to the CDN website (https://cdnjs.com/)
+        - Search for Font Awesome
+        - Click the link icon to copy the URL
+        - Open the index.html file
+        - Paste the link as a value of the <link> element in the HTML document
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+
+    - Go back to the Font Awesome website
+        - Click the 'Free' category
+        - Search for the correspoding icons (i.e. 'play', 'pause')
+        - Copy the associated HTML tag
+        
+        - Paste the associated HTML tag of the icon
+            - On top of the text of the <button> element
+            - To replace the text of the corresponding <button> element with an icon
+
+        - Save changes in the index.html
+    
