@@ -1,0 +1,21 @@
+Application Overview
+--------------------
+- Build a web application called Movie Fight 
+    - User types in the title of two movies
+        - Input is an autocomplete input / widget
+            - Returns a list of related movie titles based on the keyword(s) entered
+
+    - App retrieves corresponding information about each movie
+        - Movie poster
+            - Movie title
+            - Movie sub-title
+
+        - Box office (earnings in USD)
+        - Critic rating
+
+    - Compares details of two movies side-by-side
+        - Higher statistics = highlighted in Green
+        - Lower statistics  = highlighted in Yellow
+
+- The goal of this project is to practice already learned JavaScript skills
+
