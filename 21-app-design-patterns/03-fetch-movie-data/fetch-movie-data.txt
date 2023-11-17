@@ -1,0 +1,17 @@
+Fetching Movie Data
+-------------------
+- Access the OMDb API (https://omdbapi.com/) to test search for some movies
+    - Avail an API key (free account type)
+    - Activate API key after receiving it via email
+
+- OMDb search operation
+    - To send all data request to
+      http://www.omdbapi.com/?apikey=[yourkey]&
+
+    - Add additional parameters (included at the end of the URL)
+        - 's' and assign it a string (movie title)
+
+- Use JavaScript to make a network request to the OMDb API
+    - Use the Axios library
+        - Already 'wired up' in the included HTML document of the starter kit
+        
