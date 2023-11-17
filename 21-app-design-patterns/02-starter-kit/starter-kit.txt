@@ -1,0 +1,10 @@
+Starter Kit Setup
+-----------------
+- Plan of attack
+    - Setup boilerplate for the project
+        - Boilerplate = pre-built starter code (in HTML & CSS)
+
+    - Identify challenging aspects of the project
+
+    - Get started and write a lot of code
+
