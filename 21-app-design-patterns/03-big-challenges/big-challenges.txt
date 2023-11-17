@@ -1,0 +1,17 @@
+Big Challenges
+--------------
+- Challenging aspects of the project
+    - Need to fetch data about movies
+        - Use JavaScript to fetch movie data from an external movie-related API
+            - OMDb API, The Open Movie Database (https://omdbapi.com/)
+            - Offers the option to search and be able to return
+                - An index result   = listing of related movie titles (limited information = id & title)
+                - A show result     = every attribute of the movie
+
+    - Build an autocomplete widget from scratch
+        - List of rules on how autocomplete works
+
+    - Better styling in CSS
+        - Use Bulma CSS framework (https://bulma.io/)
+        - Already 'wired' up in the HTML document that came with starter kit
+
