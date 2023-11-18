@@ -1,0 +1,21 @@
+Understanding Debounce
+----------------------
+- The process of waiting for the last keypress before sending a request to the OMDb API
+    - Is referred as 'debouncing an input'
+
+    - Waiting for some time to past after the last event to actually do something
+
+- Implement a refactor on the onInput()
+    - To make it reusable
+    - Current code is hard to read & understand 
+    - Hide the implementation of the actual debouncing logic
+
+- Action plan
+    - Create a new helper function named debounce()
+        - It accepts a callback function
+        - It returns a new onInput() function
+
+    - The new onInput() function       
+        - It is a wrapper function that restrict calls to the original onInput()
+        - It allows access to the onInput() only after a certain period of time passes
+        - The onInput() within this wrapper is the same as the original onInput()
