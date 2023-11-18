@@ -1,0 +1,13 @@
+Searching The API On Input Change
+---------------------------------
+- When a user types on the text input 
+    - Initiate search on OMDb API
+        - To find corresponding list of movies
+
+    - The problem with this implementation
+        - It makes multiple requests for every single keypress
+        - OMDb API allows ONLY 1000 requests per day
+
+    - To address this concern
+        - As soon as the user stops typing on the text input for a little bit of time
+        - Then perform the request 
