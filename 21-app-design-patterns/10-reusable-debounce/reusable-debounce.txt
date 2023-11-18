@@ -1,0 +1,9 @@
+Implementing A Reusable Debounce
+--------------------------------
+- Create a debounce function
+    - Make it modular that can be used for other functions
+
+
+- Use the debounce() to call onInput()
+    - Prevents repetitive calls to onInput() after every keypress
+    - Makes a request to the OMDb after a defined delay after the last keypress
