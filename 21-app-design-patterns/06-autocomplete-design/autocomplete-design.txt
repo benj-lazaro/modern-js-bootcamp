@@ -1,0 +1,34 @@
+AutoComplete Widget Design
+--------------------------
+- Behavior of the AutoComplete widget   
+    - Default state
+        - Show an empty input field
+
+    - User starts typing
+
+    - User stops typing 
+        - App takes the typed search string
+        - Make a request to the OMBb API
+        - Return a list of matching movies
+            - Opens a dropdown menu underneath the input field
+            - Render the list of matching movies
+                - Movie poster
+                - Movie title & year released
+
+        - If no matching movies returned
+            - Close the menu underneath the input field
+            - Optionally display information that are no matching movies available
+
+    - User presses enter
+        - Do nothing else
+
+    - User clicks an entry
+        - Update the text inside the input field 
+            - To the matching movie title of the selected movie from the list
+            - Year released NOT included
+            - Closes the dropdown menu
+        
+    - User clicks outside the dropdown menu
+        - Close the dropdown menu
+        - Do nothing else
+    
