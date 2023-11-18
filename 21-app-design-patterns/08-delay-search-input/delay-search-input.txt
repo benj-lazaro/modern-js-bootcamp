@@ -1,0 +1,9 @@
+Delaying Search Input
+---------------------
+- To implement a 1 second (1000ms) delay as the user types on the input text
+    - Prior to sending a request to the OMDb API
+    - Prevents from burning daily credits of 1000 requests
+
+    - This is done using the setTimeout() function
+        - A function that executes a piece of code once the timer expires
+        - Reference (https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
