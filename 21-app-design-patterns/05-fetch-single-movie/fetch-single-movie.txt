@@ -1,0 +1,10 @@
+Fetching A Single Movie
+-----------------------
+- Fetching a single movie from OMDb API using Axios library
+    - In order to perforn the 'show' operation
+        - That returns additional information regarding a particular movie
+
+    - Use the OMDb search by ID or Title
+        - Parameter 'i' = valid IMDb ID
+        - Parameter 't' = specific movie title
+
