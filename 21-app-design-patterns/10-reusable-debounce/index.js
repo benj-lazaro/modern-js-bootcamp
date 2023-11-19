@@ -1,4 +1,4 @@
-// Movie Fight Web Application
+// Reusable Debounce Movie Fight Web Application
 
 const fetchData = async (searchTerm) => {
   const response = await axios.get("http://www.omdbapi.com/", {
