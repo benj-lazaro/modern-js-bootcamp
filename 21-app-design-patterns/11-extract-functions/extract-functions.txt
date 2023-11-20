@@ -1,0 +1,15 @@
+Extracting Utility Functions
+----------------------------
+- Extract 'utility' function(s) from the index.js file
+    - Create a separate JavaScript file named utils.js
+    - Paste the reusable debounce function
+    - Succeeding utility functions will be placed within this file
+
+- In the index.html file
+    - Place the line <script src="utils.js"></script> before <script src="index.js"></script>
+    
+    - To ensure the the 'utility' function(s) will be loaded first
+        - And referenced by the code within index.js during runtime
+
+- This is to organize the code inside the project
+    - Better than placing the entire lengthy code within index.js
