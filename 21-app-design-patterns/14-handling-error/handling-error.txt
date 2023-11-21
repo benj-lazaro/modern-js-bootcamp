@@ -1,0 +1,20 @@
+Handling Errored Responses
+--------------------------
+- Addressing the 'Uncaught (in promise) TypeError: movie is not iterable' error message
+    - Occurred when entering a long random string in the text input field
+
+    - It was learned that when the OMDb API returned no results
+        - The returened data is NOT in the form of an array (or iterable)
+        - But as an object with a property 'Error' with a value 'Movie not found'
+        - As a result triggering a TypeError
+
+- The seeach functionality with the OMDb API is NOT that great
+    - Entering a partial name of the movie will return a "Movie not found" error
+    - The OMDb API does not consider partial terms
+        - It expects to provide a reasonable title of a movie
+        - In order to return some kind of results
+
+- To address this error
+    - Refactor fetchData() and incorporate an if-statement 
+        - To check the presence of an 'response.data.Error' in the returned data
+        - If present, return an empty array
