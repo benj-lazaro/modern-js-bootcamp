@@ -1,0 +1,4 @@
+Awaiting Async Functions
+------------------------
+- For every movie fetched, render corresponding content on screen
+    - Refactor fetchData() and onInput() functions
