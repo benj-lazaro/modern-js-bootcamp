@@ -1,0 +1,9 @@
+Rendering Movies
+----------------
+- Iterate over the fetched array of Movies and retrieve the following
+    - Movie poster
+    - Movie title
+
+- Insert retrieved data into a <div> element
+    - Append the <div> as a child of another <div> element in the HTML document
+    - With the 'id' attrubute of 'target'
