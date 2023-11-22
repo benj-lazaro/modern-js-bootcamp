@@ -1,0 +1,13 @@
+Opening A Menu
+--------------
+- Style the returned movie poster and title data received from the OMDb API
+    - Resize the movie poster (smaller)
+    - Show the movie title besides the poster
+    - Appear as a menu beneath the input text
+
+
+- Use the included Bulma CSS framework included/wired with the starter kit index.html and style.CSS
+    - Use the 'dropdown' component
+        - To create a menu that will contain the movie's
+            - Small-scale poster
+            - Title
