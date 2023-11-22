@@ -1,0 +1,34 @@
+Style Of Widget Creation
+------------------------
+- The current design of the autocomplete Widget
+    - To get distinct coupling between the index.html and index.js
+        - Both work closely together
+
+    - In the event that either one's code is be changed (intentionally/unintentionally)
+        - It might break the entire application
+
+
+- A new design of the autocomplete Widget
+    - Move the entire widget code to the JavaScript side of the application
+    
+    - It will require only one (1) <div> element with class of 'autocomplete'
+        - In the HTML document (index.html)
+
+    - Refactor index.js to search for the targeted <div> element
+        - Then setup the entire autocomplete widget within itself
+    
+    - This allows creation of reusable widgets for future projects
+        - Due to limited coupling between the HTML document & JavaScript code containing the widget
+
+
+- New design implementation notes
+    - In the index.html
+        - Creating a <div> element with a class 'autocomplete'
+
+    - In the index.js
+        - Select the DOM element with class of 'autocomplete'
+        - Create an <input> element
+        - Add event handlers to the <input>
+        - Perform the search (on the API)
+        - Add the HTML code require to generate the dropmenu for the returned data
+        - Add in options for menu
