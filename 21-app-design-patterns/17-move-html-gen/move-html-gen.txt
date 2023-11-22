@@ -1,0 +1,4 @@
+Move HTML Generation
+--------------------
+- To purpose of the refactor is for the creation of JavaScript heavy reusable widgets
+    - Widgets easily reusable between different projects
