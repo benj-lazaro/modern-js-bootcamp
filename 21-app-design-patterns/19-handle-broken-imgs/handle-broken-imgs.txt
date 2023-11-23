@@ -1,0 +1,7 @@
+Handling Broken Images
+----------------------
+- Update the index.js code in order to:
+    - Clears out the existing menu when making a new search
+
+    - Address movie posters with broken images
+        - These are movies whose property 'Poster' has a value of  'N/A'
