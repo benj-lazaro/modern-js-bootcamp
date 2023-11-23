@@ -1,0 +1,5 @@
+Repairing References
+--------------------
+- Update the DOM elements being referenced by the autocomplete widget code in index.js
+    - In order to generate a dropdown menu item of returned movies
+        - Each item contains the corresponding movie poster and title
