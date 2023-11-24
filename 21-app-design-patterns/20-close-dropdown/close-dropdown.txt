@@ -1,0 +1,4 @@
+Automatically Closing The Dropdown
+----------------------------------
+- Implement the code that will automatically close the dropdown menu
+    - By clicking anywhere outside the dropdown menu
