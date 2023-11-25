@@ -1,0 +1,11 @@
+Handling Empty Responses
+------------------------
+- The dropdown menu stays open when deleting via backspace an entry from the <input> element
+    - The dropdown menu has no content inside it 
+
+    - A check needed to be implemented in the onInput()
+        - If no data has been returned from fetchDate()
+        - Remove the 'is-active' class attribute from the dropdown menu
+        - Immediately return away from this function
+            - Prevents rendering an empty dropdown menu
+        
