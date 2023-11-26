@@ -1,7 +1,7 @@
 Handling Movie Selection
 ------------------------
-- Implement the code that will handle
-    - Clicking individual movie entry from the dropdown menu
-    - Update the text input to the display the selected movie title
-    - Close the dropdown menu
+- Implement code that handles
+    - Recognize a 'click' event on an individual movie entry
+    - Update DOM element <input> to reflect the movie title
+    - Automatically closes the dropdowm menu
 
