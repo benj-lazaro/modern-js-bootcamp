@@ -1,0 +1,7 @@
+Handling Movie Selection
+------------------------
+- Implement the code that will handle
+    - Clicking individual movie entry from the dropdown menu
+    - Update the text input to the display the selected movie title
+    - Close the dropdown menu
+
