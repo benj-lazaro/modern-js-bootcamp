@@ -1,0 +1,6 @@
+Making A Followup Request
+-------------------------
+- Implement code to perform the following task(s):
+    - Performs a follow-up request to the OMDb API after a user clicks a specific movie
+    - Request detailed information by sending out the movie's ID to the API
+    - Return detailed data 
