@@ -1,0 +1,5 @@
+Rendering An Expanded Summary
+-----------------------------
+- Render the expanded (i.e. detailed) movie summary in the HTML document
+    - Styling of DOM elements are done through Bulma CSS framework
+
