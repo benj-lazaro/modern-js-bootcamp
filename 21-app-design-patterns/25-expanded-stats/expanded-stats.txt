@@ -1,0 +1,12 @@
+Expanded Statistics
+-------------------
+- Render the additional statistics taken from the returned API data namely
+    - Awards
+    - Box Office
+    - Metascore
+    - IMDB Rating
+    - IMDB Votes
+
+    - All implemented within the helper function movieTemplate()
+
+
