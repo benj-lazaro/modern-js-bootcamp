@@ -1,0 +1,33 @@
+Making The Autocomplete Reusable
+--------------------------------
+- To make the autocomplete widget reusable 
+    - Refactor current codebase
+    - Divide it into two parts
+        - index.js
+        - autocomplete.js
+
+
+- The index.js:
+    - Contains non-reusable code for our very specific project
+
+    - It handles the config for the autocomplete.js
+        - fetchData()       = function to find movies
+        - renderOption()    = function that knows how to render a movie
+        - onOptionSelect()  = function that gets invoked when a user clicks an option (specific movie)
+        - root              = element that the autocomplete should be rendered into
+
+        - Saved as an object to be passed off to autocomplete.js
+
+
+- The autocomplete.js:
+    - Super reusable code to get an autocomplete widget to work
+        - It must have zero knowledge on the specifics that it receives from the API
+        - It must be able to run several times in the same project
+        - It must be 100% reusable
+            
+    - It has a function that 
+        - Takes a autocomplete config object (from index.js)
+            - Process the option's 4 properties inside the object
+
+        - Then renders an autocomplete widget on screen
+    
