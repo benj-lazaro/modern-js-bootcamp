@@ -1,0 +1,6 @@
+Extracting Rendering Logic
+--------------------------
+- Extract the rendering logic of the movie data returned from the OMDb API from the autocomplete.js
+    - Add a 2nd property named renderOption() to the object that is passed as a parameter value to createAutocomplete()
+    - The renderOption() is a function
+
