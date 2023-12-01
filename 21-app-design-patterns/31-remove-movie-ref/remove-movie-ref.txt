@@ -1,0 +1,9 @@
+Removing Movie References
+-------------------------
+- Extract the code that fetches data from the OMDb API from autocomplete.js
+    - Specifically from the onInput codeblock
+
+- Remove references to the specific data (movie) from the autocomplete.js
+
+- To make the codebase of autocomplete.js generic and reusable to other projects
+
