@@ -1,0 +1,4 @@
+Extracting Selection Logic
+--------------------------
+- Extract the selection logic that gets triggered when a user clicks a specific movie
+    - Add a 3rd property onOptionSelect() to the object that is passed to createAutocomplete()
