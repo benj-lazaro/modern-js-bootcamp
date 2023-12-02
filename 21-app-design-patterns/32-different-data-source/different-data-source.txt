@@ -1,0 +1,16 @@
+Consuming A Different Source Of Data
+------------------------------------
+- Demonstrates that the autocomplete.js can handle different source of Data
+    - Testing using JSONPlaceholder (https://jsonplaceholder.typicode.com/)
+        - A fake API for testing and prototyping
+
+    - Access the API's /photos resource
+        - Using the URL (https://jsonplaceholder.typicode.com/photos?albumid=1)
+            - To return 50 photos only
+
+        - API returns an array of objects, each containing the photo's 
+            - Title
+            - URL
+            - Thumbnail URL
+
+    - Returns a dropdown menu of 50 thumbnails and its corresponding (random) titles
