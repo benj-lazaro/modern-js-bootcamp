@@ -1,0 +1,12 @@
+Avoiding Duplication Of Config
+------------------------------
+- Refactor the call for createAutocomplete() in index.js
+    - Update the content for the configuration object being passed as an argument
+
+    - Create a variable autocompleteConfig
+        - Stores an object
+        - Object containing the configuration data & associated functions
+
+    - Pass configuration object and the targeted root DOM element
+        - To the createAutocomplete() function twice
+        - In order to place two autocomplete widgets in the DOM
