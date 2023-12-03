@@ -1,0 +1,9 @@
+Refreshed HTML Structure
+------------------------
+- Refactor the HTML document
+    - To show up two separate columns, next to each other
+        - Two <input> elements
+
+    - Loads up a tutorial message upon loading up the web application
+        - A concise messsage on the wep app do
+
