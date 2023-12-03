@@ -1,0 +1,8 @@
+Hiding The Tutorial
+-------------------
+- Implement code that hides the tutorial message
+    - When the user clicks a specific movie from the dropdown menu
+
+- Add the corresponding code 
+    - Within the onOptionSelect() in the configuration data
+    - Configuration data that is passed as an argument to createAutocomplete()
