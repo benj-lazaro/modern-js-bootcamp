@@ -1,0 +1,13 @@
+Showing Two Summaries
+---------------------
+- Implement code that will show summaries of selected two movies
+    - Modify index.html
+        - Add <div> where respective movie summary will be rendered
+
+    - Modify autocompleteConfig
+        - Take the function onOptionSelect() from being part of the argument value passed
+        - Insert as a parameter values of createAutoComplete()
+
+    - Modify onMovieSelect()
+        - Add a parameter variable as the placeholder for the <div>
+            - Where the movie summary will be rendered
