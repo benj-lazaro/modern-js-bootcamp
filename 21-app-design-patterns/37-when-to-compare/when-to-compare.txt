@@ -1,0 +1,11 @@
+When To Compare
+---------------
+- Implement code to make comparison between movie statistics
+
+- Pass an additional string argument value when calling onMovieSelect()
+    - Inside onOptionSelect()
+
+    - String argument values 'left' and 'right'
+        - Helps identify which select which movie's statistics (left or right)
+            - Is currently being retrieved from OMDb API
+    
