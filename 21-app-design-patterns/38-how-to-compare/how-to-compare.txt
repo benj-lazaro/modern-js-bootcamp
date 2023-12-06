@@ -1,0 +1,14 @@
+How To Compare
+--------------
+- How to compare the statistics value of the selected movies
+    - Replace the console.log placeholder in runComparison() of index.js
+
+    - Make a 'data' property for each <article> element within the movieTemplate()
+        - This property will hold the numeric value of the corresponding statistic
+        - Statistics refers to awards, box office, metascore, etc.
+
+    - Write code to read the value from the corresponding 'data' property
+        - In order to make the comparison operation easier
+
+    - Apply the appropriate CSS styling to each statistic value
+        - Use notification colors Green or Yellow
