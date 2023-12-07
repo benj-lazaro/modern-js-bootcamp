@@ -1,0 +1,9 @@
+Extracting Statistics Values
+----------------------------
+- Update the movieTemplate() function (index.js)
+    - To extract statistics values from selected movies
+
+    - The passed 'movieDetail' object (as argument)
+        - Comes with a property (statistic values) of the selected movie
+        - Extract each statistic value
+        - Add each as a 'data' property into each <article> element in the HTML template
