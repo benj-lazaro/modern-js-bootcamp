@@ -1,0 +1,9 @@
+Updating Styles
+---------------
+- Update code of runComparison()
+    - To extract statistics data from 'data-value' attributes of <article> elements
+        - <article> elements within <div id="left-summary"> 
+        - <article> elements within <div id="right-summary"> 
+
+    - Compare the corresponding statistical values
+
