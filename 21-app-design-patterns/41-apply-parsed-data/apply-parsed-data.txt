@@ -1,0 +1,8 @@
+Applying Parsed Properties
+--------------------------
+- Apply extracted statistics data to their correspond 'data' property
+    - In the HTML template within movieTemplate()
+
+    - Insert the attribute 'data-value' on each corresponding <article> element
+        - Assign with the corresponding extracted statistics value to 'data-value'
+
