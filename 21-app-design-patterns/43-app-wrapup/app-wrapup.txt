@@ -1,0 +1,19 @@
+App Wrap Up
+-----------
+- The goal of the web application
+    - To create an autocomplete widget that is entirely re-usable in nature
+        - Can easily swap out source of data (API)
+        - Has render option that contains configuration data for the widget
+
+    - Locate the root HTML element
+        - Where the retrieve data from an API will be generated
+        - Within the code of the widget
+
+    - How to implement the statistical value comparison appropriately
+        - In the movieTemplate()
+            - Upfront extract movie statistical values from the returned object
+            - Store the values inside the DOM 
+            - Pull the values from the DOM using a helper function runComparison()
+                - Then referencing the appropriate data-set.values 
+                - Perform a simple comparison operation
+                    - Apply corresponding CSS style
