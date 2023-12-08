@@ -1,0 +1,15 @@
+Parsing Number Of Awards
+------------------------
+- Parsing the selected movie's "awards" data
+    - Contains inconsistent set of data that revolves around
+        - Oscar
+        - Wins
+        - Nominations
+
+- To address the inconsistency of data
+    - Find all different awards data
+    - Convert them to numbers
+    - Sum them up
+
+    - The movie with the most (higher) number wins
+        - Inaccurate but fits the purposes of this application
