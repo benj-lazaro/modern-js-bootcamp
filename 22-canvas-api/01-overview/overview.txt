@@ -1,0 +1,35 @@
+Application Overview
+--------------------
+- The project is a little maze game
+    - Runs directly inside the browser
+
+    - Upon start-up
+        - It shows the user a maze
+
+    - The user manipulates a ball
+        - Controlled by 'WASD' keys
+
+    - Move the ball around the maze
+        - Until it reaches the target location (Green square)
+        - Touching the target location, wins the game
+
+
+- Big challenges (and how to address them)
+    - How do we generate a maze?
+        - Many available algorithms to generate a maze
+        - Have to learn about tree data structure and recursion
+            - To implement the simpliest algorithm
+
+    - How are we going to draw this thing (maze) on the screen (browser)?
+        - Use matter.js to draw the maze onto a canvas 
+            - It is a 2D physics engine for the web
+            - It simulates physical elements (e.g. ball, spring, board, etc.)
+            - Reference (https://brm.io/matter-js/)
+
+    - How do we make some keyboard keys to control the ball?
+        - matter.js has the ability to map key presses to movements of shapes
+
+    - How do we detect when the ball touches the Green square (target location)?
+        - matter.js has the ability to detect collission between shapes
+            - Report the collissions as events
+    
