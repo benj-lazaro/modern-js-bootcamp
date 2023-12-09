@@ -4,7 +4,7 @@ Project Setup
     - index.html
     - index.js
 
-- Load the mater.js using CDN
+- Load the matter.js using CDN
     - Use version 0.14.2 (specific version for this project)
     - URL (https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js)
     - Load it as a <script> child element of the <head>
