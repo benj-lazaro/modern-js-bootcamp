@@ -1,0 +1,30 @@
+matter.js Terminology
+---------------------
+- Important pieces of terminology in matter.js
+    - World
+        - Object that contains all of the different 'things' (shapes) in our matter.js app
+        - It tracks the location, position, speed, velocity, etc. of each shape
+        - It takes a snapshot of the shapes in an instant in time
+
+    - Engine
+        - An object that has a bunch of different functions
+        - It reads in the current state of the World object
+        - Then calculates changes in positions of all the different 'things' (shapes)
+        - It is responsible for transitioning from one snapshot to another
+
+    - Runner
+        - It is responsible for making the Engine and World objects to work together
+        - Runs about 60 times per second
+            - Until the Engine object process all of the data stored inside the World object
+
+    - Render
+        - Whenever the Engine object processes an update
+        - Render will take a look at all different shapes 
+            - Then show (render) all of them on the screen (browser)
+
+    - Body
+        - A shape that gets displayed (rendered) on screen (browser)
+        - We can create a body that represents a circle, rectangle, oval, etc.
+            - It can create any arbitrary shapred polygon
+
+- Reference (https://brm.io/matter-js/docs/)
