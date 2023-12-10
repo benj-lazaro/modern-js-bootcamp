@@ -1,0 +1,10 @@
+Getting Content To Appear
+-------------------------
+- Create a little demo
+    - To get a handle on what matter.js is
+
+    - Implement a bunch of shapes
+        - All in a pile
+        - Can be dragged around & move them
+        - Can collide with other shapes
+
