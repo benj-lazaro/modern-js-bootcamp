@@ -1,0 +1,36 @@
+Boilerplate Overview
+--------------------
+- Discusses the boilerplate code in detail
+
+- The Render.create()
+    - Dynamically creates a <canvas> element in the DOM 
+        - The <canvas> element is used to draw any kind of arbitrary shape 
+
+    - To assign the <canvas> element's height & width
+        - An 'options' object is passed to along with properties 'element' & 'engine'
+            - Container properties of 'width' and 'height'
+
+
+- The Bodies object comes with a method that defined any shape (e.g. rectangle)
+    - The object that comes with the defined shaped is then saved in the variable 'shape'
+    - It contains a representation of all of the different shapes inside of the World object
+
+    - The 'options' object with the property 'isStatic' assigned with the value of 'true'
+        - Instructs the shape to be not movable (static) within the World object
+
+        - Assigning a 'false' value or removing the 'isStatic' property
+            - The shape will be fall down beyond the bottom of the World object
+            - By default, the 'gravity' property is enabled
+
+    - The values passed as arguments to the shape method (e.g. .rectangle()) of the Bodies
+        - The first two numbers 
+            - Refers to the X & Y coordinates
+            - Measured starting from the top-left corner of the World object
+
+        - Thw next two numbers 
+            - Refers to the height and width (in pixels) of the defined shape
+
+
+- To display (render) the defined shape on the World object
+    - Call the .add() method
+    - Pass the variables 'world' and 'shape' 
