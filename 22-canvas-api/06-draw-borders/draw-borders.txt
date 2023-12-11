@@ -1,0 +1,10 @@
+Drawing Borders
+---------------
+- Draw rectangles at the top, right, bottom and left of the World object's borders
+    - To serve as a walls around the World object
+    - To prevent shapes from 'flying off' outside
+
+- Add a rectangle shape into the World object
+    - To serve as a sort of crash dummy
+    - The shape's 'isStatic' property is turned off (i.e. set to false or undefined)
+    - To check if the walls prevent the shape from 'flying off' outside the World object
