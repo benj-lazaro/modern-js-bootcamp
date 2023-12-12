@@ -1,6 +1,6 @@
 Clicking And Dragging
 ---------------------
-- Enable the 'click' and 'drag' functionality on the created shape (rectangle)
+- To enable the 'click' and 'drag' functionality on the created shape (rectangle)
     - Pull off 'MouseConstraint' and 'Mouse' objects from the matter.js library
 
     - Setup a mouse constaint then add it to the 'World' object
