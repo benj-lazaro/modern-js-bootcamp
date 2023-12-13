@@ -1,0 +1,20 @@
+Generating Random Shapes
+------------------------
+- Generate a bunch of different shapes within the 'World' object
+
+
+- Wireframe mode = renders the outlines of the generated shapes within the 'World' object
+    - To disable this mode
+
+    - In Render.create() of the variable 'render'
+        - On the 'options' property
+            - Define the property 'wireframes'
+            - Then assign the value of 'false'
+
+        - Renders solid shapes in random colors
+
+
+- Bodies.<shape>() has a 'render' property enclosed in an object that is passed as an argument
+    - The 'render' property accepts an object as value
+        - This object contains the property
+            - 'fillStyle' and assigned with a valid CSS color (i.e. name, hex value, etc.)
