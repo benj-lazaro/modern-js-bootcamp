@@ -1,0 +1,30 @@
+Maze Generation Algorithm
+-------------------------
+- To generate or 'build' a maze 
+    - Create a grid of 'cells'
+        - A 'cell' represents the space that a user can visit
+
+        - Build a 2D array
+            - To represent the grid of cells
+
+        - Pick a random starting cell
+            - From the grid of cells
+
+    - Then from the starting cell
+        - Build a randomly-ordered list of neighbors
+            - Then randomly pick a neighbor cell to visit (*)
+
+        - If a neighbor cell has been visited (by the user) before
+            - Remove the cell from the randomly-order list of cells to visit next
+    
+        - For each remaining neighbor cell
+            - The user moves into the picked neighbor cell to visit
+            - Then remove the wall between the previous cell and the visited cell
+
+        - Repeat for this process for that new neighbor (*)
+            - After moving into picked neighbor cell
+
+    - In the event that there is no possible moves to make (yet there are available cells to consume)
+        - The user 'backtrack' to previous moves (or visited cells)
+            - Until an unvisited neighbor cell is found
+            - Repeat the process for that new neighbor cell
