@@ -1,0 +1,17 @@
+More On Maze Generation
+-----------------------
+- Maze = 2-D grid array containing neighboring 'cells'
+    - It would a number of columns & rows
+
+    - In-between each neighboring 'cell' is a wall
+        - vertical      = placed between two neighboring cells on the same row 
+        - horizontal    = placed between two neighboring on the same column 
+
+    - Two additional 2-D arrays will be added into the code
+        - To keep track of both the horizontal and vertical walls
+            - Variable 'verticals'   = keeps track of the vertical walls
+            - Variable 'horizontals' = keeps track of the horizontal walls
+
+        - These arrays will contain boolean values
+            - 'true'    = no wall (an open space for the user to 'walk' into)
+            - 'false    = there is a wall between neighboring 'cells'
