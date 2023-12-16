@@ -1,11 +1,10 @@
 Configuration Variables
 -----------------------
 - Refactor index.js to get it ready for maze generation
-
-- Remove code related to shape generation
-    - Except for the 'walls'
+    - Remove code related to shape generation
+        - Except for code regarding the generation of 'walls'
 
 - Add variables for the width and height of the 'World' object
     - To make it easier to configure any size
     - To reduce hard-coded values 
-    
+
