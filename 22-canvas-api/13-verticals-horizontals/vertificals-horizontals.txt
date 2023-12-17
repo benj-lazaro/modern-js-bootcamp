@@ -1,0 +1,16 @@
+Verticals And Horizontals
+-------------------------
+- verticals array
+    - Keeps track of every vertical 'wall' between two 'cells' within the maze (grid)
+    - Each item will have a value of 'false'
+        - Representing that the user has NOT crossed that 'wall' yet
+        - Updates to 'true' after the user crossed the 'wall'
+
+
+- horizontals array
+    - Keeps track of every horizontal 'wall' between two 'cells' within the maze (grid)
+    - Each item will have a value of 'false'
+        - Representing that the user has NOT crossed that 'wall' yet
+        - Updates to 'true' after the user crossed the 'wall'
+
+
