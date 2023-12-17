@@ -1,0 +1,8 @@
+Grid Generation
+---------------
+- Implement code for generating a 3 x 3 grid
+    - An array containing 3 sub-arrays
+        - Each sub-array contains 3 items
+            - Each item has the value 'false'
+            - Representing an unvisited 'cell' by the user
+            
