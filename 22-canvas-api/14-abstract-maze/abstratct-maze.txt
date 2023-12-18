@@ -1,0 +1,14 @@
+Abstracting Maze Dimensions
+---------------------------
+- Abstract hard-coded values used in generating the dimensions of the maze to be generated
+    - Specifically those that are used in the following constant variables
+        - grid
+        - verticals
+        - horizontals
+
+    - Assigning the hard-coded value of 3 (representing number of cells in a 3x3 grid)
+        - Into a configuration variable named 'cell'
+
+        - This makes setting the size of the grid easier
+            - Prevents breaking the code by a typo when hard-coding the value
+
