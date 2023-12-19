@@ -1,0 +1,15 @@
+Guiding Comments
+----------------
+- Next is to code on how to pick a random starting 'cell' within the grid (maze)
+    - For the 3x3 grid, generate a random pair of values ranging between 0 and 2
+
+- To generate the coordinates of the starting 'cell'
+    - Multiply the value of variable cell to the value of Math.random()
+    - Round the product to the lowest integer using Math.floor()
+    - Assign the rounded down product to their corresponding variables
+        - startRow
+        - startColumn
+
+- Write a function named stepThroughCell()
+    - Implement the algorithm / pseudo-code as comments in index.js
+    
