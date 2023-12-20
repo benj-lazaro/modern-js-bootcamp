@@ -1,0 +1,12 @@
+Neighbor Coordinates
+--------------------
+- Implement code regarding check if a 'cell' have already been visited by a user
+    - Update the code of stepThroughCell()
+        - Check if the user has visited the selected 'cell'
+        - If it has, change the value of that 'cell' from boolean false to true
+
+    - Assemble randomly-ordered list of neighbors (for a user can move forward into) using the formula
+        - Above = current row - 1 and current column
+        - Right = current row and current column + 1
+        - Below = current row + 1 and current column
+        - Left  = current row and current column - 1
