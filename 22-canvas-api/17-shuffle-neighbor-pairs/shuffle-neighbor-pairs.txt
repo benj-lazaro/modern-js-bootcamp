@@ -1,0 +1,9 @@
+Shuffling Neighbor Pairs
+------------------------
+- Implement code to randomize the list of neighboring 'cell'
+    - To ensure a strong randomization factor inside the maze
+
+    - JavaScript does not have the functionality to randomize elements of an array
+        - Need to write a function to do just that
+
+    
