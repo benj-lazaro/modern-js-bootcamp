@@ -1,6 +1,7 @@
 Determining Movement Direction
 ------------------------------
-- Iterate through the randomize list of neighboring 'cells'
+- Implement code that iterates through the randomize list of neighboring 'cells'
+    - Surrounding the starting 'cell'
 
-- Update variable 'neighbors' to incldue a 3rd item for each sub-array
-    - Third item will provide details on the direction the user will be heading
+    - Update the variable 'neighbors' to include a 3rd item on each sub-array
+        - This provides the direction where the user will be heading
