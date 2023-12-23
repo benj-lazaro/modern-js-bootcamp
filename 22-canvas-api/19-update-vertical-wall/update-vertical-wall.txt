@@ -1,0 +1,7 @@
+Updating Vertical Wall Values
+-----------------------------
+- Implement the code that will 'remove' the wall
+    - Whenever a user travels into a neighboring 'cell' 
+
+    - Update the values of variable
+        - verticals
