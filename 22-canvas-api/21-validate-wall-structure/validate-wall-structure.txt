@@ -1,0 +1,6 @@
+Validating Wall Structure
+-------------------------
+- Recurse through the neighboring 'cell' beginning from the starting 'cell'
+    - By calling stepThroughCell() each individual time
+    - To make sure that we walk through all different cells of the grid (maze)
+    
