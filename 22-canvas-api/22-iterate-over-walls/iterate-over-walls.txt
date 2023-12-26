@@ -1,0 +1,7 @@
+Iterating Over Walls
+--------------------
+- Take the items from the verticals and horizontals arrays
+    - To render the walls of the grid (maze) using matter.js
+    
+    - Using Bodies.rectangle() to render a wall segment
+        - Draw a rectangle for every false value in verticals and horizontals
