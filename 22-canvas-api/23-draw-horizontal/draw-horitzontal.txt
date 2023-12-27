@@ -1,0 +1,3 @@
+Drawing Horizontal Segments
+---------------------------
+- Implement code that renders the horizonta walls / segments using Bodies.rectangle()
