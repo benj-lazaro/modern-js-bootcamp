@@ -1,0 +1,3 @@
+Drawing Vertical Segments
+-------------------------
+- Implement code that renders the vertical walls / segments using Bodies.rectangle()
