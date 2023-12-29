@@ -1,0 +1,13 @@
+Drawing The Goal
+----------------
+- Implement the code that renders the 'goal'
+    - Located at the bottom-right corner of the grid (maze)
+
+    - Adjust / scale the size of the 'goal' accordingly 
+        - Based on the pre-defined unit length
+        - Unit length = size of each individual 'cell'
+
+- Reduce the size of the 'walls' (borders)
+    - Change from 40 to 2
+    - To address the visual 'conflict' with the horizontal & vertical walls
+        - When the size of the grid (maze) increases
