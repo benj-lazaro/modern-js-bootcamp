@@ -1,0 +1,4 @@
+Drawing The Playing Ball
+------------------------
+- Implement the code that renders the ball that the user can later manipulate
+    - Using the keyboard keys (a-w-s-d)
