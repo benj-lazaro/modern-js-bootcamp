@@ -2,5 +2,5 @@ Handling Keypresses
 -------------------
 - Implement code that enables the user to use keyboard keys (a-w-s-d)
     - Applies movement / velocity to the ball
-    - Listen for 'keydown' events
+    - Listen for 'keydown' events for keys pressed
 
