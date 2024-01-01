@@ -1,0 +1,14 @@
+Adding Keyboard Controls
+------------------------
+- Implement code that changes the movement of the ball
+    - Based on the key that has been pressed by the user
+
+    - Checks the current velocity of the ball
+        - Velocity = speed in which the ball is moving
+        - Updates the current velocity in the up, right, down or left directions
+
+    - To change the velocity of a shape
+        - Use the matter.js structure 'Body'
+            - Contains functions that allows to update properties inside of a shape
+                - It's position, velocity, rotation, etc.
+
