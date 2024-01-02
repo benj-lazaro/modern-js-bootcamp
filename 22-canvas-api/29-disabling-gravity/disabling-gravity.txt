@@ -1,0 +1,4 @@
+Disabling Gravity
+-----------------
+- Implement code that disables gravity within the grid (maze)
+    - Enabling the ball to move freely, unhampered by gravity
