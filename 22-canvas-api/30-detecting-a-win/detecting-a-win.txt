@@ -1,0 +1,10 @@
+Detecting A Win
+---------------
+- Implement code that detects a win 
+    - When the ball reaches the 'goal' located at the bottom-right corner of the grid (maze)
+
+    - Simply detects a collision event between shapes (i.e. ball & goal)
+        - Instantiate an Events object from matter.js
+
+    - Modify properperties of the ball and 'goal'
+        - To include labels to identify the collision between said shapes
