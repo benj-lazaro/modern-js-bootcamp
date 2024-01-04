@@ -1,0 +1,11 @@
+Adding A Win Animation
+----------------------
+- Implement code that performs a 'win' animation 
+    - Triggered after dectecting a 'win' condition
+    - Informs the user that he/she won the game
+
+- Upon detection of a 'win' condition 
+    - Turns gravity in the grid (maze) back on
+    - Disable 'static' property on all horizontal & vertical walls
+        - The entire grid (maze) falls apart
+        - Except for the border surrounding the entire grid (maze)
