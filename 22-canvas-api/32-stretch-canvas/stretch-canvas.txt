@@ -3,6 +3,11 @@ Stretching The Canvas
 - Implement the code to scale the canvas to fill the user's screen
     - Without distorting the grid itself
 
+    - Implement a CSS rule in index.html
+    - Change a couple of variables in index.js 
+        - Using window.innerWidth and window.innerHeight as values
+        - When defining the width & height of the grid (maze)
+
 - To do so
     - Add one (1) CSS rule
     - Change a couple of different variables inside the JavaScript file
