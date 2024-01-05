@@ -1,0 +1,9 @@
+Stretching The Canvas
+---------------------
+- Implement the code to scale the canvas to fill the user's screen
+    - Without distorting the grid itself
+
+- To do so
+    - Add one (1) CSS rule
+    - Change a couple of different variables inside the JavaScript file
+    
