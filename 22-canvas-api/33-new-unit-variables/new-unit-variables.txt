@@ -1,0 +1,22 @@
+Understanding The New Unit Variables
+------------------------------------
+- Refactor the codebase to make the grid (maze) to display properly
+    - Accordingly to the user's screen dimensions
+
+- To generate the number of cells on the horizontal and vertical direction
+    - Replace variable 'cells' with 2 new ones
+        - 'cells' = number of cells in the horizontal & vertical direction
+        - 'cellsHorizontal' = defines the number of cells in the horizontal direction
+        - 'cellsVertical' = defined the number of cells in the vertical direction
+
+- To accomodate the size of cells on the horizontal and vertical direction
+    - Replace variable 'unitLength' with 2 new ones
+        - 'unitLengthX' = defines the width of a cell
+        - 'unitLengthY' = defines the height of a cell
+
+        - To calculate the unitLength of a cell
+            - Take the current window height & width
+            - Divide that number with 'cellsHorizontal' & 'cellsVertical' respectfully
+
+            const unitLengthX = width / cellsHorizontal;
+            const unitLengthY = height / cellsVertical;
