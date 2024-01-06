@@ -1,22 +1,27 @@
 Understanding The New Unit Variables
 ------------------------------------
-- Refactor the codebase to make the grid (maze) to display properly
-    - Accordingly to the user's screen dimensions
+- Refactor code in order to make the grid (maze) display properly
+    - According to the user's current screen (browser) window size
 
-- To generate the number of cells on the horizontal and vertical direction
-    - Replace variable 'cells' with 2 new ones
-        - 'cells' = number of cells in the horizontal & vertical direction
-        - 'cellsHorizontal' = defines the number of cells in the horizontal direction
-        - 'cellsVertical' = defined the number of cells in the vertical direction
 
-- To accomodate the size of cells on the horizontal and vertical direction
-    - Replace variable 'unitLength' with 2 new ones
-        - 'unitLengthX' = defines the width of a cell
-        - 'unitLengthY' = defines the height of a cell
+- In order to generate the number of cells on the horizontal & vertical direction
+    - Replace the variable 'cells' with
 
-        - To calculate the unitLength of a cell
-            - Take the current window height & width
-            - Divide that number with 'cellsHorizontal' & 'cellsVertical' respectfully
+    - 'cellsHorizontal' = defines the number of cells in the horizontal direction
+    - 'cellsVeritical'  = defines the number of cells in the vertical direction
 
-            const unitLengthX = width / cellsHorizontal;
-            const unitLengthY = height / cellsVertical;
+
+- To properly resize individual cells on the horizontal & vertical direction
+    - Replace the variable 'unitLength' with
+
+    - 'unitLengthX' = defines the width of a cell
+    - 'unitLengthY' = defines the height of a cell
+
+
+- To calculate the unitLength of a 'cell'
+    - Take the current window height & width
+    - Respectfully divide that number (height or width) with
+        - 'cellsVeritical' or 'cellsHorizontal' 
+
+        const unitLengthX = width / cellsHorizontal;
+        const unitLengthY = height / cellsVertical;
