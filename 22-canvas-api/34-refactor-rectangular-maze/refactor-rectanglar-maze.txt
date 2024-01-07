@@ -1,0 +1,5 @@
+Refactoring For Rectangular Maze
+--------------------------------
+- Refactor code to accomodate grid (maze) of different sizes
+    - NOT just a perfect square grid
+
