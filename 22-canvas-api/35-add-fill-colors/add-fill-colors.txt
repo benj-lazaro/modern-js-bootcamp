@@ -1,0 +1,24 @@
+Adding Fill Colors
+------------------
+- Implement code to add fill colors on grid
+    - Set the render's options 'wireframe' to false
+
+
+- Update the options object of the horizontal & vertical walls
+    - Add a 'render' property
+        - Assign an object as value
+        - Containing 'fillStyle' property with the value of preferred color
+
+
+- Update the options object of the goal
+    - Add a 'render' property
+        - Assign an object as value
+        - Containing 'fillStyle' property with the value of preferred color
+
+
+- Update the options object of the ball
+    - Add a 'render' property
+        - Assign an object as value
+        - Containing 'fillStyle' property with the value of preferred color
+
+
