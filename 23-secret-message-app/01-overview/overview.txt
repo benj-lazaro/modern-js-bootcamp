@@ -1,0 +1,19 @@
+Application Overview
+--------------------
+- To build a secret messaging web Application
+
+- Mechanics
+    - Prompts a user to enter a (clear-text) secret message in a text input field
+    
+    - Clicks the 'Create' button
+
+    - Updates the web page
+        - Displays a URL
+        - User can share this URL with one of their friends
+            - URL contains a cryptic-looking string
+            - It is the actual message encrypted along with the clear-text URL
+    
+    - When a friend visits the web site
+        - The contents of the secret message is shown on screen
+        - A link at the left-bottom side of the side is available to create a new secret message
+            - Click the link will restart the entire workflow all over again
