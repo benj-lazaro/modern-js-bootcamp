@@ -1,0 +1,9 @@
+Project Setup
+-------------
+- Setup the files for the project 
+    - index.html
+        - Link to Materialize CSS for styling the web app
+        - Reference: (https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css)
+
+    - index.js
+    
