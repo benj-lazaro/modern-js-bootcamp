@@ -1,0 +1,8 @@
+Handling Form Submission
+------------------------
+- Implement code that handles form submission 
+    - Create a form in the HTML document
+    - Style the form using Materialize CSS
+    - Prevent default of submitting form data to a remote server
+    - Capture event (input) after the user clicked the 'Submit' button
+    - Display submitted form data to console
