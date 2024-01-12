@@ -1,0 +1,27 @@
+Base64 Encoding
+---------------
+- Implement code that handles the "encryption" of the user-submitted clear text
+    - Using Base64 encoding
+
+
+- How Base64 encoding works
+    - ASCII character codes
+        - These characters are represented with a decimal value 0 to 127
+        - Characters "a-z", "A-Z", 0-9, !@#$%^&*()
+
+    - Base64 character codes
+        - These characters are characters represented with a decimal value 0 to 63
+        - Similar to ASCII characters except supports fewer characters
+        - Characters "a-z", "A-Z", 0-9
+
+
+- How the Base64 translation works
+    - Convert each character it into their respective ASCII code
+    - Convert each ASCII code into their 8-bit binary representation
+    - Join all of the 8-bit binary representations together
+    - Split the entirety into groups of 6 characters each (converting into Base64)
+    - Convert each group of 6 characters into their corresponding character
+
+
+
+
