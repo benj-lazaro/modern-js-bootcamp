@@ -1,0 +1,11 @@
+Encoding The Entered String
+---------------------------
+- Encode the entered string using Base64 encoding 
+    - Using JavaScript function btoa()
+        - A global function that create a Base64-encoded ASCII string from a binary string
+        - A string which each character in the string is treated as a byte of binary dat
+        - Reference (https://developer.mozilla.org/en-US/docs/Web/API/btoa)
+
+    - To convert from Base64 encoding to string, use JavaScript function atob()
+        - A global function that decodes a string of data which has been encoded in Base64 encoding
+        - Reference (https://developer.mozilla.org/en-US/docs/Web/API/atob)
