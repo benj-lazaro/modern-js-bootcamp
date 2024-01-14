@@ -1,0 +1,14 @@
+Parts Of A URL
+--------------
+- Implement code that would generate the URL
+    - Appending the Base64 encoded string data
+
+
+- Different parts of a URL (in general)
+    - Domain            = message.com
+    - Path              = index.html
+    - Query string      = ?color=red
+    - Hash / fragment   = #value
+
+    https://message.com/index.html/?color=red#value
+
