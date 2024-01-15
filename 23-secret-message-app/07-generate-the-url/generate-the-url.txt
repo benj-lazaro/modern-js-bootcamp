@@ -1,0 +1,17 @@
+Generate The URL
+----------------
+- Implement code that will generate the URL for the encoded message
+
+- The window.location is a read-only property
+    - Returns a 'location' object with information 
+        - About the current location of the document
+        - Reference (https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
+
+    - Using string template on window.location
+        - Return the current URL of the document
+
+        `${window.location}`
+
+
+- Appends the encoded message on the retrieve URL of the document
+    - The URL is then automatically selected
