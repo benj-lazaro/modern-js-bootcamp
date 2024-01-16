@@ -1,0 +1,9 @@
+Displaying The Message
+----------------------
+- Displays the cleartext message of the decoded URL inside a card
+
+- Create a secret message
+    - Copy the generated URL with the encoded message
+    - Open a new browser tab
+    - Paste the copied URL to view the decoded message
+    
