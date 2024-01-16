@@ -1,0 +1,5 @@
+Toggle Element Visibility
+-------------------------
+- Implement code that:
+    - Hides the existing form after a user enters the message to be 'encrypted'
+    - Replace it with a card element showing the URL of the secret message
