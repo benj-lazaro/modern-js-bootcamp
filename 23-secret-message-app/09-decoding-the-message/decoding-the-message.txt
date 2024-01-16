@@ -1,0 +1,8 @@
+Decoding The Message
+--------------------
+- Implement the code that decodes the 'encrypted' (secret) Message
+    - Get the current URL
+    - Check if it includes a hash
+    - Retrieve the hash part of the URL
+    - Convert the hash part back to its ASCII encoding equivalent
+
