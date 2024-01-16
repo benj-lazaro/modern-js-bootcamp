@@ -1,0 +1,12 @@
+App Deployment
+--------------
+- How to deploy the application on the Internet
+    - Using a free service called now
+        - Requires node.js installed
+
+        - NOTE: 'now' has been deprecated & stop receiving updates on 12/31/2020
+            - Use 'vercel' installed
+
+    - The service will automatically upload & deploy the project files
+        - Generate a URL where the application can be accessed
+    
