@@ -1,0 +1,28 @@
+JavaScript With Node VS Browser
+-------------------------------
+
+JavaScript in the Browser
+-------------------------
+- Executed by adding <script> tag to an HTML document
+- Get access to the DOM & related objects (e.g. window)
+- Code can reference variables in other files freely
+- Include libraries by adding <script> tags
+
+
+JavaScript with Node
+--------------------
+- Executed by running Node CLI from the terminal / commandline
+- No DOM exists
+- Each file is its own separate world
+- Include libraries by using NPM (Node Package Manager)
+
+
+Node installation
+-----------------
+- Website (https://nodejs.org/en/download/)
+
+- To verify installation or to check if it is already installed
+    - Open terminal
+    - Type 'node'
+    - Returns a '>' prompt
+    - To exit, type CTRL+C (twice)
