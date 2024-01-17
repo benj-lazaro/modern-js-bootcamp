@@ -1,0 +1,32 @@
+Executing JavaScript
+--------------------
+- Setup a little project to figure out how to run code with Node
+    - Create a file named index.js 
+    - Type the code / statement
+       
+        console.log("Hi there!");
+        
+    - Save contents
+
+
+- To execute:
+    - Open terminal on current (same) directory
+    - Execute the command
+
+        node index.js
+
+    - Returns a string "Hi there!"
+
+
+- Alternatively, JavaScript code can also run within Node
+    - Open terminal on current (same) directory
+    - Execute the Node REPL
+    - Type the code / statement 
+    
+        console.log("Hi there!");
+
+    - Press ENTER to execute the JavaScript code
+    - Press CTRL+C (twice) to exit Node REPL
+
+    - NOTE: This is similar to Python's REPL
+
