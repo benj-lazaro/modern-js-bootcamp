@@ -1,0 +1,18 @@
+Working With Modules
+--------------------
+- Focuses on how to get Node.js to share data between multiple different files
+
+- JavaScript on the browser
+    - Uses <script> tag defined in the HTML document
+    - Multiple files meant multiple <script> tags
+
+- JavaScript on Node.js
+    - Uses require() on the main JavaScript file to import data from external files
+        - Need to pass a relative path & the filename as an argument value
+
+        - NOTE: require() is NOT part of the standard JavaScript API
+            - It is a built-in function of Node.js
+            - Reference (https://stackoverflow.com/questions/9901082/what-is-require-in-javascript-and-nodejs)
+
+    - On external files, require using module.exports
+        - Declare the data to be exported
