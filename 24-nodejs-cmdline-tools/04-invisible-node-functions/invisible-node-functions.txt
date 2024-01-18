@@ -1,0 +1,33 @@
+Invisible Node Functions
+------------------------
+- Behind the scene details on Node.js' code sharing
+
+- When Node.js execute a JavaScript file
+    - Behind the scenes, it read the entire contents of the file
+    
+    - Wraps it inside a simple function declaration
+        - With a number of automatically provided arguments (around 5)
+
+        function(exports, require, module, __filename, __dirname) {
+            // Code of the JavaScript file
+        }
+
+        - Details of the automatically provided arguments are as follows
+            - exports       = Equivalent to 'module.exports'
+            - require       = Function to get access to the exports from another file
+            - module        = Object that defines different properties about the current file
+            - __filename    = Full path + filename of the current file
+            - __dirname     = Full path of the current file
+
+    - Then automatically invoked the function 
+    
+
+- To prove the existence of the aforementioned arguments
+    - Modify the existing code of index.js
+
+    - Use the special variable 'arguments'
+        - To reference all the arguments that are passed to a function
+
+    - In theory, if Node.js automatically wraps the JavaScript code in a function
+        - The 'arguments' should print out these five (5) arguments passed to the invisible function
+
