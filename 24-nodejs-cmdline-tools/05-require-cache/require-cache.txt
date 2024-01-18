@@ -1,0 +1,47 @@
+The Require Cache
+-----------------
+- Expand how on the 'require' argument along with the module.exports works
+    - Points out issues related to require() & the 'require cache'
+
+- When running a JavaScript code in Node.js 
+    - Node.js reads the JavaScript file
+        - When it encounters a require() function with an argument value pointing to another file
+            - It reads the code from that file
+            - Automatically wraps the code in an invisible function
+            - Then executes the invisible function
+            - Simultaenously updates the 'require cache'
+
+        - 'require cache' is an object that store the results of requiring in any file in a project
+            - It holds the value(s) from a 'module.exports'
+
+                - Technically, it stores the entire 'module' object 
+
+                - That is passed as one of 5 argument values to the invisible function
+                    - 'id'      = holds the full path & file of the required external JavaScript file
+                    - 'exports' = holds the exported value from using 'module.exports'
+
+            - It stores keys and its corresponding values
+                - key   = name of the file that is passed to require() (e.g. 'myscript.js')
+                - value = taken from a value assigned to 'module.exports'
+
+    - Automatically wraps the content in an invisible function w/ argument values
+    - Then executes the invisible function
+
+
+- The issue
+    - Whenever an attempt to execute a require() on the same external file for the nth time
+        - Node.js will NOT re-read the content & execute the said file
+
+        - Instead, it will look at the 'require cache'
+        - Directly fetch the needed exported value(s) from it
+
+    - NOTE: Node.js ONLY execute every file once (one single time)
+        - Whatever data that is exported from an external file one single time
+        - It then gets stored in 'require cache'
+        - Consistently references the 'exports' property & its assigned value
+            - Throughout the execution of the JavaScript code 
+        
+        - If the exported value changes over time within the external file
+            - Those changes will NOT be reflected in the 'require cache'
+
+    
