@@ -1,0 +1,37 @@
+Debugging With Node
+-------------------
+- The following are other ways of debugging a Node.js program
+    - Besides using a number of console.log() statements
+    
+- Start up a debugger CLI & pause execution whenever a 'debugger' statement is hit
+    
+    node inspect <filename>.js
+
+    - CLI Debugger Commands
+        - c     = continue execution until the program ends or next debugger statement
+        - n     = run the next line of code 
+        - s     = step into a function
+        - o     = step out of the current function
+        - repl  = starts up an execution environment to reference variables inside a program
+        - .exit = exits the debugger
+    
+
+- Start up a debugger & pause execution whenever a 'debugger' statement is hit
+    - Access the debugger at 'chrome://inspect'
+    - On the Remote Target section, click the link 'inspect'    
+
+    node --inspect <filename>.js
+
+    - NOTE: Starts up the debugger & simutaenously execute the program
+        - Used when running a long running process like a server
+
+
+- Start up debugger instance & wait to execute until a debugger is connected
+    - Access the debugger at 'chrome://inspect' 
+    - On the Remote Target section, click the link 'inspect'
+
+    node --inspect-brk <filename>.js
+
+    - NOTE: The debugger pauses program execution at the very 1st line of code
+        - Used for running a small script that completes execution in milliseconds
+        - Preferred debugging option
