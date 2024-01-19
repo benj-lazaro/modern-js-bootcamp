@@ -1,0 +1,10 @@
+Files Get Required Once
+-----------------------
+- An external file (JavaScript file) can ONLY be required once
+
+- Reference the same external file for the 2nd time
+    - Will NOT result to the same external file being read by Node.js 
+    - Will NOT upload the exported data to the 'require cache'
+    - Will continue to reference the current data from the 'require cache'
+    - There is ONLY ONE instance of the exported data stored in the 'require cache'
+
