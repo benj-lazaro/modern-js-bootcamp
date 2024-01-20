@@ -1,0 +1,14 @@
+App Overview
+------------
+- Build an CLI-based app that emulates the Linux command 'ls'
+    - "ls" command with NO arguments
+        - Prints out files and folders in the current directory
+
+    - "ls" command with arguments
+        - Prints out files and folders in relative or absolute path of the target directory
+
+- The app makes use of the NodeJS Standard Library
+    - Specifically the 'file system' module
+        - Helps read out files and folders of the target directory
+        
+    - Reference (https://nodejs.org/api/fs.html)
