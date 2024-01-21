@@ -1,0 +1,17 @@
+Accessing Standard Library Modules
+----------------------------------
+- In the FS module documentation, search for
+    - fs.readdir()  = function that read the contents of a directory
+        - Gives back an array of strings ('files')
+        - Contains the names of the files in the directory excluding '.' and '..'
+        - Reference (https://nodejs.org/api/fs.html#fsreaddirpath-options-callback)
+
+    
+- To access the 'file system' module from the NodeJS Standard Library
+    - Requires a require() function
+    - Pass the argument value 'fs' and then assign it to a constant variable
+    
+    - NOTE: The 'file system' module in NodeJS is abbreviated as 'fs'
+
+    - The value returned from the 'fs' is an object
+        - It provides access to every single function listed in the 'file system' module documentation
