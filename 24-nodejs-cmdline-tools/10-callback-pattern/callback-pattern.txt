@@ -1,0 +1,13 @@
+The Callback Pattern in Node
+----------------------------
+- Implement code to use the readdir() function of the 'file system' module
+    - Reference (https://nodejs.org/api/fs.html#fsreaddirpath-options-callback)
+
+
+- It is extremely common in NodeJS functions to have the pattern of
+    - Passing a callback function as the last argument
+    - The 1st argument (of the callback function) is an error of some kind (err)
+    - The 2nd or 3rd argument being the actual data being accessed or the action to be accomplished
+
+    - NOTE: Exception are functions that have the word 'sync' on it's name (e.g. fs.readdirSync())
+
