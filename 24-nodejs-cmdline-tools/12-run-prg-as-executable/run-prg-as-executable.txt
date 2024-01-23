@@ -1,0 +1,38 @@
+Running A Node Program As An Executable
+---------------------------------------
+- To make a normal Node.js program to be an executable file requires multiple steps
+    - The executable program will be named 'nls' (Node.js based 'ls' command)
+
+
+- First step
+    - Open terminal inside the project folder
+
+    - Execute the command "npm init -y"
+        - Automatically generate the file "package.json"
+
+        - The package.json describes qualities about the Node.js app
+            - Name
+            - Version
+            - Description
+
+            - It has a 'scripts' section
+                - Allows to write custom mini programs that automates tasks for the project
+
+            - Keeps track of dependencies
+                - Allows other users to automatically download & install dependencies
+                - In order to use the Node.js on their computer
+
+
+    - Open 'package.json' file
+    - Add the following configuration to assign the executable name for the Node.js apppp
+    
+        "bin": {
+        "<executable_name>": "<filename_node_js_app>.js"
+        }
+
+
+        Example
+        -------
+        "bin": {
+        "nls": "index.js"
+        }
