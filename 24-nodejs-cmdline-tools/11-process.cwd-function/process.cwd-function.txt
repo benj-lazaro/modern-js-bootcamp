@@ -1,0 +1,15 @@
+The process.cwd function
+------------------------
+- This method returns the current working directory (cwd, a string) of the Node.js process
+    - It offers better cross-platform compatibility
+
+    - By default, the 'process' module is automatically added into the global scope of every project
+        - However recent documentation, suggest using require()
+
+    - Reference (https://nodejs.org/api/process.html#processcwd)
+
+
+Example
+-------
+const { cwd } = require('node:process');
+console.log(`Current directory: ${cwd()}`);
