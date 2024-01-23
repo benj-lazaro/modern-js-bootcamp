@@ -1,0 +1,34 @@
+Linking A Project
+-----------------
+- The next steps in making a Node.js app into an executable file
+
+
+- Steps to make a Node.js app executable
+    - Create a 'package.json'
+        - Implementation the 'bin' section
+
+
+    - Change 'index.js' file permission
+        - Allows to run the file as though it is an actual executable
+            - NOTE: This is NOT REQUIRED on a Windows machine
+
+        chmod +x <node_app>.js
+
+
+    - Add comment to 'index.js'
+        - To allow it to be treated like an executable
+            - NOTE: This is NOT REQUIRED on a Windows machine    
+
+        - Go to the first line of code and add the following line        
+            - NOTE: DO NOT put any COMMENT above this line
+        
+        #!/usr/bin/env node
+
+
+    - Link the Node.js app to its executable name
+        - On the terminal, type the command
+
+        npm link
+
+
+    - Test by typing the executable name 'nls' instead of 'node index.js'
