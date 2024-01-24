@@ -1,0 +1,23 @@
+Is It A File Or Folder
+----------------------
+- Implement code to improve the formatting of the read files/folder from the current working directory
+    - Provide color code to distinguish files from folders
+
+
+- Require the fs.lstat() gets information about a file or folder at a time
+    - Retrieves "fs.Stats" for the symbolic link referred to by the path
+    
+    - It requires two arguments (err, stats)
+        - "err"     = error encountered when identifying a file or folder
+        
+        - "stats"   = is a "fs.Stats" object that identifies the item read as file or folder
+            - It is an instance of the "fs.Stats" class
+            
+            - It comes with methods 
+                - "stats.isDirectory()" = returns true if "fs.Stats" object describes a directory
+                - "stats.isFile()"      = returns true if "fs.Stats" object describes a file
+
+            - Reference (https://nodejs.org/api/fs.html#class-fsstats)
+
+    - Reference (https://nodejs.org/api/fs.html#fslstatpath-options-callback)
+
