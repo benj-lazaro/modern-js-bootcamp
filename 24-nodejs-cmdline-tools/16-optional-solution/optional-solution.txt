@@ -1,0 +1,19 @@
+Optional Solution
+-----------------
+- The following are the 3 optional solutions to address Node.js' treament on callback functions
+
+- First
+    - Maintain an array of the results from each call to fs.lstat()
+    - As each callback is invoked, add the 'stats' object to the array
+    - When the array is full, log everthing in it
+    - NOT ideal if there is a suceeding asynchronous call after the call for fs.lstat()
+
+
+- Second
+    - Wrap the fs.lstat() with a promise
+    - Use async/await syntax to process each fs.lstat() call, one at a time
+
+
+- Third
+    - Wrap the fs.lstat() with a promise
+    - Use async/await + the Promise.all helper methd to process fs.lstat() calls at once
