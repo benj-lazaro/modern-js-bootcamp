@@ -1,0 +1,9 @@
+A Buggy Initial Implementation
+------------------------------
+- Initial implementation of formatting the read files and/or folder from cwd
+
+- IMPORTANT
+    - Every function in the Node Standard Library does NOT RUN the callback instantly
+
+    - The order of the callbacks is completely unknown to the developer
+        - Developer will have NO IDEA on what the ORDERING of the callbacks will be
