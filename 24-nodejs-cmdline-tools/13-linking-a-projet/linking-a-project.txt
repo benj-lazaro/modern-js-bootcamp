@@ -28,7 +28,7 @@ Linking A Project
     - Link the Node.js app to its executable name
         - On the terminal, type the command
 
-        npm link
+        sudo npm link
 
 
     - Test by typing the executable name 'nls' instead of 'node index.js'
