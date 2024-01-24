@@ -1,0 +1,12 @@
+Callback Solution
+-----------------
+- Implementation of the refactored callback solution 
+    - Maintain an array of the results from each call to fs.lstat()
+        - Each array item is initially assigned with the value of 'null'
+
+    - As each callback is invoked, add the 'stats' object to the array
+
+    - When the array is full (e.g. no more 'null' items)
+        - console.log() everthing in it
+
+    - NOTE: NOT ideal if there is a suceeding asynchronous call after the call for fs.lstat()
