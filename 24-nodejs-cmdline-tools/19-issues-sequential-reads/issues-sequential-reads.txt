@@ -1,0 +1,24 @@
+Issues With Sequential Reads
+----------------------------
+- Continuation with Method #3
+    - Calls the Promise-based implementation of fs.lstat()
+
+    const { lstat } = fs.promises;
+
+
+    - NOTE: Every method in the "file system" module offers a Promise-based version
+        - It return Promise objects instead of using a callback function
+        - Reference (https://nodejs.org/api/fs.html#promises-api) 
+
+
+- However, this solution (callback-promises) is NOT ideal
+    - The issue with this approach is that everything runs in serial
+        - i.e. perfoming sequential reads
+    
+    - It can only perform one operation at a time 
+        - It can only go as fast as it takes to go through each file in series
+        - It does NOT run multiple operationsi in parallel
+
+    - To address this issue is to make use of Promise.all
+        - A helper method that allows to process multple calls in parallel
+        - A better approach in terms of performance
