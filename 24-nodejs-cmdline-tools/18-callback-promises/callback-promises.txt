@@ -1,0 +1,40 @@
+Callback-Based Functions Using Promises
+---------------------------------------
+- Implementation of the previous callback solution
+    - Except this time will wrap fs.lstat() in a promise 
+    - Use async/await syntax to process the call to fs.lstat() one at a time
+    - This will execute the calls in order
+
+- Three implementations of this solution: 
+    - Method #1
+        - Straightforward wrapping of fs.lstat in a Promise object
+        - Calls fs.lstat using async/await to return a 'stat' object
+
+
+    - Method #2
+        - Requires the "util" module
+            - Reference (https://nodejs.org/api/util.html)
+        
+        - Calls the util.promisify() function
+            - Takes a function as argument
+                - Pass in the fs.lstat() function
+
+            - Returns a version of that function which interact with a promise-based interface
+                - Instead of the usual callback-based interface
+            
+            - NOTE: ONLY works if the function follows the common err-first callback style
+                - i.e. taking an (err, value) => {} callback as the LAST ARGUMENT
+
+            - Reference (https://nodejs.org/api/util.html#utilpromisifyoriginal)
+
+
+    - Method #3
+        - Calls the Promise-based implementation of fs.lstat()
+
+        - NOTE: Every method in the "file system" module offers a Promise-based version
+            - It return Promise objects instead of using a callback function
+            - Reference (https://nodejs.org/api/fs.html#promises-api) 
+
+
+
+        
