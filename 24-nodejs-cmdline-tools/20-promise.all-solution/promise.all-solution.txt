@@ -1,0 +1,21 @@
+Promise.all Solution
+--------------------
+- The final and favored implementation
+    - Create an array to store 'stat' objects
+
+
+    - Wraps the fs.lstat() in a Promise
+
+
+    - Use async/await and Promise.all() method
+        - To process individual calls to fs.lstat() in parallel
+        - Throw the returned data from each Promise into the array
+
+        - NOTE: Promise.all() is a built-in method of JavaScript
+        - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+
+
+    - Wait for every item in the array to have some data inside
+
+
+    - Process each item in the array
