@@ -1,0 +1,34 @@
+console.log With Colors
+-----------------------
+- Implement code that will format the output of the application's console.log()
+    - Use a 3rd-party NPM package named Chalk 
+        - That formats the output of console.log() statements
+        - Github repository (https://github.com/chalk/chalk)
+        - NPM registry (https://www.npmjs.com/package/chalk)
+
+
+    - To install
+
+        npm install chalk
+
+
+    - To verify
+        - Open package.json and look at the "dependencies" section
+
+        "dependencies": {
+         "chalk": "^x.x.x"
+        }
+
+        - Inside the project folder, a new folder will be created named "node_modules"
+            - This is where all of the installed dependencies are stored
+
+
+- To use chalk in the current application
+    - Require chalk just like what a normal Node Standard Library module 
+        - Using require()
+
+        const chalk = require("chalk");
+
+
+- For the purposes of the application
+    - Folders will be rendered as bold
