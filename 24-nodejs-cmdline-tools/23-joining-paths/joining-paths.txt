@@ -1,0 +1,19 @@
+Joining Paths
+-------------
+- To address the encountered error message "Error: ENOENT: no such file or directory"
+    - Triggered by lstat() reading the file or folder name ONLY, the path is NOT included
+    - It attemps to read the files/folder from the current directory
+
+
+- To solve this issue
+    - Require another module named 'path' from the Node Standard Library
+        - It provides utilities for working with file and directory paths
+        - It handles cross-platform compatibility
+        - Reference (https://nodejs.org/api/path.html)
+
+    - Specifically access the method path.join()
+        - It joins all given path segments together
+        - Using platform-specific separators as delimeters
+        - Then normalize the resulting path
+        - Reference (https://nodejs.org/api/path.html#pathjoinpaths)
+
