@@ -1,0 +1,43 @@
+App Wrapup
+----------
+- High points of this project is as follows:
+    - Create a package.json file using the command
+
+    npm init -y
+    
+
+    - Added a "bin" section in the package.json
+        - Defines the command that will be executed on the local machine
+        - Links and executes the code of the index.js
+        
+        - NOTE: This is NOT required for a normal Node.js application
+            - It was done to run an CLI-based application as an executable file
+            - A normal CLI-based Node.js app will be run using the following convention
+
+            node <application_name>.js
+
+
+    - Understand different Node.js Standard Library modules
+        - file system
+        - utils
+        - path
+    
+
+    - Most of the functions from the Standard Library follow the the same format
+        - Pass in a number of arguments
+
+        - The last argument will be a callback function
+            - Always going to be called with the same order of arguments
+                - error (i.e. "err") object  
+                - the actual data requested
+
+        - Inside the callback function
+            - Checks for an error, if there was, write code to handle it
+            - Otherwise, continue on and use/process the data requested
+
+
+    - Take the functions that rely upon callbacks
+        - Wrap them around in a promise manually OR 
+        - Pass it to util.promisify() OR
+        - Use a sub-module to access the promise-based version of the given function directly
+            - The 3rd option is NOT available to every function
