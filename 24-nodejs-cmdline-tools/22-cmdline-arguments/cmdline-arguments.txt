@@ -1,0 +1,19 @@
+Accepting Command Line Arguments
+--------------------------------
+- Implement code that would allow the application to
+    - Accept a path as an argument
+    - Display the files & folders from the stated path
+
+
+- Using 'process.argv'
+    - It returns an array that contains items pointing to
+        - Index 0   = /usr/bin/node
+        - Index 1   = /usr/bin/<application_name> (app's symbolic link stored in /usr/bin)
+        - Index 2   = passed argument value after the application application_name
+
+
+- Refactor exisint code
+    - To check upon execution if a path is given as argument
+    - If none, defaults to the current working directory (i.e. process.cwd())
+    - Reads the files and/or folder from the given path
+        - NOTE: As of the time of this writing, the given path will trigger errors
