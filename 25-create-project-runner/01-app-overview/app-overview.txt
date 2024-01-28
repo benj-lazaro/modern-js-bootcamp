@@ -1,0 +1,13 @@
+App Overview
+------------
+- This project is similar to the previous application in nature
+    - Another CLI tool
+    - Will rely more on 3rd party Node modules than the previous one
+
+    - Build a tool similar to that of "nodemon" where it:
+        - Executes the targeted JavaScript file
+        - Concurrently monitors for changes in content
+        - Automatically restarts the JavaScript file any time there is a change
+    
+    nodemon <filename>.js 
+
