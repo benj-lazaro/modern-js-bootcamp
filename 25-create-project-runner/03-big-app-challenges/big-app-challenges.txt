@@ -1,0 +1,37 @@
+Big Application Challenges
+--------------------------
+- The following are the 3 big issues that will be run into
+    - Need to detect when a file changes inside a given folder
+        - Does NOT ONLY restarts the CLI program being executed when its content changes
+
+        - Watch the entire folder, to see if ANYTHING within entire folder changes
+            - Any changes from the files, the program restarts
+
+        - Use package "chokidar" 
+            - To detect file changes inside a project directory
+            - Also detects when a file is created or deleted as well
+            - Reference (https://www.npmjs.com/package/chokidar)
+
+
+    - It would be nice to provide some help to users of the CLI tool
+        - Integrate a help system to the CLI program
+            - To make it obvious to user on how to use the program
+
+        - Use package "caporal" 
+            - To build the CLI tool
+
+            - Helps put together a command-line tool
+                - Auto-generated help
+                - Parse incoming arguments that are being provided 
+            
+            - Reference (https://www.npmjs.com/package/caporal)
+
+
+    - Need to figure out how to execute some JavaScript code from within a JavaScript program
+        - Detect file changes in the JavaScript code and execute that file
+
+        - Use the Standard Library module "child_process" 
+            - To execute a program
+            - Reference (https://nodejs.org/api/child_process.html)
+
+    
