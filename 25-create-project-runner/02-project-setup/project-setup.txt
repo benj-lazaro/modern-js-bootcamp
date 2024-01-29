@@ -1,0 +1,47 @@
+Project Setup
+-------------
+- Setup the application's project files
+    - Create a file named "index.js"
+
+    - Add the following as the first line of code
+
+    #!/usr/bin/env node
+
+
+    - Add the console.log() statement to serve as test code
+
+    console.log("I was executed");
+
+
+    - Change the file permission of "index.js"
+        - NOTE: Applicable on a Linux or MacOS machine
+
+    chmod +x index.js
+
+
+    - Generate a "package.json" file
+        - In order to define the "bin" section
+        - Allows the "index.js" to become a global executable CLI app
+
+    npm init -y
+
+
+    - Open the file "package.json"
+        - At the bottom, add the lines
+
+        "bin": {
+            "watchit": "index.js"    
+        }
+
+        - Save changes
+
+
+    - On the terminal, run the command 
+    
+    sudo npm link
+
+
+    - Test the CLI application by executing the command
+        - It must return the message "I was executed"
+
+    watchit
