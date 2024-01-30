@@ -1,0 +1,40 @@
+Issues With Add Event
+---------------------
+- The chokidar's "add" function presents an issue with the current app being developed
+
+    - The watchit app starts up & watches over the targeted directory
+        - The chokidar reports an "add" event
+
+    - Starts up the user's code
+        - The chokidar reports an "add" event
+
+    - Stopped the user's program just created
+        - Nothing is reported
+
+    - Restart the user's code
+        - The chokidar reports an "add" event
+
+    - Stopped the user's program just created
+        - Nothing is reported
+
+    - Restart the user's code
+        - The chokidar reports an "add" event
+
+        - NOTE: This process continously repeats itself
+
+
+- To get around this issue
+
+    - The watchit app starts up & watches over the targeted directory
+        - The instant that it adds a file rather than running it immediately
+        - Wait for 100ms to go by
+        - See if any other events get emitted
+
+    - If any other events does get emitted
+        - Restart the 100ms timer
+
+    - If a 100ms goes by without any event emitted
+        - Starts up the user's code
+
+    - NOTE: Waiting for some time to pass before executing some code of our own
+        - Is referred as to "bouncing" a function
