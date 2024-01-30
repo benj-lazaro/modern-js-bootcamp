@@ -1,0 +1,22 @@
+Watching Files With Chokidar
+----------------------------
+- Install NPM package "chokidar"
+
+    npm install chokidar
+
+
+- Implement code to detect file changes inside a targeted directory
+    - Initially try out chokidar's "add", "change" & "unlink" functions
+
+- The cholidar's "add" function is triggered
+    - When a new file is created on the monitored directory
+    - When chokidar starts up & sees the file(s) inside the targeted directory
+        - Including those inside the "node_modules"
+
+- The cholidar's "change" function is triggered
+    - When the content of a file inside the targeted directory has been changed
+
+
+- The cholidar's "unlink" function is triggered
+    - When a file in the monitored directory has been deleted
+
