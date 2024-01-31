@@ -1,0 +1,35 @@
+Naming Require Statements
+-------------------------
+- Implement a 'help' screen for the users of the CLI application
+    - Using the NPM package 'caporal'
+    - Reference (https://www.npmjs.com/package/caporal)
+
+
+    - Install "caporal"
+
+    npm i caporal 
+
+
+- NPM package "caporal" also offers
+    - Automatic validation in handling of arguments passed into the CLI application
+
+    - Inform "caporal" to expect an filename argument
+        - In event a user forgets to include one, a corresponding error message is generated 
+
+
+- NOTE: The convention for naming a variable receiving an assignment from a require() statement 
+    - To name the variable directly after the library (NPM package) requiring it
+        - With the exception of a number of NPM packages
+            - "caporal" being one of these exceptions
+
+    - The variable "debounce" is used instead of "lodashDebounce"
+        - The debounce() is one of the many functions from the "lodash" package
+        - It is the ONLY function of the said library being used for the current project
+
+    - The variable "program" for the "caporal" package
+        - The documentation specifically specifies the name of the variable
+            - The official documentation uses "prog" instead of "program"
+        
+        - "caporal" returns an object that represents the program that is being built
+            - This is the exact opposite of most NPM packages
+                - That returns an object reprsenting the NPM package being required
