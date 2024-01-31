@@ -1,0 +1,23 @@
+Debouncing Add Events
+---------------------
+- Implement code to debounce the "add" event of "chokidar" package
+    - Using a NPM package "lodash.debounce"
+
+    - It contains one function
+        - To address the debounce require for the "add" event of "chokidar"
+            - Reference (- Reference (https://lodash.com/docs#debounce))
+
+        - Limits the "add" event from immediately invoking the callback function
+        - Forces to wait for 100ms to go by before invoking the callback function
+    
+    - Reference (https://www.npmjs.com/package/lodash.debounce)
+    
+    - Install "lodash.debounce"
+
+    npm i lodash.debounce
+
+
+- Refactor code to implement "lodash.debounce"
+
+
+
