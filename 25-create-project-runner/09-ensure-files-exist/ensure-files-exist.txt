@@ -1,0 +1,17 @@
+Ensuring Files Exist
+--------------------
+- Remove the console.log() statement from the .action()
+    - Uncomment debounce code, cut and paste into the .action() method
+
+    - Update the "chokidar" events e.g. "change" & "unlink"
+        - Change to referencing to the variable "start"
+
+    - Check for a filename that has been passed as an argument value
+        - If none, default to using "index.js"
+
+        - Use the "fsPromises.access()" from the "file system" module
+            - To check if the file exists on the local drive
+            - Also checks the user's read or write permission on the file as well           
+            - Reference (https://nodejs.org/api/fs.html#fspromisesaccesspath-mode)
+
+        - Implement a try-catch statement if the file does not exists
