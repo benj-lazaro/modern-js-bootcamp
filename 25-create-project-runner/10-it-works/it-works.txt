@@ -1,0 +1,41 @@
+It Works
+--------
+- Implement code to "add" method of "caporal"
+    - Attempt to start up the user-provided file or the default "index.js"
+
+    - Use Node's "child processes" module
+        - Reference (https://nodejs.org/api/child_process.html)
+
+        - It allows to startup a second program from the CLI app
+
+        - Offers the following asynchronous functions
+            - .exec()
+            - .execFile()
+            - .fork()
+            - .spawn()
+
+            - NOTE: These functions are extremely similar in nature
+
+
+- Will use the "child_process.spawn()" function; accepts the following arguments
+    - The "command" argument refers to "node" command of Node.js
+    
+    - The optional "[args]" refers to the user-provided file to be started up
+    
+    - The optional "[options]" refers to the options object
+        - It contains a property named "stdio" (Standard I/O)
+            - When a child process is created by the CLI app
+
+            - That child process might be emitting some logs
+                - In the form of its own console.log() statements
+                - Or defined errors
+
+            - Passing the value "inherit" to the property "stdio"
+                - Instructs the child process to pass any logs emitted
+                - Back to the parent process (i.e. CLI app)
+                - So to that the parent process can print or use that information
+
+            - Reference (https://nodejs.org/api/child_process.html#optionsstdio)
+
+    - Reference (https://nodejs.org/api/child_process.html#child_processspawncommand-args-options)
+
