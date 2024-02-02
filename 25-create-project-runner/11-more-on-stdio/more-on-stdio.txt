@@ -1,0 +1,14 @@
+More On StdIO
+-------------
+- The basics of standard in (stdin), out (stdout) & error (stderr)
+    - Every single program started or process created has its own three (3) separate channels
+        - stdin     = optionally listens to incoming input
+        - stdout    = communicates normal logs to the outside world (e.g. console.log() stmts)
+        - stderr    = throws an error of any kind
+
+
+- Whenever a child process is created
+    - It does NOT have anywhere to send its own information channels (i.e. stdio) to
+
+    - The "stdio" property assigned with the value of "inherit"
+        - Forwards the child process' stdin, stdout & stderr back to the parent process
