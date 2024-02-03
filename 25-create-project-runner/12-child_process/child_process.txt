@@ -5,18 +5,92 @@ More On child_process
     - Wherein it starts up some code or program from within an application
 
     - .exec()
+        - Node.js creates a shell 
+
+        - Takes the first argument (i.e. "command") 
+            - A long string with a bunch of little different sub-commands inside of it
+
+        - Execute that string inside of the shell
+            - Offers the benefit of a shell to interpret the possible complex "command" passed as 1st argument
+
+        - It does NOT have stream support
+            - Unable to create a new child process
+        
+        - All of the output (logs) emitted by the new process (command/program executed; NOT a child process)
+            - Automatically collected by Node.js
+
+            - When the process is completed and terminates
+
+            - Collected output is wrapped up in a package and sent back to the parent process for processing
+                - Calls a callback function with arguments
+                    - error
+                    - stdout
+                    - stderr
+
+        - NOTE: Use this method in the event of needing to execute complex series of commands
+            - Offers the benefit of running said command(s) inside of a shell
+
         - Reference (https://nodejs.org/api/child_process.html#child_processexeccommand-options-callback)
 
+
     - .execFile()
+        - It does NOT run a command inside of a shell
+            - Limited to running one program (or command) at a time with some set number of arguments
+            - Can NEVER use to refer an environment variable
+            - Can NEVER use pipe syntax
+            - Can NEVER perform anything that is/are used to do on the terminal
+
+        - It does NOT have stream support
+            - Unable to create a new child process
+        
+        - All of the output (logs) emitted by the new process (command/program executed; NOT a child process)
+            - Automatically collected by Node.js
+
+            - When the process is completed and terminates
+            
+            - Collected output is wrapped up in a package and sent back to the parent process for processing
+                - Calls a callback function with arguments
+                    - error
+                    - stdout
+                    - stderr
+
         - Reference (https://nodejs.org/api/child_process.html#child_processexecfilefile-args-options-callback)
 
+
     - .fork()
+        - It is used to create a process out of a JavaScript file
+            - 1st argument = path to a JavaScript file to run using Node.js 
+
+        - It is just for running a Node.js process 
+
+        - When creating a new process
+            - The parent process can communicate with the child process using inter process communication (IPC) 
+
+        - This method is RARELY USED
+            - Specifially used around a web server
+
+        - It does NOT run a command inside of a shell
+            - Limited to running one program (or command) at a time with some set number of arguments
+            - Can NEVER use to refer an environment variable
+            - Can NEVER use pipe syntax
+            - Can NEVER perform anything that is/are used to do on the terminal
+
+        - Support stream
+            - Able to create a new child process
+
+        - All of the output (logs) emitted by the child process (command / program)
+            - It is immediately sent back over to the parent process
+            - Parent process has the option to handle that output or not
+
+            - When the child process is completed and terminates
+                - There is NO bundled information returned back to the parent process            
+
         - Reference (https://nodejs.org/api/child_process.html#child_processforkmodulepath-args-options)
 
 
 - Summary of differences
 
-    Function        Executes inside a shell             STDIO are passed back to our program in a stream
+    Function        Executed inside a shell             STDIO are passed back to our program in a stream
     --------        -----------------------             ------------------------------------------------
     .exec()         YES                                 NO 
     .execFile()     NO                                  NO
@@ -34,3 +108,18 @@ More On child_process
     - Allows to type something it
     - It launches the shell on a computer 
 
+- A stream is how information from stdio of a child process gets sent back to its primary (parent) process
+
+
+- IMPORTANT
+    - At the end of the day, the different between the methods are POINTLESS
+        - All that it MATTERS, is the .spawn() method
+
+    - The .exec(), .execFile() and .fork() methods are just reusing the .spawn() method
+        - Each providing some different options
+
+    - Passing .spawn() with the correct options, it will behave like .exec(), .execFile() or .fork()
+        - Checkout the "options" argument in the documentation
+            - It has a property "shell" that allows to run a command (1st argument) inside a shell; similar to that of the .exec()
+
+            - Reference (https://nodejs.org/api/child_process.html#child_processspawncommand-args-options)
