@@ -1,0 +1,36 @@
+More On child_process
+---------------------
+- Explore other methods available from the "child_process" module
+    - The remaining three (3) methods are similar to that of the .spawn()
+    - Wherein it starts up some code or program from within an application
+
+    - .exec()
+        - Reference (https://nodejs.org/api/child_process.html#child_processexeccommand-options-callback)
+
+    - .execFile()
+        - Reference (https://nodejs.org/api/child_process.html#child_processexecfilefile-args-options-callback)
+
+    - .fork()
+        - Reference (https://nodejs.org/api/child_process.html#child_processforkmodulepath-args-options)
+
+
+- Summary of differences
+
+    Function        Executes inside a shell             STDIO are passed back to our program in a stream
+    --------        -----------------------             ------------------------------------------------
+    .exec()         YES                                 NO 
+    .execFile()     NO                                  NO
+    .spawn()        NO                                  YES
+    .fork()         NO                                  YES
+
+
+- A shell is a program that take commands from the terminal and text
+    - It interprets/parses the text provided by the users
+    - It executes it in some intelligent fashion 
+    - It can string together a number of program or commands together to achieve a particular result
+    - It is the "brains" of the terminal
+
+- A terminal is a program that displays text
+    - Allows to type something it
+    - It launches the shell on a computer 
+
