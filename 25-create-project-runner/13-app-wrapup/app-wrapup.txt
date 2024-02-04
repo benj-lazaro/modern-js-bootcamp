@@ -1,0 +1,27 @@
+App Wrap Up
+-----------
+- Details a software bug of the app 
+    - When placing logs emitted by the child process inside a setInterval()
+    
+    - Any changes made in the content of the targeted file
+        - App will create a new process
+        - Emit the logs forwarded by the child process to the parent process (i.e. the app)
+
+    - However, the previous child process continues to emit its own logs
+        - Prior to the logs emitted by the recently created child process 
+
+
+- To address the bug
+    - When the .spawn() method is called, it returns a child process object
+        - Reference (https://nodejs.org/api/child_process.html#class-childprocess)
+
+    - The child process object comes with a function .kill()
+        - It sends a SIGTERM signal to the child process object
+        - It returns true if it succeeds terminating thie child process
+            - Otherwise, it returns a false
+    
+    - Save the current child process into a variable
+        - When a new child process is created
+        - It calls .kill() method FIRST
+        - Then call the .spawn() in order to create a new child process 
+        
