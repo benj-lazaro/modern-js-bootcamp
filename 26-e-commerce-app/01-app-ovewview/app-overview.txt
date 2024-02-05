@@ -1,0 +1,40 @@
+App Overview
+------------
+- Create an e-commerce application
+    - Build a Node.js web server
+        - Serve HTML pages
+        - Allow users to view, shop & purchase items
+        - Each item has
+            - An image
+            - A title
+            - A price
+            - A button "Add to Cart"
+
+        - Presents a Shopping Cart
+            - Contains selected items to purchase
+            
+            - Each item has
+                - A title
+                - A quantity
+                - A Price
+                - A button to remove the item
+                - A Total Price on selected item (based on quantity)
+
+            - Shows the Total of all the items in the cart
+
+            - A button "Buy" to proceed in purchasing the items
+                - NOTE: This button does NOT do anything
+
+    - Create Admin Panel pages
+        - Provides the ability to create products
+            - Display a form to accept information about the new item
+
+        - View existing items
+        - Edit to change their image, title and/or price
+        - Delete existing items
+
+        - Access to Admin Panel is locked out from users / customers using authentication
+            - Provides a "Sign Up" and "Sign-In" pages
+            - ONLY site administrators are required to log in to the website
+            
+
