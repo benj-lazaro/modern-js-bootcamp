@@ -1,0 +1,29 @@
+package.json Scripts
+--------------------
+- Create a new default "package.json" file
+
+    npm init -y
+
+
+- Install dependencies
+    - expreess  = help create a web server
+    - nodemon   = automatically restarts the web server for any changes in a project file
+
+    npm install express nodemon
+
+
+- Create a new file "index.js"
+
+
+- Open the "package.json" file
+    - Replace the content of "scripts" section
+
+    "dev": "nodemon index.js"
+
+
+- Start up the project
+
+    npm run dev
+
+
+- To stop nodemon from the terminal, press CTRL+C 
