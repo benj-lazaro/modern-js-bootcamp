@@ -1,0 +1,47 @@
+Behind The Scenes Of Requests
+-----------------------------
+- Behind the scenes after the web browser made a request to the web server app
+    - Client web browser assembled a network request
+        - Disassembles the URL (http://localhost:3000/) into the following properties
+            - Host of "localhost"
+            - Port of 3000
+            - Path of "/" (default value if not specified)
+            - HTTP method of "GET"
+
+        
+     - Client browser hands off the HTTP request to the operating system 
+        - Sends out the HTTP request to the target Host
+        
+        - If the target host is other than "localhost"
+            - HTTP request is sent to a DNS server (publicly available)
+            - Maps hostnames with corresponding IP addresses
+            - DNS server sends back the corresponding IP address 
+            - The operating system send the request to the said IP address 
+        
+        - If the target host is "localhost"
+            - The operating system does NOT reach out to a DNS server
+
+            - The operating system takes a look at the specified port of the request
+                - NOTE: The computer has around 65,000 ports available for use
+                - Ports are essentially little communication channels
+
+            - Forwards the request to the specified port number
+
+
+    - Express web server receives the HTTP request forwarded by the operating system
+        - Express web server is configured to listen at port number port 3000
+            - NOTE: Port 3000 is the convention used in development
+        
+        - Receives the incoming HTTP request
+            - Retrieves the following data from the request
+                - Requested path of "/"
+                - Requested method of "GET"
+
+        - Express hands over the request to the router object
+            - It takes a look at the path (e.g. "/") and method (e.g. "GET")
+            - Forwards the request to the appropriate route handler 
+            - Which then calls the corresponding callback function     
+
+
+    - Express formulates a response (from the callback function)
+        - Sends the response back to the client web browser
