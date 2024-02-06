@@ -1,0 +1,28 @@
+App Architecture
+----------------
+- The overall architecture of the app is as follows
+    - Build a Node.js web server
+        - Initially hosted locally
+        - Configured to receive network requests
+        - Inspects the requests
+        - Decides what resources the user is looking for
+        - Send the requested resource (HTML document) back to the client browser
+            - HTML document dynamically assembled per request on the server
+
+        - Accessible from a web browser
+            - Makes a network request to the web server
+
+    - Build a custom file-based data store
+        - Store different items to be sold
+        - Store different items in a user's shopping cart
+        - Store user information who signed up as adminsitrators
+
+
+- Initial project setup
+    - Create a new project directory
+    - Generate a package.json file
+    - Install dependencies to help build the project
+    - Create a 'start' script (in the package.json file) 
+        - Used to run the project
+
+    - NOTE: These are common steps in building Node.js projects

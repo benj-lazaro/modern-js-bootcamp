@@ -1,0 +1,46 @@
+<mxfile host="Electron" modified="2024-02-06T05:00:45.733Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="KPsU7yPDnrkicvcSu3rR" version="23.0.2" type="device">
+  <diagram name="Page-1" id="j_bYaFn6By0qyeC1aVG6">
+    <mxGraphModel dx="880" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-1" value="Client Web Browser" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RxdNcUKsDi7FUZ5htBoz-2" target="RxdNcUKsDi7FUZ5htBoz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RxdNcUKsDi7FUZ5htBoz-2" target="RxdNcUKsDi7FUZ5htBoz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-2" value="File-based Data Store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="640" y="120" width="110" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RxdNcUKsDi7FUZ5htBoz-3" target="RxdNcUKsDi7FUZ5htBoz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-3" value="Node.js Web Server" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="120" width="120" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="RxdNcUKsDi7FUZ5htBoz-1" target="RxdNcUKsDi7FUZ5htBoz-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1.009;entryY=0.829;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="RxdNcUKsDi7FUZ5htBoz-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="260" as="sourcePoint" />
+            <mxPoint x="490" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-9" value="&lt;h1&gt;Request&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="314" y="113" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RxdNcUKsDi7FUZ5htBoz-10" value="&lt;h1&gt;HTML Doc&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="307" y="270" width="136" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
