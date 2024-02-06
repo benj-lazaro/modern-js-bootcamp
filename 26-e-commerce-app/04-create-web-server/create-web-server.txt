@@ -1,0 +1,37 @@
+Creating A Web Server
+---------------------
+- Node.js can run a web server
+    - Accepts incoming HTTP requests out of the box
+        - It has function from the standard library that receive network requests
+        - However offers limited features
+
+    - The Express is a library or web framework that sets up a full featured web server
+        - It receives network requests and respond to them
+        - Same with the functions offered by the Node Standard Library but with more features
+        - Reference (https://www.npmjs.com/package/express)
+        - Website (https://expressjs.com/)
+
+
+- Refactor "index.js" to set up a new web server using "express"
+    - Require the "express" library
+    - Define an "app" object
+    - Define a handler for the "root" route
+    - Start listening for incoming requests
+
+
+- Run the app / the web server
+
+    npm run dev
+
+    - In the event that you'll encounter a "EADDRINUSE" error
+        - It meant that another app or process is currently using the same defined port number
+
+        - To address this error
+            - Stop the other app / process
+              OR
+            - Define a different port number (e.g. 3001)
+        
+            - Then restart your web server 
+
+
+- Access the web server on http://localhost:3000/
