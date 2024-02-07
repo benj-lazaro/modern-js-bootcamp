@@ -1,0 +1,5 @@
+Display Simple HTML
+-------------------
+- Refactor the route hander of "/" (or root) of index.js
+    - To response by sending back HTML code
+    - HTML code that contains a form
