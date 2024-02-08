@@ -1,0 +1,38 @@
+Understanding Form Submissions
+------------------------------
+- Behind the scenes an how a web browser treats an HTML form 
+
+- Whenever a form's submit button is clicked or hit enter
+    - The client web browser performs an automatic submission
+        - Browser looks at the <form> element
+        
+        - Find the <input> element(s) inside it
+        
+        - Attempt to collect all the information from each <input> element(s)
+            - That has a "name" property assigned to it (them)
+            - NOTE: Without a "name" property, information will NOT BE COLLECTED
+
+    - Browser forms the collected information into a "query string"
+        - Evident on the URL right after the "?"
+        - The "name" property along with the assigned value
+
+    - Browser executes a GET method request to the URL's web server
+
+
+- The Express module / web server can be configured to receive a "query string"
+    - Takes a look & retrieve the value(s) of each "name" property
+
+    - By creating a route handler assigned with the app.post() method
+
+
+- The HTTP method POST slightly changes the default behavior of the browser
+    - A HTTP request method associated in creating a record of some kind
+        - Such as a blog post, image upload or creating a new user account
+
+    - After submitting the "query string" to the web server
+        - The information is NO longer placed in the URL
+
+        - It is appended into the request body after the form's data is submitted
+            - Data viewed using Google Chrome's dev tools
+            - Network -> Payload -> Form Data
+
