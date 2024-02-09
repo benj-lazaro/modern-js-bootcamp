@@ -1,0 +1,27 @@
+Parsing Form Data
+-----------------
+- Implement code to access the information that get sent along with the POST request
+    - Retrieved from the body of the request
+
+
+- Behind the scenes of a request from the client browser to the web server
+    - Browser sends HTTP header to the server
+        - The server has NOT received the entire request as of this time
+
+    - Server sees the request with path & method of the request
+        - The server has NOT received the entire request as of this time
+
+    - Server runs appropriate callback method
+        - The server has NOT received the entire request as of this time
+
+    - Then the browser starts transmitting information from the body of request
+
+    - Browser sends a little chunck of information
+        - Sends a chunk of data inside the form over to the server bit by bit
+        - Waits for confirmation from the server 
+        - This step is repeated several times
+
+        - NOTE: This part of the process that will be implemented in index.js
+
+    - Until all chuncks have been sent over and the request is complete
+
