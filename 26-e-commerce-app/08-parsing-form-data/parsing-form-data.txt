@@ -1,27 +1,23 @@
 Parsing Form Data
 -----------------
-- Implement code to access the information that get sent along with the POST request
-    - Retrieved from the body of the request
+- Refactor code in order to access data from the body of request
 
 
-- Behind the scenes of a request from the client browser to the web server
-    - Browser sends HTTP header to the server
-        - The server has NOT received the entire request as of this time
+- The following is the behind the scenes of the request
+    - Client browser sends a HTTP server to the web server
+        - At this time, the server has NOT received the entire request 
 
-    - Server sees the request with path & method of the request
-        - The server has NOT received the entire request as of this time
+    - Web server sees the request along with the path and method (e.g. GET, POST)
+        - At this time, the server has NOT received the entire request 
 
-    - Server runs appropriate callback method
-        - The server has NOT received the entire request as of this time
+    - Web server responds by running the corresponding callback method
+        - At this time, the server has NOT received the entire request
 
-    - Then the browser starts transmitting information from the body of request
+    - Client browser starts transmitting information from the body of the request
+        - It sends little chuncks of information to the web server
+        - Client browser waits for confirmation of receipt from the web server
 
-    - Browser sends a little chunck of information
-        - Sends a chunk of data inside the form over to the server bit by bit
-        - Waits for confirmation from the server 
-        - This step is repeated several times
+        - NOTE: This setup is repeated several times
 
-        - NOTE: This part of the process that will be implemented in index.js
-
-    - Until all chuncks have been sent over and the request is complete
-
+    - All of the chuncks of data have been sent over to the web server
+        - The request is COMPLETE
