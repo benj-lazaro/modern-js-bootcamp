@@ -1,0 +1,35 @@
+Globally Applying Middleware
+----------------------------
+- Replace the helper function (middleware) with a library
+    - To address big holes in the implementation
+
+    - In particular, there are other requests that have bodies
+        - The current helper function handles POST requests
+        - Likely conflict with other request handlers that will be implementated later on
+
+    - Use the library "body-parser"
+        - Use the .urlencoded() method
+        - Pass in the object { extended: true} as an argument value
+
+    - The .urlencoded() handles specific information coming out of an HTML form
+        - The logic behind this method is identical to the previously created helper function
+
+        - It takes an incoming request
+            - Receives the body of the request bit by bit
+            - Parse it
+            - Put all the information together
+            - Make the information available on the "req.body" property
+
+        - It automatically detects the type of incoming request (e.g. GET, POST)
+
+
+- Refactor index.js 
+    - To ensure that every single request
+        - Gets automatically parsed
+        
+        - Refrain from copy-paste bodyParser.urlencoded() for every route handler
+        - Move it into app.use() as an argument value
+        
+        - Ensures that the bodyParser.urlencoded() to be available to every route handler 
+            - Parsed data is accessible from the "req.body" property
+            
