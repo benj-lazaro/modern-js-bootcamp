@@ -1,0 +1,30 @@
+Middlewares In Express
+----------------------
+- Refactor the callback function of the root's route handler for a POST request
+    - Place it into a separate helper function
+        - Retaining the logic on parsing the information incldued in the request
+        
+    - Reason being is that as the app scales up 
+        - The logic of parsing information in the request becomes repetitive for each route handler
+
+    - The helper function handles information parsing from a POST request
+        - It is called BEFORE the corresponding callback function of a route handler 
+        - Receives all information from the body of the request       
+        - Returns the parsed data to the route handler's callback function
+
+
+- The helper function is referred as a "middleware" function in Express
+    - It is a function that preprocess the request and/or response object
+    
+    - Think of it as a function in the middle of a request handler
+
+    - It requires three (3) different arguments
+        - req   = request object
+        - res   = response object
+        - next  = a function that is called when the helper function is done processing
+                = Informs Express to hand back control to the route handler's callback function
+
+    - A route handler can accept multiple helper functions (middlewares)
+
+
+- Later replace the helper (middleware) function with a 3rd-party library
