@@ -1,0 +1,23 @@
+Data Storage
+------------
+- To create a persistent data store to save details when creating an "admin" account
+    - Persistent = to store data and be readily available after the next restart of the web server
+
+    - To have the Express web server to interface with a data store
+        - Data store contains the list of "admin" accounts and products to sell
+
+        - Data store saves the data locally on the hard drive
+            - In the form of a JSON files
+                - products.json = products to sell
+                - users.json    = admin accounts
+    
+    - Implement the data store from scratch
+        - NOTE: This data store is NOT SUITABLE for production use for the following reasons:
+            - It will trigger an error when opening / writing to the same file twice at the same time   
+
+            - It will NOT WORK if multiple web servers running on different machines
+                - Each machine will have their own version of the JSON files
+
+            - It will have to write to the filesystem EVERYTIME it has to update some data
+                - Impacting the performance of the application
+                
