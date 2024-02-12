@@ -1,0 +1,60 @@
+Different Data Model Approaches
+-------------------------------
+- The data store is going to take the form of a couple of different classes
+    - Each individual class is going to manage its own collection of objects
+        - One class that manages all of the different users
+        - One class that manages different products
+
+
+- The term data store is only from a conceptual standpoint
+    - At the end of the day, there will be two separate objects 
+        - Individually managing their respective resources
+
+    - These individual objects will be called "repositories"
+        - Users repository
+        - Products repository
+
+
+- A repository is a class that has a bunch of methods attached to it
+
+    Method      Input Arguments     Return Value        Description
+    ------      ---------------     ------------        -----------
+    getAll      -                   [user / product]    Get a list of all users / products
+
+    getOne      id                  user / product      Finds the user / product with the given ID
+
+    getOneBy    filers              user / product      Finds the user / product with the given filters
+
+    create      attributes          null                Creates a user / product with the given attributes
+
+    update      id, attributes      null                Updates the user / product with the given ID using given attributes
+
+    delete      id                  null                Deltes the user / product with the given ID
+
+    randomid    -                   ID                  Generates a random ID
+
+    writeAll    -                   null                Writes all users / products to the corresponding .json file 
+
+
+
+- In the world of JavaScript and data management in general, there are two popular approaches in managing data
+    - Repository Approach
+        - A single class is reponsible for data access
+            - Functions as a gatekeeper that governs access to the raw data
+
+        - All records are stored and used as a plain JavaScript objects
+            - A normal JavaScript object with no methods attached to it
+
+        - It is responsible for all interactions with the data
+
+        - It has all the functionality wrapped up in a single class
+            - Managing one type of data
+
+        - This approach makes sesnse to the app being built
+
+
+    - Active Record Approach
+        - NOT the official name
+
+        - Every record is an instance of a "model" class that has methods to save, update, & delete a record
+            - Each record has its own set of methods 
