@@ -1,0 +1,16 @@
+Saving Records
+--------------
+- Implement the .create() method for the UsersRepository class
+    - Takes the attributes (i.e. email address, password) that a user should have
+
+    - Read the current content of users.json
+        - Content is in the form of an array
+
+    - Push the new attributes into the array
+
+    - Use .promises.writeFile() method to replace the current content of users.json
+        - Reference (https://nodejs.org/api/fs.html#fspromiseswritefilefile-data-options)
+    
+    - Use JSON.stringify() to convert the updated array into a json string
+        - Pass the updated array as an argument value
+        - Before overwriting the content of the users.json
