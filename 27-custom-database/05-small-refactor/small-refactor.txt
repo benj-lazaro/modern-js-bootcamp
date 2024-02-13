@@ -1,0 +1,5 @@
+Small Refactor
+--------------
+- Continuation of the .getAll() method implementation of the UsersRepository class
+    - Use JSON.parse() to parse the contents of the file as JSON data
+    
