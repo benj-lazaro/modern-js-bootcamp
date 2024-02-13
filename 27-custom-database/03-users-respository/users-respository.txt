@@ -1,0 +1,29 @@
+Implementing The Users Repository
+---------------------------------
+- Create a user's repository to model all user (admin) accounts that will be created
+    - Save user account details on the file users.json
+        - email account
+        - password
+
+
+- Implement a class named "UsersRepository"
+    - On a separate directory and file
+    - Located at repositories/users.js
+
+
+- Use the method fs.accessSync()
+    - To check for the existence of (and access to) a file synchronously (no callback involved)
+    - Reference (https://nodejs.org/api/fs.html#fsaccesssyncpath-mode)
+
+    - NOTE: From a performance standpoint, using .accessSync() is NOT advisable in general
+        - However this method is ONLY called ONCE throughout the entire lifecycle of the app
+        - So it is NOT the worst thing in the world
+
+    - The normal and promise version of.accessSync() is NOT recommended
+        - It is called within the confines of a constructor function
+        - Constructor functions are NOT allowed to be async in nature
+
+
+- Use the method fs.writeFileSync()
+    - To create the user repository file if it does NOT exists
+    - Reference (https://nodejs.org/api/fs.html#fswritefilesyncfile-data-options)
