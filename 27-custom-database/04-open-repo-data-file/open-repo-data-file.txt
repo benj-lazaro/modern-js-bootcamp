@@ -1,0 +1,9 @@
+Opening The Repo Data File
+--------------------------
+- Implement the getAll() method for the class UserRepository
+    - Refactor the code of users.js
+
+    - Define the method getAll() 
+        - Right after the class UsersRepository's constructor method
+    
+    - Use the method .Promises.readFile() of the fs modules
