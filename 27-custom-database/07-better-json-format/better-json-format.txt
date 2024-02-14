@@ -1,0 +1,6 @@
+Better JSON Formatting
+----------------------
+- Create a helper function writeAll() 
+    - It's function is to write collected / parsed data into a JSON file
+
+
