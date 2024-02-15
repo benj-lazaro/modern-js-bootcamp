@@ -1,0 +1,5 @@
+Finding By ID
+-------------
+- Implement the method .getOne()
+    - It finds the user account (or product item later) with the given ID
+
