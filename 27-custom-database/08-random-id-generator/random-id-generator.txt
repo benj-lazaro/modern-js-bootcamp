@@ -1,0 +1,23 @@
+Random ID Generator
+-------------------
+- Implement code for the method for the class UsersRepository 
+    - This method will generate a random ID
+    - That will help create a unique identity to an account / product item
+
+
+- Use the method .randomBytes() from the "crypto" module of the standard Library
+    - To generate random raw data based on a specific length of bytes
+        - Reference (https://nodejs.org/api/crypto.html#cryptorandombytessize-callback)
+
+    - Convert the raw bytes into a hexadecimal string using .toString() method
+        - Pass the argument value "hex" to convert data into hexadecimal
+
+
+- Update the code of class UsersRepository's method .create()
+    - Call .randomId() from within
+    - Assign the returned value to the attrs' property of "id"
+
+
+- Delete the previous users.json and test the code by running
+
+    node users.js 
