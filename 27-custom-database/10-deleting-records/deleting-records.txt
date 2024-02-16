@@ -1,0 +1,5 @@
+Deleting Records
+----------------
+- Implement method .delete()
+    - This method deletes a record with a given valid ID
+
