@@ -1,0 +1,9 @@
+Adding Filtering Logic
+----------------------
+- Implement code for the .getByOne() method
+    - It finds the first record that matches the given filters object
+
+    - A flexible method to find any arbitraty record
+        - With any arbitraty set of properties inside the fileters object
+
+        
