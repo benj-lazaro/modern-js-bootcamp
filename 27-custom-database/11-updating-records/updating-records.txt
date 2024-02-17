@@ -1,0 +1,5 @@
+Updating Records
+----------------
+- Implement code for the .update() method
+    - Updates the record with the given ID using the given attributes
+
