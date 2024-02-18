@@ -1,0 +1,14 @@
+Signup Validation Logic
+-----------------------
+- Refactor the index.js code that handles the POST request for the root route
+    - Calls the method(s) from the class UsersRepository
+
+    - Implement the following checks
+        - Did the user already sign up with this email?
+            - If yes, show an error
+
+        - Are the password and password confirmation strings different?
+            - If yes, show an error
+        
+        - Otherwise, proceed in creating a user (admin) account
+
