@@ -1,0 +1,8 @@
+Exporting An Instance
+---------------------
+- Code cleanup of users.js
+    - Remove the test code
+
+
+- Export an instance of the class UsersRepository
+    - To ensure that other files of the project can get access to it 
