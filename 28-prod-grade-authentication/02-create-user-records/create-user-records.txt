@@ -1,0 +1,26 @@
+Creating User Records
+---------------------
+- Create a user record in the user.json
+    - This represents a user
+        - The ID will later be used in identifying the user on succeeding requests to the server
+
+    - Stores the generated ID of a user inside the user's cookie
+
+    - Use a 3rd-party package "cookie-session"
+        - Reference (https://www.npmjs.com/package/cookie-session)
+        - Repository (https://github.com/expressjs/cookie-session)
+
+        - To install
+
+            npm install cookie-session
+
+        - Manages important information stored inside a user's cookie
+            - Doing it manually is notoriously tricky
+            - Increases risk of leaking sensitive information to malicious users      
+        
+    - Implement a cooked-based authentication flow
+
+
+- Refactor the following code 
+    - POST request handler for the root route (index.js)
+    - . create() method of the UsersRepository class (users.js)
