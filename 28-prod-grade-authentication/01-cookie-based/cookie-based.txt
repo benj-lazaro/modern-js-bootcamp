@@ -1,0 +1,25 @@
+Cookie Based Authentication
+---------------------------
+- A dive into request cookies
+
+
+- A cookie is a small string of characters in an encrypted format
+    - Sent by the Web Server in response to a request from a browser
+
+    - Requires the browser to include the cookie for every succeeding requests to the same server
+        - Same server === same domain
+        - Cookies are ALWAYS UNIQUE for each domain
+
+
+- This cookie is the absolute core of the vast majority of authentication 
+    - Help identify users who are making a series of requests
+
+    - It is located witnin the Response Headers
+        - Specifically in the section named Set-Cookie 
+        - Often has more than 1 cookie; each likely contain
+            - Identity ID
+            - Session Token
+            - Launchpad Session 
+
+    - Cookies included within the succeeding requests is located in the Request Headers
+        - Specifically in the section named Cookie
