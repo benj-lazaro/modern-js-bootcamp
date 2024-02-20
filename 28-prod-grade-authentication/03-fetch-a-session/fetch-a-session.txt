@@ -1,0 +1,35 @@
+Fetching A Session
+------------------
+- Implement the code that will store a user's ID inside a cookie
+    - Using a 3rd-party package named "cookie-session"
+    - Reference (https://www.npmjs.com/package/cookie-session)
+
+
+- To wire-up the "cookie-session" into the project
+    - Require it using require()
+
+    - Call it using app.use()
+        - Pass cookieSession() as an argument value
+        - Effectively call it like a function
+
+    - Pass a configuration object as an argument value to cookieSession()
+        - The object contains a single item
+            - A key named "keys"
+            - An array value containing a single item
+                - A string of random string of characters
+                - Serves as an encryption key
+                - To encrypt information stored inside a cookie
+
+    - Doing so willl add an additional property to the "req" object
+        - Namely the req.session
+            - A plain JavaScript object
+            - It can accept as many properties
+
+        - When calling res.send()
+            - "cookie-session" library looks into the information stored req.session
+                - Information is automatically maintained by the "cookie-session" library
+
+            - It encodes that information into a simple string
+
+            - Then attach the string to the outgoing response as the cookie 
+                - Stored on the user's browser
