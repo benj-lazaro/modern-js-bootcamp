@@ -1,0 +1,10 @@
+Signing Out A User
+------------------
+- Implement code that would allow for a user to signout from the web application
+
+
+- Refactor index.js
+    - Update the GET and POST requests of the "root" route from '/' to '/signup'
+
+    - Create a "signin" route for both GET & POST requests
+        - Send back a HTML form in order to a user to sign into the web application
