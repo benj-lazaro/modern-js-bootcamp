@@ -1,0 +1,15 @@
+Signing In
+----------
+- Implement code for the POST request handler for the "signin" route
+
+
+- Basic algorithm
+    - Check for the user's email address
+        - If it does NOT EXISTS, show an error
+
+    - Check if the user's password matches
+        - If it does NOT MATCH, show an error
+
+    - Otherwise, sign in the user into the web application
+
+    
