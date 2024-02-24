@@ -1,0 +1,10 @@
+Testing The Full Flow
+---------------------
+- Refactor the .comparePasswords() method in users.js
+    - Rename variable hashedSupplied to hashedSuppliedBuffer
+    - Pass the resulting hashed password to .toString("hex")
+        - To convert it to a string of hexadecimal value
+
+
+- Implement code that tests the .comparePasswords() method in index.js
+    - Refactor the code of the POST request for the "signin" route 
