@@ -1,0 +1,32 @@
+Project Structure
+-----------------
+- Refactor the codebase and break it into separate files
+    - Link the separate files back to the index.js (main program)
+
+
+- The web application will be divided into three (3) primary directories
+    - Routes
+        - Handles the GET and POST requests of differen routes 
+
+        - "admin/auth.js" route
+            - Handles the user (admin) authentication
+        
+        - "admin/products.js"
+            - Handles the management of product inventory
+            - Create, edit and delete products to & from inventory
+
+        - "product.js"
+            - Handles the user's viewing products
+
+        - "cart.js"
+            - Handles the user's shopping cart
+
+
+    - Repositories
+        - Responsible for the storage of data (repositories)
+        - Respository = users (admin), products 
+
+
+    - Views
+        - Responsible for the creation of different HTML documents (viewable pages)
+        - Effectively removing embedded HTML code from current route handlers
