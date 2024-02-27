@@ -1,0 +1,9 @@
+HTML Templating Functions
+-------------------------
+- Extract HTML code from current codebase
+    - Transfer into different files in the views/ directory
+
+    - Each file is responsible for returning one little snippet of HTML
+        - Export a function that returns a string
+        - Inside of that string is the HTML code
+
