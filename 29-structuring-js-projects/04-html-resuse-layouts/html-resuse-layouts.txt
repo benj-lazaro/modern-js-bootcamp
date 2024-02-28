@@ -1,0 +1,13 @@
+HTML Reuse With Layouts
+-----------------------
+- Address current deficiencies
+    - Relying on the client browser to interpret the received partial HTML code from the server
+        - Refactor the code in order for the server to send over an entire valid HTML document (<html>, <head> and all..)
+            - Refactor "signin.js" and "signup.js" files
+
+
+    - Noted that during the completion of HTML code is the re-occurrence of identical pieces of HTML elements
+        - Both "signin.js" and "signup.js" have identical HTML structures
+
+        - Address the problem by creating a layout file
+            - It is a file the contains all of the standard HTML elements inside a document
