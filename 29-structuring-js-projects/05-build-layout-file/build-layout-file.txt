@@ -1,0 +1,5 @@
+Building A Layout File
+----------------------
+- Create a layout file named layout.js in the views/admin directory
+    - Hook-up the layout file to the corresponding files within views/
+    
