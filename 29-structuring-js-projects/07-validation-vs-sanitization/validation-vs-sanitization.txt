@@ -1,0 +1,10 @@
+Validation VS Sanitization
+--------------------------
+- Use "validator express" library to perform validation of different values
+    - Provided by different forms in the web application
+
+    - Validation chain
+        - Reference (https://github.com/validatorjs/validator.js)
+
+
+- Refactor "auth.js" located within the routes/admin directory
