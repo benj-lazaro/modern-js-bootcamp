@@ -1,0 +1,22 @@
+Adding Better Form Validation
+-----------------------------
+- Address the last issue with the current codebase
+    - When an incorrect email address or password is used to login
+        - A corresponding error message is generated
+        - BUT requires the user to click the "back" button
+            - To return to the login page 
+
+        - Instead of generating a corresponding error message
+            - While remaining on the same login page
+
+    - To create a repeatable solution that handle validation
+        - That can be implemented on different forms to be created
+        - Produce reasonable feedback message to the user
+        - Show the message on the corresponding views
+
+    - Use a 3rd-party library named "Express Validator" 
+        - It helps validate the contents of the form 
+        - Documentation (https://express-validator.github.io/docs)
+        - Reference (https://www.npmjs.com/package/express-validator)
+        
+
