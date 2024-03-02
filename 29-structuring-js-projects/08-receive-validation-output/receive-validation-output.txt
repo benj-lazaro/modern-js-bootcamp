@@ -1,0 +1,4 @@
+Receiving Validation Output
+---------------------------
+- Implement code that handles sanitization then validation of the "signup" route
+    - POST request handler for the "/signup" route (routes/admin/auth.js)
