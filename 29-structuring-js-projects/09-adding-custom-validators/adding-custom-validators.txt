@@ -1,0 +1,17 @@
+Adding Custom Validators
+------------------------
+- Refactor validation logic of the POST request handler for the "signup" route
+    - Write a custom validator that merges earlier validator code with the validation chains
+        - Checks for the existence of a user email address in the repository
+        - Checks if the user password matches with the passwordConfirmation value
+        
+    - Custom validator is a function to be added to the express-validation's validation chains
+        - Throws an error when something is NOT quite right with the checks
+        - In return express-validation interprets it (error) as something went wrong
+
+        - Chain the function .custom()
+            - Pass a callback function that will be used to validate
+                - Existence of provided email address in the repository
+                - Value of password and passwordConfirmation matches 
+
+        - Reference (https://express-validator.github.io/docs/6.2.0/custom-validators-sanitizers)
