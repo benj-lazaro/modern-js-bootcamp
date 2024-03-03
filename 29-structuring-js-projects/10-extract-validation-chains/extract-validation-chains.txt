@@ -1,0 +1,5 @@
+Extracting Validation Chains
+----------------------------
+- Extracting validation logic codebase from the auth.js file into validators.js
+
+
