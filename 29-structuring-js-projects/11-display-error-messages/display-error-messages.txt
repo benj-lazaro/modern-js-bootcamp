@@ -1,0 +1,4 @@
+Displaying Error Messages
+-------------------------
+- Implement code that will render encountered error messages from the routes/admin/auth.js (helper file)
+    - To the exact HTML forms in views/auth/*.js
