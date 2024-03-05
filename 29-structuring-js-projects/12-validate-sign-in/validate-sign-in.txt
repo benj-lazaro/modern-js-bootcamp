@@ -1,0 +1,6 @@
+Validation Around Sign-In
+-------------------------
+- Implement code that renders the encountered error messages
+    - From the "signin" POST request handler of the routes/admin/auth.js
+    - To the HTML document in views/admin/auth/signin.js
+
