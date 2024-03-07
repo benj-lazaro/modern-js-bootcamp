@@ -1,0 +1,6 @@
+Template Helper Function
+------------------------
+- Implement code that captures errros from the POST request of the "signin" route
+    - Re-renders the "signin" template once again
+    - Pass the errors object & print out the appropriate error message on screen
+    
