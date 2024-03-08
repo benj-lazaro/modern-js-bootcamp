@@ -1,2 +1,3 @@
 Adding Some Styling
 -------------------
+- Implement pre-made files with styling into the current codebase of the web application
