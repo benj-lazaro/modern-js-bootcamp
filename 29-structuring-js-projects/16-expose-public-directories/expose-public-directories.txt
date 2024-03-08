@@ -1,0 +1,31 @@
+Exposing Public Directories
+---------------------------
+- Implement code that would instruct Express.js to find the pre-made CSS file
+    - Send the file back to the client web browser
+    - To implement the styling for the entire web application
+
+
+- Create a directory named "public" within the root directory of the web application
+    - This folder will be "exposed" to the outside world
+    - Any file or sub-folder will be freely accessed by the client web browser
+
+    - This folder will contain files that is intended for public consumption
+        - CSS file
+        - Image file(s)
+        - Font(s)
+        - JavaScript code (intended to be executed by the client web browser)
+
+    - NOTE: NEVER place any file(s) that are NOT meant for public viewing / use
+
+
+- Create a directory named "css" within the "public" directory
+    - Paste the pre-made CSS file (main.css) within this directory
+
+
+- Instruct Express.js to make the "public" directory available to the outside world
+    - Refactor index.js
+    - Implement app.use() to wire up the "css" directory
+        - Pass "public" as an argument value
+
+    - Every request coming from a client browser
+        - Express.js will look inside this directory every single time
