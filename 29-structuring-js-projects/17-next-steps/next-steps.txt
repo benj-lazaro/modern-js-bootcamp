@@ -1,0 +1,5 @@
+Next Steps
+----------
+- Next thing to focus on
+    - Product Listing (Admin Panel)
+    - Product Creation (Admin Panel)
