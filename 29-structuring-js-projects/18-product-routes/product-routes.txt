@@ -1,0 +1,3 @@
+Product Routes
+--------------
+- Implement code that will allow to list, create, edit & delete products 
