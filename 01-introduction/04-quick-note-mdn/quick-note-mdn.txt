@@ -1,0 +1,9 @@
+A Quick Note On MDN
+-------------------
+- Mozilla Developer Network (MDN)
+    - It is a good online resource on Open Web technologies w/c includes 
+        - HTML, CSS, JavaScript & APIs for both web sites & progressive web apps
+
+    - Considered as the "official" documentation of JavaScript
+
+    - Website (https://developer.mozilla.org/en-US/)

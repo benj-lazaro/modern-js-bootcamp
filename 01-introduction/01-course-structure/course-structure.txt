@@ -1,0 +1,6 @@
+How This Course Works
+---------------------
+- This course is divided into two (2) parts
+    - JavaScript basics (building blocks)
+    - All projects (20 hours worth of projects)
+

@@ -1,0 +1,46 @@
+JS, ECMA, TC39: What Do They Mean?
+----------------------------------
+- ECMA International
+    - An international organization in charge of creating different standards for technologies
+    - Reference (https://ecma-International.org)
+
+
+- ECMAScript
+    - Refers to the specification defined in the ECMA-262 document for a scripting language
+    
+    - A text document on a set of rules that describes how a programming language should work
+        - Browser developers follow these rules & implement them as "JavaScript"
+
+
+TC39 (Technical Committee 39) also referred as "the deciders"
+    - Delegates who are in change of evolving & maintaining the ECMAScript specification
+    - Around 40 to 60 delegates who meet-up 6 times a year to discuss proposed specification changes
+
+
+- ECMAScript naming convention
+    - These were batches of new features added to the specification
+    
+    - After the release of ES6 (ES2015), TC39 decided to annually update the specification
+        - Naming changes to "ES" followed by the year the update was released 
+        - e.g. ES2015, ES2016, ES2017, ES2018, ES2019, ...
+
+
+- JavaScript
+    - A programming language that confirms to the ECMAScript specification
+        - It is NOT a single "language" but a bunch of implementations of the same specification
+
+    - Different browsers supports different implementations of the ECMAScript specification
+        - NOT ALL browsers supports the same (newer) features at any given point in time
+    
+    - However, there are 3rd-party websites that help identifies
+        - JavaScript features supported by current popular browsers
+
+    
+- Can I Use
+    - A website that identifies supported JavaScript features of current browsers
+    
+    - It provides a compatibility chart (or table) that identifies w/c browsers
+        - Supports the specified JavaScript feature
+        - Displays when a browser (version) started supporting or if they have started it
+    
+    - Website (https://caniuse.com/)
