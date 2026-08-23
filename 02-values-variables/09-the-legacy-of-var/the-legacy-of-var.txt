@@ -1,0 +1,21 @@
+The Legacy of var
+-----------------
+- The keyword "var" declares
+    - A global and/or function scoped variable
+        - Optionally initializing w/ a value 
+
+    - It was the OLD WAY of creating a variable in JavaScript
+        - Now replaced w/ the keyword "let"
+
+
+- To declare & use a Javascript variable (the OLD way)
+    - Use the keyword "var"
+        - Followed by a variable name
+
+        var <variable_name>;
+    
+    - To declare a variable & assign an initial value
+        - Use the "=" operator
+        - Followed by the initial (assigned) value
+
+        var <variable_name> = <initial_value>;

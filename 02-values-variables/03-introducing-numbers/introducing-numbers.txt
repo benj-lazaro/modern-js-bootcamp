@@ -1,0 +1,48 @@
+Introducing Numbers
+-------------------
+- The Primtive Type Number
+    - It is a way of storing or representing numbers in JavaScript
+
+    - JavaScript has ONLY one (1) number type (i.e. Number), where it works w/
+        - Whole number (integer)
+        - Decimal number (float)
+        - Positive & negative number
+
+        - NOTE: JavaScript does NOT STORE infinitely precise numbers
+            - It eventually loses the entire decimal portion
+            - Then rounds the value to the nearest possible integer
+
+    - It works w/ math operations
+        - Add (+)
+        - Subtract (-)
+        - Mutiply (*)
+        - Divide (/)
+        - Modulo (%)
+        - Exponent (**)
+
+    - JavaScript follows the standard order of operations (PEMDAS)
+        - Parenthesis
+        - Exponents
+        - Multiplication
+        - Division
+        - Addition
+        - Subtraction
+
+
+- To clear the clutter from Chrome's JavaScript console
+    - Use the function "clear()"
+    - Returns the message "Console was cleared"
+
+
+- JavaScript code comments
+    - Single-line comments uses the prefixed w/ a "//" character
+
+        // This is a single-line comment
+
+
+    - Multi-line comments are sandwiched in-between the starting "/*" & ending "*/" characters
+
+        /* This is
+           a multi-line
+           comment */
+

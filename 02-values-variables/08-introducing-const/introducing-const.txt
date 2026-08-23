@@ -1,0 +1,27 @@
+Introducing const
+-----------------
+- The keyword "const" works similarly to the keyword "let"
+    - EXCEPT it does NOT allow to change (update) the assigned value
+        - Earning the name "constant"
+        - It functions as a block-scoped variable
+
+    - Assigning a new value to a constant
+        - Returns a "TypeError: Assignment to constant variable" 
+
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+
+
+- To declare a Javascript constant w/ an assigned value
+    - Use the keyword "const"
+        - Then a name
+        - Followed by the "=" and the assigned value
+
+        const <name> = <assigned_value>;
+
+Example:
+
+const hens = 4;
+hens = 20;          // TypeError: Assignment to constant variable
+
+const age = 17;
+age = age + 1;      // TypeError: Assignment to constant variable

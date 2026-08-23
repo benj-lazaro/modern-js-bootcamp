@@ -1,0 +1,34 @@
+Goals & Primitives
+------------------
+- Section Goals
+    - Work w/ primitive types 
+    - Understand "let" & "const"
+    - Use String Template Literals
+    - Work w/ common operators / methods
+
+
+- JavaScript Primitive Types
+    - Number
+        - Numeric values
+    
+    - String
+        - Text values
+        - Numbers placed w/in a pair of " " or ' '
+
+    - Boolean (true / false)
+        - Simple "true" or "false" values
+
+    - Null
+        - A "null" value; to be discussed in detail later
+
+    - Undefined
+        - An "undefined" value; to be discussed in detail later 
+
+    - Symbol
+        - NOT commonly used 
+
+    - BigInt
+        - NOT commonly used 
+
+    - NOTE: Primitive types refers to different ways of storing information at the lowest lovel
+

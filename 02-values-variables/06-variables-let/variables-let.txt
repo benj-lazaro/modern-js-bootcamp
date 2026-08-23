@@ -1,0 +1,38 @@
+Variables & let
+---------------
+- A Javascript variable is similar to a labeled jar for a value
+    - You can store a value in it & then give it a name
+        - Recall the stored value by its given name to use it or change it
+
+
+- To declare & use a Javascript variable
+    - Use the keyword "let"
+        - Followed by a variable name
+
+        let <variable_name>;
+
+    
+    - To declare a variable & assign an initial value 
+        - Use the "=" operator
+        - Followed by the initial (assigned) value
+
+        let <variable_name> = <initial_value>;
+
+
+    - To change (update) the assigned value of an existing (declared) variable
+        - Access the variable by its name
+        - Followed by the "=" operator
+        - Then a new value or mathematical expression involving the same or different variable
+
+        <variable_name> = <new_value>;
+
+        <variable_name> = <new_value> <math_operator> <new_value>;
+
+        <variable_name> = <variable_name> <math_operator> <new_value>;
+
+
+- Javascript variable name convention
+    - Use camelCase
+        - Lowercase 1st letter of the 1st word
+        - Uppercase 1st letter of EACH succeeding word
+        - e.g. numOfHens, targetValue

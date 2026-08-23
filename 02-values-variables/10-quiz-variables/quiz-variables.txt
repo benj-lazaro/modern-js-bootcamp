@@ -1,0 +1,35 @@
+Quiz: Variables
+---------------
+- What is the value of eggCount?
+
+    let eggCount = 42;
+    eggCount + 2;
+
+    - Answer: 42
+        - Question asked for the value of the variable "eggCount"
+        - The performed mathematical operation did NOT save the new result back to "eggCount"
+
+
+- What is the value of rating after this code runs?
+
+    const rating = 7.5;
+    rating = 8;
+
+    Answer: TypeError
+        - An attempt to assign a new value to a constant 
+
+
+- What is the value of wind_speed? What's the minor issue with the code?
+
+    let wind_speed = 76;
+    wind_speed += 5;
+    wind_speed--;
+
+    Answer: 81
+        - The sum is save to the variable wind_speed
+
+    Answer: 80
+        - The current value of wind_speed is decremented by 1
+
+    Answer: Minor issue is the variable name styling
+        - The variables used the snake_case instead of the camelCase naming convention

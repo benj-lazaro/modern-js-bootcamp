@@ -1,9 +1,0 @@
-JavaScript Primitive Types
---------------------------
-- Number
-- String
-- Boolean (true / false)
-- Null
-- Undefined
-- Symbol
-- BigInt
