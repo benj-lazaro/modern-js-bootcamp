@@ -1,12 +1,12 @@
 The Tools You Need
 ------------------
 - Two (2) main tools needed for this course
-    - Chrome (preferrably)
+    - Chrome (preferably)
         - As the web browser w/ Firefox as an alternative
         - NOTE: NOT recommended to use Internet Explorer or Safari 
 
     - Microsoft VS (Visual Studio) Code
         - As the code editor
-        - It has a greaty community, lots of extensions & color schemes
+        - It has a great community, lots of extensions & color schemes
 
 
