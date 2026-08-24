@@ -1,6 +1,6 @@
 Introducing Numbers
 -------------------
-- The Primtive Type Number
+- The Primitive Type Number
     - It is a way of storing or representing numbers in JavaScript
 
     - JavaScript has ONLY one (1) number type (i.e. Number), where it works w/
@@ -15,7 +15,7 @@ Introducing Numbers
     - It works w/ math operations
         - Add (+)
         - Subtract (-)
-        - Mutiply (*)
+        - Multiply (*)
         - Divide (/)
         - Modulo (%)
         - Exponent (**)

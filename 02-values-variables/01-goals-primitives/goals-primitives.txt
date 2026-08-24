@@ -8,27 +8,12 @@ Goals & Primitives
 
 
 - JavaScript Primitive Types
-    - Number
-        - Numeric values
-    
-    - String
-        - Text values
-        - Numbers placed w/in a pair of " " or ' '
+    - Number    = numeric values   
+    - String    = text values & numbers enclosed w/in a pair of "" or ''
+    - Boolean   = true or false
+    - Null      = to be discussed later
+    - Undefined = to be discussed later
+    - Symbol    = NOT commonly used
+    - BigInt    = NOT commonly used
 
-    - Boolean (true / false)
-        - Simple "true" or "false" values
-
-    - Null
-        - A "null" value; to be discussed in detail later
-
-    - Undefined
-        - An "undefined" value; to be discussed in detail later 
-
-    - Symbol
-        - NOT commonly used 
-
-    - BigInt
-        - NOT commonly used 
-
-    - NOTE: Primitive types refers to different ways of storing information at the lowest lovel
-
+    - NOTE: Refers to different ways of storing information at the lowest level

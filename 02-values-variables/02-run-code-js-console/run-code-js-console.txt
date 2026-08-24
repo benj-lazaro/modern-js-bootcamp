@@ -1,7 +1,7 @@
 Running Code In The JavaScript Console
 --------------------------------------
 - For this section
-    - Use the JavaScript console of the Chrome's Developer Tools
-        - Shortcut: CTRL + SHIFT + I
+    - Code will be written directly on the browser's JavaScript console
 
-    - To write JavaScript code on the tab named "Console"
+    - Launch Chrome's Developer Tools (CTRL + SHIFT + I)
+        - Click the "Console" tab
