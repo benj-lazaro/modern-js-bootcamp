@@ -1,0 +1,56 @@
+String Methods
+--------------
+- The Primitive Type Strings comes w/ a set of built-in methods
+    - Methods are like built-in pieces of functionality (i.e. actions) that
+        - Can be performed on or w/ that particular string value
+
+        <string_value>.<method>();
+
+    - This includes
+        - Searching a string w/in a string
+        - Replacing parts of a string
+        - Changing the character case (i.e. lowercase or uppercase)
+        - and more
+
+    - Methods can be chained one after another
+
+        <string_value>.<method_1>().<method_2>....<method_n>();
+
+    - Reference (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)
+
+
+- Method ".toUpperCase()"
+    - Returns an uppercase copy of the original string value
+
+        let stringText = "hello";
+        stringText.toUpperCase();   // Returns "HELLO"
+
+        - NOTE: Original string value remains unchanged (i.e. IMMUTABLE)
+
+    - To override (i.e. replace) the original string value
+
+         let stringText = "hello";
+         stringText = stringText.toUpperCase(); // Assigns the uppercase string as a new value
+
+
+- Method ".toLowerCase()"
+    - Returns a lowercase copy of the original string value
+
+        let stringText = "HELLO";
+        stringText.toUpperCase();   // Returns "hello"
+
+    - To override (i.e. replace) the original string value
+
+         let stringText = "hello";
+         stringText = stringText.toLowerCase(); // Assigns the lowercase string as a new value
+
+
+- Method ".trim()"
+    - Returns a copy of the original string value w/ whitespace from BOTH ends removed
+    - NOTE: Does NOT REMOVE whitespace in-between words in a string
+
+        let stringText = "  Hello  ";
+        stringText.trim();                  // Returns "Hello"
+
+        let stringText = "  Hello  ";
+        stringText.trim().toUpperCase();    // Returns "HELLO"

@@ -1,0 +1,26 @@
+The Math Object & Random Numbers
+--------------------------------
+- The Math object contains methods & properties of mathematical constants & functions
+    - It works w/ the Primitive Type Number 
+    - But does NOT work w/ the Primitive Type BigInt 
+
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+Example:
+
+Math.PI;                // Returns the PI value of 3.141592653589793
+Math.floor(3.999999);   // Returns 3; removes the decimal part & retains the integer part
+Math.round(3.999999)    // Returns 4; rounds off to the nearest integer value
+Math.pow(7, 2);         // Returns 49; 7 raised to the power of 2
+
+
+- Method ".random()"
+    - Returns a floating point, pseudo-number between the value of 0 (inclusive) & 1 (exclusive)
+
+        Math.random():
+
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+    
+Example:
+
+Math.random();  // Returns a random number between 0 & 1; excluding 1

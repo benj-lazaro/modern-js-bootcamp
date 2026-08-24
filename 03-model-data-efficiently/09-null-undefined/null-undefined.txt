@@ -1,23 +1,27 @@
-null
-----
-- It represents the intentional absence of any object value
-- It MUST be assigned to a variable; the explicit value of nothingness
-- It is one of JavaScript's primitive values
-- It is treated as falsy for boolean operations
-- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)
+null & undefined
+----------------
+- The Primitive Type Null
+    - It represents the "intentional" absence of any object value
+        - To EXPLICITLY assign the value of nothingness
+    
+    - It MUST be assigned to a variable w/ NO initial value
+
+    - It is treated as a "falsy" value for boolean operations
+
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)
+
+Example:
+
+let loggedInUser = null;  // Explicitly assigns nothing to a variable w/ NO intended initial value
 
 
-undefined
----------
-- It represents the idea of the lack of value
-- It is one of JavaScript's primitive values
-- Normally, it is the value that is returned by JavaScript
+- The Primitive Type Undefined 
+    - It represent the idea of the "lack" of value
+        - A value returned (or assigned) by JavaScript
 
-- A variable that is NOT assigned a value is of type undefined
-- A function returns undefined if a value was NOT returned
-- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+    - A variable w/ NO initial value is IMPLICITLY assigned the value of "undefined"
 
+    - A function returns a value of "undefined"
+        - If NOT value was returned 
 
-Example
--------
-> let loggedInUser = null;  // Explicitly assigns nothing to the variable loggedInUser
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)

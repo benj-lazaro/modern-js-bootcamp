@@ -1,92 +1,77 @@
-String Methods
---------------
-- The following string methods accepts arguments that modify their behavior.
-- Argument values are passed inside the method's parenthesis
+More String Methods
+-------------------
+- The following string methods accepts argument values that modify their behavior
+    - An argument value is a value passed w/in a method's pair of "( )"
+
+        <string_value>.<method>(<argument_value>);
 
 
-General Syntax
---------------
-<string_value>.<string_method>(<argument_value>);
+- Method ".indexOf()"
+    - Accepts a substring (or a character) as an argument value
+
+        <string_value>.indexOf("<substring>");
+
+        <string_value>.indexOf("<character>");
+
+    - It returns the index value of a substring's position w/in a string
+        - Index value starts at 0
+        
+        - Returns an index value of -1 
+            - If the substring is NOT FOUND       
+
+        - IMPORTANT: The substring is case-sensitive
+
+    - If a character is passed as an argument value
+        - It ONLY returns the 1st matching instance of the character w/in a string
+
+Example:
+
+let tvShow = "catdog";
+
+tvShow.indexOf("cat");  // Returns the value of 0
+tvShow.indexOf("dog");  // Returns the value of 3
+tvShow.indexOf("pup");  // Returns the value of -1; NOT FOUND
 
 
--=-=-=-=-=-=-=-=-
+- Method ".slice()"
+    - Accepts a start index as an argument values
+        - Optionally, accepts an end index as well
+
+        <string_value>.slice(<start_index>, [<end_index>]);
+
+    - It returns the specified slice from a string value
+        - Returns an empty string if the start index points to nothing
+    
+        - IMPORTANT: The character at the specified end index is EXCLUDED
+
+    - NOTE: The original string value remains unchanged
+
+Example:
+
+let phrase = "the last crusade";
+
+phrase.slice(0, 5); // Returns "the l"
+phrase.slice(5);    // Returns "ast crusade"; starts at index 5
+phrase.slice(40)    // Returns an empty string; index 40 points to nothing
 
 
-.indexOf()
-----------
-- Returns the index value of where the substring is located within a string
-- It is case-sensitive
-- NOTE: Index value starts at 0
-- NOTE: Returns -1 if substring is NOT found within a string
-- NOTE: If a character is passed as substring, it will ONLY return the FIRST instance within a string
+- Method ".replace()"
+    - Accepts two argument values
+        - 1st = existing substring
+        - 2nd = replacement substring
 
+        <string_value>.replace(<existing_substring>, <replacement_substring>);
 
-Syntax
--------
-<string_value>.indexOf("<string_value>");
+        - IMPORTANT: Replaces the 1st occurrence of the existing substring
 
+    - It returns a new string
+        - Returns the same string is the substring to be replace is NOT found
 
-Example
--------
-> let tvShow = "catdog";
+    - NOTE: The original string value remains unchanged
 
-> tvShow.indexOf('cat');
-< 0                         // Located & starts at index 0
+Example:
 
-> tvShow.indexOf('dog');
-< 3                         // Located at index 3
+let annoyingLaugh = "teehee so funny! teehee!";
 
-> tvShow.indexOf('bird');
-< -1                        // Not found
-
-
-.slice()
---------
-- Slices and returns a slice of an existing string
-- It will NOT change the original string since string is IMMUTABLE 
-- Returns an empty string if the start index points to nothing
-- NOTE: MDN docs syntax... [] = meant that it is optional
-
-
-Syntax
-------
-<string_value>.slice(<start_index>);
-<string_value>.slice(<start_index>, [<end_index>]);
-
-
-Example
--------
-> let phrase = "the last crusade";
-
-> phrase.slice(0, 5);
-< 'the l'                   // Returns a new string from index 0 up to 5; the last character excluded
-
-> phrase.slice(5);
-< 'ast crusade'             // Returns a new string starting from index 5
-
-> phrase.slice(40)
-< ''                        // Returns an empty string since the start index points to nothing
-
-
-.replace()
-----------
-- Searches an existing substring within a string and replaces the first occurence 
-- Returns a new string
-- If the substring being searched does not exists, it return the same string
-- Original string value remains unchanged
-
-
-Syntax
-------
-<string_value>.slice("<string_to_replace>", "<replacement_string>");
-
-
-Example
--------
-> let annoyingLaugn = "teehee so funny! teehee!";
-
-> annoyingLaugn.replace("teehee", "haha");
-< 'haha so funny! teehee!'      // Returns a new string with the replaced substring
-
-> annoyingLaugn.replace("hohoho", "haha");
-< 'teehee so funny! teehee!'    // Returns the same string
+annoyingLaugn.replace("teehee", "haha"); // Returns a new string "haha so funny! teehee!" in memory
+annoyingLaugn.replace("hoho", "haha"); // Returns the same string; "hoho" substring is NOT FOUND

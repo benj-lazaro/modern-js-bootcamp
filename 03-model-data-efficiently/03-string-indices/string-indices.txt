@@ -1,48 +1,50 @@
 String Indices
 --------------
-- Strings are indexed
-- Each character has a corresponding index (positional number) based off its position in the string
+- A string value is indexed
+    - Each character has a corresponding index value (i.e. positional number)
+        - Based on it's position w/in the string
 
-- String indices starts from the left and progressing towards the right of a string
-- The lowest index value is 0
-- The index value increments by 1 as to move towards the last character of its string
+    - A string index starts (w/ the value of 0) from the left (i.e. 1st character)
+        - Progressing towards the right of a string value
+        - Index value increments by 1 as it moves towards the last character of the string
 
-- A string value has a property named .length
-- The property .length returns the number of chracters of its string
+    - To access a character from a string value using it's index
+        - Chain a pair of "[ ]" right after the string value
+        - Pass the character's index number
+        - Returns the corresponding character
+        - Otherwise, returns "undefined" w/c means NO existing character at the specified index
 
+            <string_value>[<index>];
 
-Syntax
-------
-<string_value>[<string_index>];
-- It returns the character residing on the specificed index
-- Otherwise, returns 'undefined' whicn means that there is no character on the specified index
+    - To replace an existing character on a string
+        - Chain a pair of "[ ]" right after the string value
+        - Pass the (to be replaced) character's index number  
+        - Use the "=" operator
+        - Then the new character to be assigned
 
-<string_value>[<string_value>.length - 1]
-- It returns the last character of the string
+            <string_value>[<index>] = "<new_character_value>";
 
+        - IMPORTANT: A string value is IMMUTABLE
+            - Replacing a character will NOT be implemented
+            - It will NOT trigger an error
 
-Example
--------
-"chicken"                   // Index value of 0 = 'a'; index value of 6 = 'n'
-"          "                // Index value of 0 = ' '; index value of 10 = ' '
+    - It has a property named ".length" that returns a number w/c
+        - Represents the number of characters w/in a string value
 
-> "chicken".length
-< 7
-> "          ".length       // A space is considered a character in a string
-< 10
+            <string_value>.length;
 
-let mySong = "Surfin' USA"; // Assign a string to a variable
-> mySong.length;
-< 11                        // Returns the length of the string
+        - NOTE: A space is considered a character in a string
 
-> mySong[0]                 // Access the character at index 0
-< "S"
-> mySong[2]                 // Access the character at index 2
-< "r"
-> mySong[11]                // Access the character at index 11
-< undefined
+Example:
 
-> mySong[0] = "D"           // Assigns 'D' as the 1st character of the string value in mySong
-< "D"
-> mySong
-< "Surfin' USA"             // String remains unchanges because it is IMMUTABLE
+"chicken";                      // chicken[0] = "c"; chicken[7] = "n"
+"chicken.length";               // Returns the value of 7
+
+"          ".length;            // Returns the value of 10
+
+let mySong = "Surfin' USA";     // Assign string value to a variables
+mySong.length;                  // Returns the value of 11
+mySong[0];                      // Returns the character "S"
+mySong[2];                      // Returns the character "r"
+mySong[11]'                     // Returns "undefined"
+mySong[0] = "D"                 // Attempt to replace the character "S" at index 0 w/ a "D"

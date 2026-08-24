@@ -1,21 +1,26 @@
 Strings
 -------
-- It is a primitive data type that is a sequence of characters used to represent text.
+- The Primitive Type Strings
+    - Stores a sequence of characters to represent text
+        - Wrapped either w/in a pair of '' (single quotes) or "" (double quotes)
+        
+        - NOTE: Do NOT mix single & double quotes on a single string value
+            - Be CONSISTENT; use either single or double quotes for strings on the entire codebase
 
-- The string value is wrapped in single quotes '' or double quotes ""
-- Do NOT mix single & double quotes on a single string value
+    - IMPORTANT: A string value is IMMUTABLE (i.e. can NOT be changed)
 
-- A string value is IMMUTABLE (can't be changed)
-- Reference (https://developer.mozilla.org/en-US/docs/Glossary/String)
+    - Reference (https://developer.mozilla.org/en-US/docs/Glossary/String)
 
 
-Example
--------
+- To assign a string value to a variable
+
+Example:
+
 let firstName = "Ziggy";
-let lastName = "Canaryface";
-let fullname = firstName + lastName;
+let lastName = "Canary face";
+let fullname = firstName + lastName; // Stores a combined string value from two other variables
 
 let msg = "Please do not feed the chimps!";
 let animal = 'Dumbo Octopus';
 
-let bad = "This is wrong';  //This does NOT work; do NOT mix the quotes
+let bad = "This is wrong';  // Does NOT mix single & double quotes on a single string value

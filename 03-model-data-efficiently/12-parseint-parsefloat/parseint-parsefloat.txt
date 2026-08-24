@@ -1,58 +1,42 @@
-parseInt()
-----------
-- A function that parses a string argument and returns an integer of the specified radix
-- Basically parses strings into numbers; watchout for NaN
-- String value MUST START with a number, otherwise returns a NaN
+parseInt & parseFloat
+---------------------
+- The "parseInt()" function
+    - Accepts a string as an argument value & returns an integer
+        - Based on the specified radix (as an optional 2nd argument)
+        - The integer value between 2 & 36 represents the radix (mathematical numeral system)
 
-- Leading whitespace in the string value is ignored
-- An integer between 2 and 36 represents the radix (mathematical numeral system)
-- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+        parseInt("<string_value>", [<radix_value>]);
 
+    - Basically, it parses a string value then converts it to an integer
+        - Trailing decimal numbers or non-numeric characters are EXCLUDED
 
-Syntax
-------
-parseInt(<string_value>, [<radix>]);
+    - IMPORTANT: The string value MUST BEGIN w/ a number
+        - Otherwise, it returns a NaN
 
+    - NOTE: Leading whitespace in a string value is ignored
 
-Example
--------
-> parseInt("24");
-< 24
+Example:
 
-> parseInt("24.987");
-< 24
+parseInt("24");     // Returns 24
+parseInt("24.987"); // Returns 24
+parseInt('21') + 1; // Returns 22
 
-> parseInt("28dayslater");
-< 28
-
-> parseInt("I consumed 2 burgers.");
-< NaN
-
-> parseInt('21') + 1;
-< 22
-  
-
-parseFloat()
-------------
-- Identical to parseInt() EXCEPT it returns a floating point number.
-- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
+parseInt("28dayslater");            // Returns 28
+parseInt("I consumed 2 burgers.");  // Returns NaN
 
 
-Syntax
-------
-parseFloat(<string_value>, [<radix>]);
+- The "parseFloat()" function
+    - Identical to the "parseInt()" function EXCEPT returns a floating point number
 
+        parseFloat("<string_value>", [<radix_value>]);
 
-Example
--------
-> parseFloat("24");
-< 24
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
 
-> parseFloat("24.987");
-< 24.987
+Example:
 
-> parseFloat("28dayslater");
-< 28
+parseInt("24");     // Returns 24
+parseInt("24.987"); // Returns 24.987
+parseInt('21') + 1; // Returns 22
 
-> parseInt("I consumed 2 burgers.");
-< NaN
+parseInt("28dayslater");            // Returns 28
+parseInt("I consumed 2 burgers.");  // Returns NaN

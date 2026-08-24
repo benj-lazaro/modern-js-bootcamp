@@ -1,0 +1,70 @@
+Quiz: Strings
+-------------
+- What is the value of variable age?
+
+    const age = "5" + "4";
+
+    - Answer: "54"
+        - The operation performed is string concatenation; NOT mathematical addition
+
+
+- What does the following statement evaluate to?
+
+    "pecan pie" [7];
+
+    - Answer: "i"
+
+
+- What does the following statement evaluate to?
+
+    "PUP" [3];
+
+    - Answer: undefined
+        - The index value of 3 references to nothing
+
+
+- What is the value of the variable song?
+
+    let song = "london calling";
+    song.toUpperCase();
+
+    - Answer: "london calling"
+        - String is IMMUTABLE
+        - The returned copy of the string is NOT save to a constant or variable
+
+
+- What is the value of the variable cleanedInput?
+
+    let userInput = "    TODD@gmail.com";
+    let cleanedInput = userInput.trim().toLowerCase();
+
+    - Answer: "todd@gmail.com"
+        - The chained methods ".trim()" & ".toLowerCase()" returns a new string value
+        - The new string value is stored as value to the variable "cleanedInput"
+
+
+- What is the value of the variable index?
+
+    let park = 'Yellowstone';
+    const index = park.indexOf('Stone');
+
+    - Answer: -1
+        - Due to case-sensitivity, the substring "Stone" is NOT FOUND
+        
+
+- What is the value of the variable index?
+
+    let yell = 'GO AWAY!!';
+    let index = yell.indexOf('!');
+
+    - Answer: 7
+        - Refers to the 1st instance of the character "!"
+
+
+- What does the following statement evaluates to?
+
+    'GARBAGE!'.slice(2).replace("B", '');
+
+    - Answer: "RAGE!"
+        - The method ".slice()" returns the string "RBAGE!"
+        - Method method ".replace()" replaced "B" w/ an empty string
