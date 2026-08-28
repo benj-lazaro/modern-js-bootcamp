@@ -1,13 +1,13 @@
-Truthy Falsy Values
--------------------
-- All values have inherit truthy or falsy boolean value
+Truthy & Falsy Values
+---------------------
+- ALL values have an inherit "truthy" or "falsy" (boolean) value
+    - Falsy values:
+        - false
+        - 0
+        - "" (empty string)
+        - null
+        - undefined
+        - NaN
 
-- The following are the examples of Falsy values:
-    - false
-    - 0
-    - "" (empty string)
-    - null
-    - undefined
-    - NaN
-
-- Everything else is truthy
+    - Truthy values:
+        - Everything else is truthy

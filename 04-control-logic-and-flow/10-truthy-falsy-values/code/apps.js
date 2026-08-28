@@ -3,7 +3,7 @@
 let mystery = "";
 
 if (mystery) {
-    console.log("Truthy");
+  console.log("Truthy");
 } else {
-    console.log("Falsy");
+  console.log("Falsy");
 }

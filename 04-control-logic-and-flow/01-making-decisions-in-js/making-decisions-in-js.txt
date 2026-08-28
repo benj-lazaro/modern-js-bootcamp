@@ -1,0 +1,6 @@
+Making Decisions In JavaScript
+------------------------------
+- JavaScript uses the following operators in making a decision
+    - Boolean operators
+    - Comparison operators
+    - Conditional operators

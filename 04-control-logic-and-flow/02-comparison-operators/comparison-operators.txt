@@ -1,29 +1,29 @@
 Comparison Operators
 --------------------
-- These operators return a Boolean value of true or false
-- It is possible to compare strings; it gets dicey with case, special characters & accents 
-    - This is based on their corresponding Unicode value
-    - Reference (https://en.wikipedia.org/wiki/List_of_Unicode_characters)
+- These operators returns a Boolean primitive data type of "true" or "false"
+    - Possible to use these operators to compare string values
+        - Although may get dicey w/ case-sensitivity, special characters & accents
+        - Based on their corresponding Unicode value
+        - Reference (https://en.wikipedia.org/wiki/List_of_Unicode_characters)
 
-- The following are the comparison operators in JavaScript:
->       // greater than
-<       // less than
->=      // greater than or equal to
-<=      // less than or equal to
-==      // equality
-!=      // not equal
-===     // strict equality
-!==     // strict non-equality
+    - Comparison operators
+        - Greater than              >
+        - Less than                 <
+        - Greater than or equal to  >=
+        - Less than or equal to     <=
+        - Equality                  ==
+        - Strict equality           ===
+        - NOT equal                 !=
+        - Strict non-equality       !==
 
+Example:
 
-Examples
---------
-10 > 1      // true
-0.2 > 0.3   // false
--10 < 0     // true
-50.5 < 5    // false
-0.5 <= 0.5  // true
-99 >= 4     // true
-99 >= 99    // true
-'a' < 'b'   // true
-'A' > 'a'   // false
+10 > 1      // Evaluates to true
+0.2 > 0.3   // Evaluates to false
+-10 < 0     // Evaluates to true
+50.5 < 5    // Evaluates to false
+0.5 <= 0.5  // Evaluates to true
+99 >= 4     // Evaluates to true
+99 >= 99    // Evaluates to true
+'a' < 'b'   // Evaluates to true
+'A' > 'a'   // Evaluates to false

@@ -1,43 +1,32 @@
 Triple Equals
 -------------
-- A comparison operator that checks the equality of both type AND value
-- Does NOT COERCE (convert) both values to be of a common type
-- It is more precise / specific
+- The comparison operator that
+    - Checks the equality between operands by their value and Primitive Type
+    - Does NOT coerces the values to a common Primitive Type
+    - It is more precise & specific
 
-- NOTE: Recommended to use === and !== comparing values moving forward
+    - Comparison operators
+        - Strict equality           ===
+        - Strict non-equality       !==
 
-===     // strict equality
-!==     // strict non-equality
+Example:    
 
+4 == 4              // Evaluates to true
 
-Examples
---------
-> 4 == 4
-< true
+'a' == 'a'          // Evaluates to true
 
-> 'a' == 'a'
-< true
+false == false      // Evaluates to true
 
-> false == false
-< true
+0 == false          // Evaluates to true; BOTH are falsy values
 
-> 0 == false        // both values are falsy
-< true
+7 == '7'            // Evaluates to true
 
-> 7 == '7'          // == operator converts them to a common type & then compare their values
-< true
+7 === '7'           // Evaluates to false; different Primitive Types
 
-> 7 === '7'         // === operator compares both type and value
-< false
+0 == ''             // Evaluates to true
 
-> 0 == ''
-< true
+0 === ''            // Evaluates to false; different Primitive Types
 
-> 0 === ''
-< false
+null == undefined   // Evaluates to true
 
-> null == undefined
-< true
-
-> null === undefined
-< false
+null === undefined  // Evaluates to false; different Primitive Types

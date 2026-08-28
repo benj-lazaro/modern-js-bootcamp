@@ -1,5 +1,14 @@
-Else Statement
---------------
-- Provides an optional last statement to execute after ALL conditional statements evaluates to false
-- It is considered as the "otherwise" part of the conditional statement
-- You can ONLY have 1 else statement
+Else
+----
+- Provides the last (optional) statement to execute
+    - If ALL conditional statements evaluates to false
+    - Considered as the "otherwise" part of the conditional statement
+    - NOTE: You can ONLY have one (1) "else" statement
+
+    if (<conditional_statement>) {
+        // Execute this statement if condition is truthy
+    } else if (<conditional_statement>) {
+        // Execute this statement if 1st conditional statement is false
+    } else {
+        // Execute this statement if ALL conditional statements evaluates to false
+    }      

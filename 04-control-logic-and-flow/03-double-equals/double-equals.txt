@@ -1,25 +1,24 @@
 Double Equals
 -------------
-- A comparison operator that checks the equality of the values being compared but NOT their type
-- It coerces (converts) values being compared to the SAME TYPE and then compares them
+- The comparison operator that
+    - Checks the equality between operands by their value, NOT by their Primitive Type
 
-==      // equality
-!=      // not equal
+    - Coerces (converts) the values compared 
+        - To the SAME Primitive Type
+        - The compare the equality of their values
 
+    - Comparison operators
+        - Equality                  ==
+        - NOT equal                 !=
 
-Examples
---------
-> 4 == 4
-< true
+Example:
 
-> 'a' == 'a'
-< true
+4 == 4          // Evaluates to true
 
-> false == false
-< true
+'a' == 'a'      // Evaluates to true
 
-> 0 == false        // both values are falsy
-< true
+false == false  // Evaluates to false
 
-> 7 == '7'          // == operator converts them to a common type & then compare their values
-< true
+0 == false      // Evaluates to true; BOTH are falsy values
+
+7 == '7'        // Evaluates to true; coerces values to a common primitive type & compare their values

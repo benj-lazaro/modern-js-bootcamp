@@ -1,0 +1,24 @@
+Running Code From Script
+------------------------
+- JavaScript code that is run directly from the browser is referred as REPL
+    - REPL = Read Evaluate Print Loop
+
+
+- Often, JavaScript code is imported in a HTML document where
+    - The location of the JavaScript file is embedded using the HTML element <script>
+
+
+- The method ".log()" of the "Console" object
+    - Basically outputs a message to the browser's JavaScript console
+        - The message may be a simple string value or any JavaScript object
+
+    - It can accept multiple argument values
+        - Each argument value is separated by a ","
+
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/API/Console/log)
+
+
+- The method ".error()" of the "Console" object
+    - Basically outputs an error message to the browser's JavaScript console
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/API/console/error)
+

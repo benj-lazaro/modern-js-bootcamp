@@ -1,12 +1,12 @@
 Logical OR
 ----------
-- If one side is true then the whole thing (expression) is (evaluated to) true
+- Logical operator wherein one (1) operand MUST be "true"
+    - In order for the entire expression to be evaluated to "true"
 
+        <operand> || <operand>
 
-Example
--------
-1 !== 1 || 10 === 10    // evaluates to true
+Example:
 
-10 / 2 === 5 || null    // evaluates to true
-
-0 || undefined          // evaluates to false
+1 !== 1 || 10 === 10    // Evaluates to true
+10 / 2 === 5 || null    // Evaluates to true
+0 || undefined          // Evaluates to false

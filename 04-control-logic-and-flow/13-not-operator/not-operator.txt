@@ -1,0 +1,13 @@
+NOT Operator
+------------
+- Logical operator that evaluates to "true"
+    - If the expression evaluates to "false"
+    - NOTE: It is a single operand operator
+
+        !<operand>
+
+Example:
+
+!null       // Evaluates to true
+!(0 === 0)  // Evaluates to false
+!(3 <= 4)   // Evaluates to false

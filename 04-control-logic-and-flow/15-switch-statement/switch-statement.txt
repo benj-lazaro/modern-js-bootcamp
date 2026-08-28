@@ -1,23 +1,27 @@
 Switch Statement
 ----------------
-- Evaluates an expression
-- Matches the expression's value against a series of case clauses
-- Executes the matching statements
-- Until it encounters a break statement
-- Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+- A conditional statement that 
+    - Evaluates an expression
 
+    - Matches the value (of the expression) against a series of "case" clauses
 
-Syntax
-------
-switch (expression) {
-  case value1:
-    statements
-  case value2:
-    statements
-  // …
-  case valueN:
-    statements
-  default:
-    statements
-}
+    - Executes the statement of the matching "case" clause
+        - Unit it encounters a "break" statement
 
+    - Otherwise, executes the statement of the "default" clause
+        - When the value does NOT match to ANY of the "case" clauses
+
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+
+    
+    switch(<conditional_statement>) {
+        case <value>:
+            // statement
+            break;
+        case <value>:
+            // statement
+            break;
+        ...
+        default:
+            // statement
+    }

@@ -1,12 +1,12 @@
 Logical AND
 -----------
-- Both sides MUST be true in order for the whole thing (expression) to be (evaluated to) true
+- Logical operator wherein BOTH operands MUST be "true"
+    - In order for the entire expression to be evaluated to "true"
 
+        <operand> && <operand>
 
-Example
--------
-1 <= 4 && 'a' === 'a';              // evaluates to true
+Example:
 
-9 > 10 &&  9 >= 9;                  // evaluates to false
-
-'abc'.length === 3 && 1 + 1 === 4;  // evaluates to false
+1 <= 4 && 'a' === 'a';              // Evaluates to true
+9 > 10 &&  9 >= 9;                  // Evaluates to false
+'abc'.length === 3 && 1 + 1 === 4;  // Evaluates to false
