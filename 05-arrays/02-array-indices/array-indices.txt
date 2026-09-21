@@ -1,26 +1,33 @@
 Array Indices
 -------------
-- Arrays are (zero) indexed; starting index is 0
-- Each array item has a corresponding index
-- Array index is what dictates the order
+- An Array is a zero-based indexed data structure
+    - 1st element is position at index 0
+        - Every element has a corresponding index index_value
+    
+    - An Array index is what dictates the order
+        - A specific element is accessed by placing the index value w/in the pair of "[ ]"
+
+    - The index value of -1
+        - Points to the last element of an Array
+
+Syntax:
+
+const selectedArrayElement = <array_name>[<index>];
 
 
-Syntax
-------
-<array_name>[<index_value>];
+- The Array property ".length"
+    - Returns the size of an Array
+    - Reference (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+
+Syntax:
+
+const arraySize = <array_name>.length;
 
 
-- JavaScript arrays has a .length property that returns the array's size
-
-
-Syntax
-------
-<array_name>.length;
-
-
-Example
+Example:
 -------
-let colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
 colors.length;              // Returns 7
 colors[0];                  // Returns 'red'

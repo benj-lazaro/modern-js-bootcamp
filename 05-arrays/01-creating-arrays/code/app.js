@@ -1,5 +1,3 @@
-// Array Creation Demo
-
 // Array of strings
 let shoppingList = ["cereal", "cheese", "ice"];
 
